@@ -10,9 +10,10 @@ import os
 import time
 from pathlib import Path
 
-from .build import build
+from .build import build, completeness
 from .export import iso_utc, write_coverage, write_jsonl, write_report
 from .fetch import Fetcher
+from .image_colour import ImageFetcher, fill_missing_colours
 from .scrape import scrape
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -35,6 +36,9 @@ def main() -> None:
                       max_age=0 if args.refresh else args.max_age * 60)
     raw = scrape(fetcher)
     cat = build(raw)
+    filled = fill_missing_colours(cat.records, ImageFetcher(DATA / "cache" / "images"))
+    cat.completeness = completeness(cat.records)
+    log.info("colour read from the product photo for %d products", filled)
     # When the oldest response we used was fetched, so a rebuild from cache isn't
     # mistaken for fresh data.
     scraped_at = iso_utc(fetcher.oldest_response or time.time())

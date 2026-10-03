@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS products (
     department       text,                        -- Sarees, Blouses, Women, Men, ...
     category         text,                        -- primary category (see category_source)
     categories       text[] NOT NULL DEFAULT '{}',-- every menu category it appears under
-    category_source  text,                        -- 'menu', or 'product_type' fallback
+    category_source  text,                        -- 'menu', or 'product_type' / 'description' fallback
     edits            text[] NOT NULL DEFAULT '{}',-- bestsellers, new arrivals, named edits
     product_type     text,
     price            numeric(10, 2) NOT NULL,     -- lowest variant price, INR
@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS products (
     sizes            text[] NOT NULL,
     sizes_in_stock   text[] NOT NULL,
     colours          text[] NOT NULL,
+    colour_source    text,                        -- 'text' (tags/title/description) or 'image'
     attributes       jsonb NOT NULL,              -- {"fabric": [...], "style": [...], ...}
     images           text[] NOT NULL,
     pairs_with       text[] NOT NULL,             -- handles the brand styles it with
@@ -29,6 +30,9 @@ CREATE TABLE IF NOT EXISTS products (
     published_at     timestamptz,
     scraped_at       timestamptz NOT NULL
 );
+
+-- Columns added after the first load.
+ALTER TABLE products ADD COLUMN IF NOT EXISTS colour_source text;
 
 CREATE INDEX IF NOT EXISTS products_category_idx   ON products (category);
 CREATE INDEX IF NOT EXISTS products_price_idx      ON products (price);

@@ -12,6 +12,14 @@ uv sync                                       # install dependencies
 uv run python -m catalogue                    # scrape, export, report (~4 min cold)
 ```
 
+No uv? Plain pip works too:
+
+```bash
+python -m venv .venv && .venv/Scripts/activate   # macOS/Linux: source .venv/bin/activate
+pip install requests "psycopg[binary]" pillow pytest
+python -m catalogue
+```
+
 That writes:
 
 | File | What |
@@ -77,6 +85,10 @@ to a menu category (and recorded as `category_source = "product_type"`):
 - `/collections/suta-bags/products.json` comes back empty even though the page lists
   37 bags; its membership is rebuilt from `product_type = Bag` (also 37).
 
+A product with no menu collection and no `product_type` at all is placed by a garment
+measurement in its description ("Blouse Length" → Blouses), as
+`category_source = "description"`. One product needs this today.
+
 **Nothing is missed when the store changes mid-scrape.** Page-number pagination can
 skip a product if the store is edited during the run. Every product returned by any
 category feed is merged in too, deduplicated by Shopify id, keeping the newest copy.
@@ -92,6 +104,15 @@ own merchandising collections (bestsellers, new arrivals, named edits), for the
 lookbook; and `pairs_with`, products the brand's own copy says are styled together
 ("the model is wearing a blouse called Dry Cherry"), for "what goes with this?".
 
+**Colours, most reliable first.** Suta's `Colour_` tags (97% of products); a bare
+colour tag (`Gold`); a colour word in the title, English or Hindi (`Gulabi` = pink);
+the same in the URL handle; an explicit `Colour:` line in the description. Free
+description text is never scanned (it says "Color may vary" and names other products).
+For what is left, [`image_colour.py`](catalogue/image_colour.py) reads the dominant
+shade of the garment from the centre of the first photo, ignoring skin, the backdrop
+shade at the photo's edge, and neutrals when a real colour is present.
+`colour_source` is `text` or `image`.
+
 **Excluded:** free add-ons, services and test products (`Freebies`, `service`).
 They are listed in `REPORT.md`.
 
@@ -104,10 +125,13 @@ As of the last run (see `data/export/REPORT.md`):
 - **Accuracy:** `catalogue.check` on 20 random products: 20/20 match the live site on
   title, price, sizes, per-size stock and images. Rendered product pages show the same
   sale and pre-sale prices.
-- **Colours: 97%.** About 210 products have no colour tag and no colour word in their
-  name (English or Hindi, e.g. "Gulabi" = pink). Filling these needs an image model;
-  left for Task 4, where we embed images anyway.
-- **One product has no `product_type`** and is in no menu category, so it has no category.
+- **Completeness: 100%** on all seven judged fields (title, price, images, colours,
+  sizes, category, url).
+- **Colours from photos are approximate.** 206 products (2.8%) name no colour anywhere
+  in their text, so their colour is read from the first photo (`colour_source = image`).
+  Checked by eye on 28 of them: right for about 3 in 4, reliably so for sarees, blouses
+  and lehengas; wrong mostly for thin lace trims shot on dark backgrounds. Task 4 should
+  prefer image embeddings over this field for these products.
 
 ## Data model
 

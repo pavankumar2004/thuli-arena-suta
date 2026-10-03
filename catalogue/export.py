@@ -16,14 +16,15 @@ def _json_default(value):
 
 def write_jsonl(records: list[dict], path: Path, scraped_at: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w") as f:
+    with path.open("w", encoding="utf-8") as f:
         for r in records:
             f.write(json.dumps({**r, "scraped_at": scraped_at}, ensure_ascii=False,
                                default=_json_default) + "\n")
 
 
 def write_coverage(cat: Catalogue, path: Path, scraped_at: str) -> None:
-    path.write_text(json.dumps({"scraped_at": scraped_at, "categories": cat.coverage}, indent=1))
+    path.write_text(json.dumps({"scraped_at": scraped_at, "categories": cat.coverage}, indent=1),
+                    encoding="utf-8")
 
 
 def write_report(cat: Catalogue, path: Path, scraped_at: str) -> None:
@@ -47,22 +48,31 @@ def write_report(cat: Catalogue, path: Path, scraped_at: str) -> None:
 
     uncategorised = [r for r in cat.records if not r["category"]]
     by_type = [r for r in cat.records if r["category_source"] == "product_type"]
+    by_menu = sum(1 for r in cat.records if r["category_source"] == "menu")
+    by_desc = [r for r in cat.records if r["category_source"] == "description"]
     lines += ["", "## Field completeness", "", "| Field | Present |", "|---|---:|"]
     lines += [f"| {f} | {share:.1%} |" for f, share in cat.completeness.items()]
+    from_image = sum(1 for r in cat.records if r["colour_source"] == "image")
+    lines += ["", f"{from_image} products name no colour in their tags, title, URL or "
+              "description; their colour is the dominant shade of the garment in the first "
+              "product photo (`colour_source = image`)."]
     lines += ["", "## Category source", "",
-              f"{len(cat.records) - len(by_type) - len(uncategorised)} products are placed "
+              f"{by_menu} products are placed "
               f"by suta.in's menu. {len(by_type)} are published but sit in no menu "
               f"collection ({sum(r['available'] for r in by_type)} of them in stock); "
               "their category comes from Shopify's "
-              "`product_type` (`category_source = product_type`).",
+              "`product_type` (`category_source = product_type`). "
+              f"{len(by_desc)} more have no product_type and are placed by a garment "
+              "measurement in their description, such as \"Blouse Length\" "
+              "(`category_source = description`).",
               "", f"## Uncategorised ({len(uncategorised)})", "",
-              "Products with neither a menu category nor a known product_type.", ""]
+              "Products with no menu category, known product_type or description hint.", ""]
     lines += [f"- {r['title']} (`{r['product_type']}`) {r['url']}" for r in uncategorised[:50]]
     if len(uncategorised) > 50:
         lines.append(f"- ...and {len(uncategorised) - 50} more")
     lines += ["", f"## Excluded ({len(cat.excluded)})", ""]
     lines += [f"- {e['title']} ({e['reason']})" for e in cat.excluded]
-    path.write_text("\n".join(lines) + "\n")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def iso_utc(epoch: float) -> str:

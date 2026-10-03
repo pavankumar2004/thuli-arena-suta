@@ -183,8 +183,8 @@ def main() -> None:
     parser.add_argument("--seed", type=int, help="fix the live sample")
     args = parser.parse_args()
 
-    records = [json.loads(line) for line in (EXPORT / "products.jsonl").open()]
-    coverage = json.loads((EXPORT / "coverage.json").read_text())
+    records = [json.loads(line) for line in (EXPORT / "products.jsonl").open(encoding="utf-8")]
+    coverage = json.loads((EXPORT / "coverage.json").read_text(encoding="utf-8"))
     check = Results()
 
     print("export")

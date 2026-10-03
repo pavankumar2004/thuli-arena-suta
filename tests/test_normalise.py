@@ -75,6 +75,10 @@ def test_colour_fallbacks():
     assert colours(["Festive"], "Off White Mulmul Saree") == ["Off White"]
     assert colours([], "Gulabi Chidiya") == ["Pink"]
     assert colours([], "Paan Truffles (Kurta)") == []
+    assert colours([], "Moss", "suta-green-pure-cotton-saree-01") == ["Green"]
+    assert colours([], "Minnal", "minnal", "Fabric: Mul cotton\nColour: Off White") == ["Off White"]
+    # free description text is not a colour source
+    assert colours([], "Aruvi", "aruvi", "Color may vary.\nwearing Gothic Star Ruby") == []
 
 
 def test_facets_ignore_non_facet_tags():

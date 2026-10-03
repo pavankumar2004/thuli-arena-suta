@@ -92,7 +92,7 @@ class Fetcher:
 
         cache_file = self.cache_dir / (hashlib.sha1(url.encode()).hexdigest()[:20] + ".json")
         if cache_file.exists():
-            cached = json.loads(cache_file.read_text())
+            cached = json.loads(cache_file.read_text(encoding="utf-8"))
             if max_age is None or time.time() - cached["fetched_at"] < max_age:
                 self.cache_hits += 1
                 self._saw(cached["fetched_at"])
@@ -100,7 +100,8 @@ class Fetcher:
 
         body = self._download(url)
         fetched_at = time.time()
-        cache_file.write_text(json.dumps({"url": url, "fetched_at": fetched_at, "body": body}))
+        cache_file.write_text(json.dumps({"url": url, "fetched_at": fetched_at, "body": body}),
+                              encoding="utf-8")
         self._saw(fetched_at)
         return body
 

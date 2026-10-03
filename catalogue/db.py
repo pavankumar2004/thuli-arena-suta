@@ -10,12 +10,13 @@ from pathlib import Path
 import psycopg
 from psycopg.types.json import Jsonb
 
-SCHEMA = (Path(__file__).parent / "schema.sql").read_text()
+SCHEMA = (Path(__file__).parent / "schema.sql").read_text(encoding="utf-8")
 
 PRODUCT_COLUMNS = [
     "id", "handle", "url", "title", "brand", "department", "category", "categories",
     "category_source", "edits", "product_type", "price", "compare_at_price", "currency",
-    "available", "sizes", "sizes_in_stock", "colours", "attributes", "images", "pairs_with", "description", "tags",
+    "available", "sizes", "sizes_in_stock", "colours", "colour_source", "attributes", "images",
+    "pairs_with", "description", "tags",
     "created_at", "updated_at", "published_at", "scraped_at",
 ]
 VARIANT_COLUMNS = ["id", "product_id", "position", "sku", "size", "options", "price",

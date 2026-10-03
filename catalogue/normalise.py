@@ -32,6 +32,9 @@ COLOUR_WORDS = {
     "sunehri": "Gold", "bhura": "Brown", "badami": "Beige",
 }
 _COLOUR_RE = re.compile(r"\b(" + "|".join(re.escape(c) for c in COLOURS) + r")\b", re.I)
+# An explicit "Colour: Off White" line in the description. Free description text is not
+# scanned: it says things like "Color may vary" and names other products ("Gothic Star Ruby").
+_COLOUR_LINE_RE = re.compile(r"^\s*colou?rs?\s*:\s*(.+)$", re.I | re.M)
 _PRODUCT_LINK_RE = re.compile(r"suta\.in/products/([a-z0-9][a-z0-9\-]*)")
 
 
@@ -65,9 +68,15 @@ def facets(tags: list[str]) -> dict[str, list[str]]:
     return out
 
 
-def colours(tags: list[str], title: str) -> list[str]:
+def _colour_words(text: str) -> list[str]:
+    found = [m.title() for m in _COLOUR_RE.findall(text)]
+    found += [COLOUR_WORDS[w] for w in re.findall(r"[a-z]+", text.lower()) if w in COLOUR_WORDS]
+    return list(dict.fromkeys(found))
+
+
+def colours(tags: list[str], title: str, handle: str = "", description: str = "") -> list[str]:
     """Colour_ tags first; else bare colour tags ("Gold"); else colour words in the title,
-    English or Hindi."""
+    English or Hindi; else in the URL handle; else a "Colour:" line in the description."""
     tagged = []
     for tag in tags:
         if tag.startswith("Colour_"):
@@ -79,9 +88,11 @@ def colours(tags: list[str], title: str) -> list[str]:
     bare = [tag.strip().title() for tag in tags if _COLOUR_RE.fullmatch(tag.strip())]
     if bare:
         return list(dict.fromkeys(bare))
-    found = [m.title() for m in _COLOUR_RE.findall(title)]
-    found += [COLOUR_WORDS[w] for w in re.findall(r"[a-z]+", title.lower()) if w in COLOUR_WORDS]
-    return list(dict.fromkeys(found))
+    for text in (title, handle.replace("-", " ")):
+        if found := _colour_words(text):
+            return found
+    lines = " ".join(_COLOUR_LINE_RE.findall(description))
+    return list(dict.fromkeys(m.title() for m in _COLOUR_RE.findall(lines)))
 
 
 def _size_option_index(options: list[dict]) -> int | None:
@@ -122,6 +133,8 @@ def normalise(raw: dict, categories: list[tuple[str, str]], edits: list[str],
     in_stock = list(dict.fromkeys(v["size"] for v in vs if v["available"]))
     tags = [t.strip() for t in raw["tags"]]
     department, category = categories[0] if categories else (None, None)
+    description = _plain_text(raw.get("body_html"))
+    found_colours = colours(tags, raw["title"], raw["handle"], description)
 
     return {
         "id": raw["id"],
@@ -141,13 +154,14 @@ def normalise(raw: dict, categories: list[tuple[str, str]], edits: list[str],
         "available": any(v["available"] for v in vs),
         "sizes": sizes,
         "sizes_in_stock": in_stock,
-        "colours": colours(tags, raw["title"]),
+        "colours": found_colours,
+        "colour_source": "text" if found_colours else None,
         "attributes": facets(tags),
         "images": [img["src"] for img in sorted(raw["images"], key=lambda i: i["position"])],
         "variants": vs,
         "pairs_with": sorted(set(_PRODUCT_LINK_RE.findall(raw.get("body_html") or ""))
                              - {raw["handle"]}),
-        "description": _plain_text(raw.get("body_html")),
+        "description": description,
         "tags": tags,
         "created_at": raw.get("created_at"),
         "updated_at": raw.get("updated_at"),

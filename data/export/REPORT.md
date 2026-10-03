@@ -1,6 +1,6 @@
 # Suta catalogue: scrape report
 
-Scraped at 2026-10-03T06:01:46+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
+Scraped at 2026-10-03T06:16:02+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
 
 ## Coverage against suta.in's own category counts
 
@@ -41,7 +41,7 @@ Scraped at 2026-10-03T06:01:46+00:00. 7250 products exported, 9 excluded, 19247 
 | Gifting / Gift Box | `gift-box` | 9 | 9 | collection feed | ok |
 | Kids / Kids | `kids-wear` | 32 | 32 | collection feed | ok |
 | Sarees / Ready To Wear Sarees | `ready-to-wear-sarees` | 109 | 109 | collection feed | ok |
-| Sarees / Garage Sarees | `suta-garage-saree` | 35 | 36 | collection feed | ok |
+| Sarees / Garage Sarees | `suta-garage-saree` | 36 | 36 | collection feed | ok |
 | Blouses / Garage Blouses | `suta-garage-blouse` | 170 | 170 | collection feed | ok |
 
 ## Field completeness
@@ -51,20 +51,21 @@ Scraped at 2026-10-03T06:01:46+00:00. 7250 products exported, 9 excluded, 19247 
 | title | 100.0% |
 | price | 100.0% |
 | images | 100.0% |
-| colours | 97.1% |
+| colours | 100.0% |
 | sizes | 100.0% |
 | category | 100.0% |
 | url | 100.0% |
 
+206 products name no colour in their tags, title, URL or description; their colour is the dominant shade of the garment in the first product photo (`colour_source = image`).
+
 ## Category source
 
-6853 products are placed by suta.in's menu. 396 are published but sit in no menu collection (180 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`).
+6853 products are placed by suta.in's menu. 396 are published but sit in no menu collection (180 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`). 1 more have no product_type and are placed by a garment measurement in their description, such as "Blouse Length" (`category_source = description`).
 
-## Uncategorised (1)
+## Uncategorised (0)
 
-Products with neither a menu category nor a known product_type.
+Products with no menu category, known product_type or description hint.
 
-- Grey Lacy Roads (``) https://suta.in/products/grey-lacy-roads
 
 ## Excluded (9)
 

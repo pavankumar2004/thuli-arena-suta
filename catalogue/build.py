@@ -4,7 +4,8 @@ from dataclasses import dataclass
 
 from .normalise import normalise
 from .scrape import RawCatalogue
-from .taxonomy import CATEGORIES, EDITS, EXCLUDED_PRODUCT_TYPES, PRODUCT_TYPE_CATEGORIES
+from .taxonomy import (CATEGORIES, DESCRIPTION_HINTS, EDITS, EXCLUDED_PRODUCT_TYPES,
+                       PRODUCT_TYPE_CATEGORIES)
 
 # The fields judges check on 20 random items.
 REQUIRED_FIELDS = ["title", "price", "images", "colours", "sizes", "category", "url"]
@@ -16,6 +17,10 @@ class Catalogue:
     excluded: list[dict]
     coverage: list[dict]
     completeness: dict[str, float]
+
+
+def completeness(records: list[dict]) -> dict[str, float]:
+    return {f: sum(1 for r in records if r[f]) / len(records) for f in REQUIRED_FIELDS}
 
 
 def exclusion_reason(raw: dict) -> str | None:
@@ -30,6 +35,14 @@ def exclusion_reason(raw: dict) -> str | None:
 
 def type_category(raw: dict) -> tuple[str, str] | None:
     return PRODUCT_TYPE_CATEGORIES.get(raw["product_type"].strip().lower())
+
+
+def description_category(raw: dict) -> tuple[str, str] | None:
+    """Only for products with no product_type at all."""
+    if raw["product_type"].strip():
+        return None
+    text = (raw.get("body_html") or "").lower()
+    return next((cat for hint, cat in DESCRIPTION_HINTS if hint in text), None)
 
 
 def build(raw: RawCatalogue) -> Catalogue:
@@ -55,6 +68,8 @@ def build(raw: RawCatalogue) -> Catalogue:
         source = "menu" if cats else None
         if not cats and type_category(p):
             cats, source = [type_category(p)], "product_type"
+        elif not cats and description_category(p):
+            cats, source = [description_category(p)], "description"
         edits = [h for h in EDITS if pid in members.get(h, ())]
         records.append(normalise(p, cats, edits, category_source=source))
 
@@ -68,5 +83,4 @@ def build(raw: RawCatalogue) -> Catalogue:
                          "via": "product_type" if handle in rebuilt else "collection feed",
                          "match": shown is not None and scraped >= shown})
 
-    completeness = {f: sum(1 for r in records if r[f]) / len(records) for f in REQUIRED_FIELDS}
-    return Catalogue(records, excluded, coverage, completeness)
+    return Catalogue(records, excluded, coverage, completeness(records))

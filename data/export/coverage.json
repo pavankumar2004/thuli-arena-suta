@@ -1,5 +1,5 @@
 {
- "scraped_at": "2026-10-03T06:01:46+00:00",
+ "scraped_at": "2026-10-03T06:16:02+00:00",
  "categories": [
   {
    "handle": "saree",
@@ -284,7 +284,7 @@
   {
    "handle": "suta-garage-saree",
    "category": "Sarees / Garage Sarees",
-   "site_count": 35,
+   "site_count": 36,
    "scraped": 36,
    "via": "collection feed",
    "match": true

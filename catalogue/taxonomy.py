@@ -123,5 +123,13 @@ PRODUCT_TYPE_CATEGORIES: dict[str, tuple[str, str]] = {
     "gift wrapping": ("Gifting", "Gift Wrapping"),
 }
 
+# Last resort for products with no menu collection and no product_type: a measurement
+# only one kind of garment has, in the description ("Blouse Length: 0.32 m").
+DESCRIPTION_HINTS: list[tuple[str, tuple[str, str]]] = [
+    ("blouse length", ("Blouses", "Blouses")),
+    ("kurta length", ("Women", "Co-ords & Kurta Sets")),
+    ("dress length", ("Women", "Dresses")),
+]
+
 # Shopify products that are not shoppable items: free add-ons, services, test rows.
 EXCLUDED_PRODUCT_TYPES = {"freebies", "service"}
