@@ -1,4 +1,4 @@
--- Suta catalogue. One row per product; sizes/colours live as variants under it.
+-- Suta catalogue. One row per product; each size is a variant row under it.
 
 CREATE TABLE IF NOT EXISTS products (
     id               bigint PRIMARY KEY,          -- Shopify product id
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS products (
     title            text NOT NULL,
     brand            text NOT NULL,
     department       text,                        -- Sarees, Blouses, Women, Men, ...
-    category         text,                        -- primary menu category
+    category         text,                        -- primary category (see category_source)
     categories       text[] NOT NULL DEFAULT '{}',-- every menu category it appears under
     category_source  text,                        -- 'menu', or 'product_type' fallback
     edits            text[] NOT NULL DEFAULT '{}',-- bestsellers, new arrivals, named edits
