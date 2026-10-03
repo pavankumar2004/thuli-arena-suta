@@ -645,14 +645,15 @@
           "title": "Hara",
           "image": {
             "product": "hara-jalebi-green-viscose-kurta-pant-set",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/jalebi-15-hara-v1.jpg"
           },
           "blurb": "Bottle-green stripes, cut loose enough to sit on a shopkeeper's stool and stay a while.",
           "hotspots": [
             {
               "product": "hara-jalebi-green-viscose-kurta-pant-set",
-              "x": 56,
-              "y": 42
+              "x": 52,
+              "y": 56
             }
           ]
         },
@@ -747,19 +748,20 @@
           "title": "Firozi in the courtyard",
           "image": {
             "product": "firozi-varq-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/varq-17-firozi-v1.jpg"
           },
           "blurb": "Shaola teal with a golden jaal and midnight tassels, worn with Reth ki Lakeer.",
           "hotspots": [
             {
               "product": "firozi-varq-saree",
-              "x": 50,
-              "y": 62
+              "x": 63,
+              "y": 72
             },
             {
               "product": "reth-ki-lakeer-blouse",
-              "x": 37,
-              "y": 25
+              "x": 55,
+              "y": 36
             }
           ]
         },
@@ -789,19 +791,20 @@
           "title": "Neelam, turning",
           "image": {
             "product": "neelam-varq-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/varq-19-neelam-v1.jpg"
           },
           "blurb": "Sapphire, mid-turn, with Kashi sa Mann in pink silk at the shoulder.",
           "hotspots": [
             {
               "product": "neelam-varq-saree",
-              "x": 60,
-              "y": 60
+              "x": 56,
+              "y": 72
             },
             {
               "product": "kashi-sa-mann-blouse",
-              "x": 30,
-              "y": 33
+              "x": 43,
+              "y": 48
             }
           ]
         },
@@ -901,18 +904,21 @@
           "title": "Saawan",
           "image": {
             "product": "saawan",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/kavita-21-saawan-v1.jpg"
           },
           "blurb": "“She always arrived with the rain.” Teal mul with silver sequins, scattered like raindrops.",
           "hotspots": [
             {
               "product": "saawan",
-              "x": 70,
-              "y": 62
+              "x": 52,
+              "y": 66
+            },
+            {
+              "product": "jashn-alat-palat",
+              "x": 30,
+              "y": 40
             }
-          ],
-          "extras": [
-            "jashn-alat-palat"
           ]
         },
         {
@@ -920,18 +926,21 @@
           "title": "Safeed Ishq",
           "image": {
             "product": "safeed-ishq",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/kavita-22-safeed-ishq-v1.jpg"
           },
           "blurb": "“She fell in love with everything.” White mul, a book, and an afternoon with nothing in it.",
           "hotspots": [
             {
               "product": "safeed-ishq",
-              "x": 36,
-              "y": 66
+              "x": 56,
+              "y": 70
+            },
+            {
+              "product": "jashn-alat-palat",
+              "x": 34,
+              "y": 53
             }
-          ],
-          "extras": [
-            "jashn-alat-palat"
           ]
         },
         {
@@ -939,19 +948,20 @@
           "title": "Neela Aasmaan",
           "image": {
             "product": "neela-aasmaan",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/kavita-23-neela-aasmaan-v1.jpg"
           },
           "blurb": "“She belonged to the sky.” Grey-blue mul, worn with Hatke Alat Palat and a stem of rajnigandha.",
           "hotspots": [
             {
               "product": "neela-aasmaan",
-              "x": 66,
-              "y": 72
+              "x": 47,
+              "y": 76
             },
             {
               "product": "hatke-alat-palat",
-              "x": 37,
-              "y": 41
+              "x": 39,
+              "y": 54
             }
           ]
         },
