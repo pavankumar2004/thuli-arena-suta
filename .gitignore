@@ -14,3 +14,9 @@ data/cache/
 
 # lookbook build output: re-created by python -m lookbook
 site/dist/
+
+# Instagram profiles: re-creatable with python -m instagram; not ours to redistribute
+data/instagram/
+
+# Instagram login session: equivalent to being logged in, never commit
+.instagram-session.json
