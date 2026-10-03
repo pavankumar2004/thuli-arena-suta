@@ -1,6 +1,6 @@
 # Suta catalogue: scrape report
 
-Scraped at 2026-10-03T06:01:33+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
+Scraped at 2026-10-03T06:01:46+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
 
 ## Coverage against suta.in's own category counts
 

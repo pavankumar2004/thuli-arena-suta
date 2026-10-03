@@ -95,6 +95,15 @@ def check_database(dsn: str, records: list[dict], scraped_at: str, check: Result
         one = lambda sql, *params: conn.execute(sql, params).fetchone()[0]  # noqa: E731
         check(True, "connect to DATABASE_URL")
 
+        tables = {"products", "product_variants", "category_counts"}
+        missing = tables - {row[0] for row in conn.execute(
+            "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'")}
+        check(not missing, "catalogue tables exist",
+              f"missing {', '.join(sorted(missing))}; load first with: "
+              "uv run --env-file .env python -m catalogue")
+        if missing:
+            return
+
         export_ids = {r["id"] for r in records}
         db_ids = {row[0] for row in conn.execute("SELECT id FROM products")}
         check(db_ids == export_ids, f"products table has the same {len(export_ids)} ids as the export",
