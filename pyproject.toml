@@ -1,0 +1,18 @@
+[project]
+name = "suta-catalogue"
+version = "0.1.0"
+description = "Thuli Arena: Suta catalogue scraper and downstream apps"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "psycopg[binary]>=3.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

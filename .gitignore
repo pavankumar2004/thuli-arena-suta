@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# secrets
+.env
+
+# HTTP cache: re-creatable with one command
+data/cache/
+
+# organiser material, not ours to redistribute
+*.pdf
