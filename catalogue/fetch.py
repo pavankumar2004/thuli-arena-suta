@@ -72,6 +72,7 @@ class Fetcher:
         self._last_request = 0.0
         self.network_requests = 0
         self.cache_hits = 0
+        self.oldest_response: float | None = None  # epoch seconds; how stale the data is
         self.robots = RobotsRules(self._get("/robots.txt", check_robots=False))
 
     def get_json(self, path: str, max_age=_DEFAULT) -> dict:
@@ -94,11 +95,18 @@ class Fetcher:
             cached = json.loads(cache_file.read_text())
             if max_age is None or time.time() - cached["fetched_at"] < max_age:
                 self.cache_hits += 1
+                self._saw(cached["fetched_at"])
                 return cached["body"]
 
         body = self._download(url)
-        cache_file.write_text(json.dumps({"url": url, "fetched_at": time.time(), "body": body}))
+        fetched_at = time.time()
+        cache_file.write_text(json.dumps({"url": url, "fetched_at": fetched_at, "body": body}))
+        self._saw(fetched_at)
         return body
+
+    def _saw(self, fetched_at: float) -> None:
+        if self.oldest_response is None or fetched_at < self.oldest_response:
+            self.oldest_response = fetched_at
 
     def _download(self, url: str, attempts: int = 5) -> str:
         for attempt in range(attempts):

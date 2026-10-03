@@ -26,13 +26,26 @@ cp .env.example .env                          # then paste your Neon DATABASE_UR
 uv run --env-file .env python -m catalogue
 ```
 
-Other commands:
+## Check it
 
 ```bash
-uv run python -m catalogue --refresh          # ignore the cache, refetch everything
-uv run python -m catalogue.verify             # check 20 random products against the live site
-uv run pytest                                 # unit tests
+uv run --env-file .env python -m catalogue.check   # export + Neon + 20 products vs. live site
+uv run python -m catalogue.check --live 0          # offline, export only
+uv run pytest                                      # unit tests
 ```
+
+`catalogue.check` prints PASS/WARN/FAIL per check and exits 1 on any failure:
+
+- **export:** unique ids, handles and variant ids; every product has title, URL, price,
+  images and sizes; prices, sale prices and stock flags are consistent; every category
+  matches suta.in's count; warns if the data is more than 2 hours old.
+- **database** (when `DATABASE_URL` is set): exactly the export's product ids, every
+  variant, no orphans, no coverage gaps, and the latest export is the one loaded.
+- **live site:** 20 random products re-fetched from suta.in and compared on title,
+  price, sizes, per-size stock and images, the way the judges will check them.
+
+To refetch everything instead of reusing responses cached in the last hour:
+`uv run python -m catalogue --refresh`.
 
 ## How it works
 
@@ -88,7 +101,7 @@ As of the last run (see `data/export/REPORT.md`):
 
 - **Coverage:** all 37 menu categories match the count suta.in displays, and the
   7,250 exported products match the store's "all products" count.
-- **Accuracy:** `catalogue.verify` on 20 random products: 20/20 match the live site on
+- **Accuracy:** `catalogue.check` on 20 random products: 20/20 match the live site on
   title, price, sizes, per-size stock and images. Rendered product pages show the same
   sale and pre-sale prices.
 - **Colours: 97%.** About 210 products have no colour tag and no colour word in their

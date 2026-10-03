@@ -22,6 +22,10 @@ def write_jsonl(records: list[dict], path: Path, scraped_at: str) -> None:
                                default=_json_default) + "\n")
 
 
+def write_coverage(cat: Catalogue, path: Path, scraped_at: str) -> None:
+    path.write_text(json.dumps({"scraped_at": scraped_at, "categories": cat.coverage}, indent=1))
+
+
 def write_report(cat: Catalogue, path: Path, scraped_at: str) -> None:
     lines = [
         "# Suta catalogue: scrape report",
@@ -61,5 +65,5 @@ def write_report(cat: Catalogue, path: Path, scraped_at: str) -> None:
     path.write_text("\n".join(lines) + "\n")
 
 
-def utc_now() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+def iso_utc(epoch: float) -> str:
+    return datetime.fromtimestamp(epoch, timezone.utc).replace(microsecond=0).isoformat()

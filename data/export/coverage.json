@@ -1,0 +1,301 @@
+{
+ "scraped_at": "2026-10-03T06:01:33+00:00",
+ "categories": [
+  {
+   "handle": "saree",
+   "category": "Sarees / Sarees",
+   "site_count": 3779,
+   "scraped": 3779,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "blouses",
+   "category": "Blouses / Blouses",
+   "site_count": 1404,
+   "scraped": 1404,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "lehengas",
+   "category": "Women / Lehengas",
+   "site_count": 55,
+   "scraped": 55,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "women-dresses",
+   "category": "Women / Dresses",
+   "site_count": 183,
+   "scraped": 183,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "kurta-sets-co-ords",
+   "category": "Women / Co-ords & Kurta Sets",
+   "site_count": 105,
+   "scraped": 105,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "women-shirts",
+   "category": "Women / Shirts",
+   "site_count": 12,
+   "scraped": 12,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "women-jackets",
+   "category": "Women / Jackets",
+   "site_count": 12,
+   "scraped": 12,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "dupatta",
+   "category": "Women / Dupattas",
+   "site_count": 33,
+   "scraped": 33,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "women-t-shirts",
+   "category": "Women / T-Shirt Blouses",
+   "site_count": 20,
+   "scraped": 20,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "women-trousers",
+   "category": "Women / Trousers",
+   "site_count": 8,
+   "scraped": 8,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "womens-underskirts-petticoats",
+   "category": "Women / Petticoats",
+   "site_count": 90,
+   "scraped": 90,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "mens-kurtas",
+   "category": "Men / Kurtas",
+   "site_count": 86,
+   "scraped": 86,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "mens-shirts",
+   "category": "Men / Shirts",
+   "site_count": 81,
+   "scraped": 81,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "shorts-and-trousers",
+   "category": "Men / Shorts & Trousers",
+   "site_count": 15,
+   "scraped": 15,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "gamchas-for-men",
+   "category": "Men / Gamchas",
+   "site_count": 3,
+   "scraped": 3,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "womens-jewellery",
+   "category": "Accessories / Jewellery",
+   "site_count": 155,
+   "scraped": 155,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "shoes",
+   "category": "Accessories / Shoes",
+   "site_count": 6,
+   "scraped": 6,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "suta-bags",
+   "category": "Accessories / Bags",
+   "site_count": 37,
+   "scraped": 37,
+   "via": "product_type",
+   "match": true
+  },
+  {
+   "handle": "pashmina-khwaab",
+   "category": "Accessories / Pashmina",
+   "site_count": 4,
+   "scraped": 4,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "handkerchiefs",
+   "category": "Accessories / Handkerchiefs",
+   "site_count": 13,
+   "scraped": 13,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "brooches",
+   "category": "Accessories / Brooches",
+   "site_count": 10,
+   "scraped": 10,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "eye-masks",
+   "category": "Accessories / Travel Accessories",
+   "site_count": 6,
+   "scraped": 6,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "scrunchies",
+   "category": "Accessories / Hair Accessories",
+   "site_count": 22,
+   "scraped": 22,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "rakhi-thread-of-love",
+   "category": "Accessories / Rakhi",
+   "site_count": 44,
+   "scraped": 44,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "fabric",
+   "category": "Fabric / Fabric",
+   "site_count": 385,
+   "scraped": 385,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "lace",
+   "category": "Fabric / Laces",
+   "site_count": 18,
+   "scraped": 18,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "buntings",
+   "category": "Home / Buntings",
+   "site_count": 15,
+   "scraped": 15,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "cushions",
+   "category": "Home / Cushions",
+   "site_count": 20,
+   "scraped": 20,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "curtains",
+   "category": "Home / Curtains",
+   "site_count": 17,
+   "scraped": 17,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "home-decor",
+   "category": "Home / Decor",
+   "site_count": 63,
+   "scraped": 63,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "quilts",
+   "category": "Home / Quilts",
+   "site_count": 10,
+   "scraped": 10,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "super-saver-combos",
+   "category": "Gifting / Super Saver Combos",
+   "site_count": 58,
+   "scraped": 58,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "gift-box",
+   "category": "Gifting / Gift Box",
+   "site_count": 9,
+   "scraped": 9,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "kids-wear",
+   "category": "Kids / Kids",
+   "site_count": 32,
+   "scraped": 32,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "ready-to-wear-sarees",
+   "category": "Sarees / Ready To Wear Sarees",
+   "site_count": 109,
+   "scraped": 109,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "suta-garage-saree",
+   "category": "Sarees / Garage Sarees",
+   "site_count": 35,
+   "scraped": 36,
+   "via": "collection feed",
+   "match": true
+  },
+  {
+   "handle": "suta-garage-blouse",
+   "category": "Blouses / Garage Blouses",
+   "site_count": 170,
+   "scraped": 170,
+   "via": "collection feed",
+   "match": true
+  }
+ ]
+}

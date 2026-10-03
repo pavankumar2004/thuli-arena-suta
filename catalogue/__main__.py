@@ -11,7 +11,7 @@ import time
 from pathlib import Path
 
 from .build import build
-from .export import utc_now, write_jsonl, write_report
+from .export import iso_utc, write_coverage, write_jsonl, write_report
 from .fetch import Fetcher
 from .scrape import scrape
 
@@ -35,9 +35,12 @@ def main() -> None:
                       max_age=0 if args.refresh else args.max_age * 60)
     raw = scrape(fetcher)
     cat = build(raw)
-    scraped_at = utc_now()
+    # When the oldest response we used was fetched, so a rebuild from cache isn't
+    # mistaken for fresh data.
+    scraped_at = iso_utc(fetcher.oldest_response or time.time())
 
     write_jsonl(cat.records, DATA / "export" / "products.jsonl", scraped_at)
+    write_coverage(cat, DATA / "export" / "coverage.json", scraped_at)
     write_report(cat, DATA / "export" / "REPORT.md", scraped_at)
     log.info("exported %d products (%d excluded) to data/export/  "
              "[%d requests, %d cache hits, %.0fs]", len(cat.records), len(cat.excluded),

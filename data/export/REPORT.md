@@ -1,6 +1,6 @@
 # Suta catalogue: scrape report
 
-Scraped at 2026-10-03T05:52:41+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
+Scraped at 2026-10-03T06:01:33+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
 
 ## Coverage against suta.in's own category counts
 
@@ -41,7 +41,7 @@ Scraped at 2026-10-03T05:52:41+00:00. 7250 products exported, 9 excluded, 19247 
 | Gifting / Gift Box | `gift-box` | 9 | 9 | collection feed | ok |
 | Kids / Kids | `kids-wear` | 32 | 32 | collection feed | ok |
 | Sarees / Ready To Wear Sarees | `ready-to-wear-sarees` | 109 | 109 | collection feed | ok |
-| Sarees / Garage Sarees | `suta-garage-saree` | 31 | 31 | collection feed | ok |
+| Sarees / Garage Sarees | `suta-garage-saree` | 35 | 36 | collection feed | ok |
 | Blouses / Garage Blouses | `suta-garage-blouse` | 170 | 170 | collection feed | ok |
 
 ## Field completeness
@@ -58,7 +58,7 @@ Scraped at 2026-10-03T05:52:41+00:00. 7250 products exported, 9 excluded, 19247 
 
 ## Category source
 
-6853 products are placed by suta.in's menu. 396 are published but sit in no menu collection (177 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`).
+6853 products are placed by suta.in's menu. 396 are published but sit in no menu collection (180 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`).
 
 ## Uncategorised (1)
 
