@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 type Ambience = { start: () => void; stop: () => void }
 
-/** Rain and tanpura, off until asked for. Four bars that breathe while it plays. */
+/** Tanpura and bells, off until asked for. Four bars that breathe while it plays. */
 export function AudioToggle() {
   const [on, setOn] = useState(false)
   const ambience = useRef<Ambience | null>(null)
@@ -26,8 +26,8 @@ export function AudioToggle() {
     <button
       onClick={toggle}
       aria-pressed={on}
-      aria-label={on ? "Mute the rain and tanpura" : "Play rain and tanpura"}
-      title={on ? "Mute" : "Rain & tanpura"}
+      aria-label={on ? "Mute the tanpura" : "Play a calm tanpura"}
+      title={on ? "Mute" : "Tanpura & bells"}
       className="flex h-10 items-center gap-2 rounded-full px-3 transition-colors hover:bg-current/10"
     >
       <span className="flex h-3.5 items-end gap-[2px]" aria-hidden>
