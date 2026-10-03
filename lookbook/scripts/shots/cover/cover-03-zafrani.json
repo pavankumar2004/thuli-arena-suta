@@ -1,0 +1,51 @@
+{
+  "id": "cover-03-zafrani",
+  "version": 1,
+  "look": "zafrani-varq",
+  "aspect_ratio": "9:16",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "zafrani-varq-saree",
+      "index": 0
+    },
+    {
+      "product": "zafrani-varq-saree",
+      "index": 1
+    },
+    {
+      "product": "zafrani-varq-saree",
+      "index": 6
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 1
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 3
+    }
+  ],
+  "notes": "Cover panel re-shoot of varq-18-zafrani: standing, full length, headroom for the tall crop.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Tall vertical 9:16 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the saffron-ochre mul cotton saree from the first three references, printed with a fine gold foil jaal of scalloped lines and tiny dots, gold lace edge and navy tassels. Soft, matte, airy.",
+    "- Blouse: the deep purple silk brocade blouse with gold lotus motifs from the last two references, elbow-length sleeves.",
+    "- Pallu tucked at the waist kitchen-style, showing the gold jaal across her shoulder and front.",
+    "",
+    "MUSE: a woman in her early thirties with a short pixie-fringe bob, small gold earrings, a nose pin, glass bangles, laughing as a sheet of silver leaf floats off her fingertips.",
+    "",
+    "MOMENT AND PLACE: Late morning in the whitewashed doorway of an old kitchen courtyard, holding a brass tray of kaju katli topped with silver varq at her waist, a tulsi planter softly behind.",
+    "",
+    "LIGHT: Bright side sunlight with warm bounce from the walls; the saffron saree luminous.",
+    "",
+    "COVER FRAMING (this photograph becomes one tall, narrow panel of the lookbook's opening page, behind a large title):",
+    "- POSE: she is standing upright, full length, head to toe in frame; ignore any seated or kneeling pose mentioned above.",
+    "- HEADROOM: the top quarter of the frame is calm, empty background (sky, wall, foliage or soft darkness); her head sits about a quarter of the way down, never near the top edge.",
+    "- Subject centred horizontally and filling the middle third of the width, so a narrow vertical crop keeps all of her.",
+    "- Keep the background simple and softly out of focus; nothing busy behind her face.",
+    "- CAMERA: eye level, 50mm lens at f/2.8, gentle depth of field, medium-format look with fine grain."
+  ]
+}

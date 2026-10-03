@@ -1,6 +1,182 @@
 {
   "scrapedAt": "2026-10-03T07:28:13+00:00",
   "products": {
+    "nitai": {
+      "handle": "nitai",
+      "title": "Nitai",
+      "url": "https://suta.in/products/nitai",
+      "category": "Sarees",
+      "price": 3278,
+      "compareAtPrice": 3450,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "White"
+      ],
+      "fabric": "Cotton",
+      "technique": [],
+      "length": "5.50 m",
+      "blousePiece": "No",
+      "collection": "Pujo",
+      "preOrder": null,
+      "story": "",
+      "description": "An off-white woven mul cotton saree, framed with a red and gold zari border, and finished with an embroidered alpona design gracing the pallu. This is the quintessential Durga Puja look. Light, breathable, and festive-ready. It’s perfect for Ashtami Anjali or pandal-hopping from morning to night. Wear it once, and get ready for the inevitable question: “Where did you get this from?”",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-03.jpg?v=1756103195",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-11.jpg?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_7178.png?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-12.jpg?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-05.jpg?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-04.jpg?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-09.jpg?v=1764314290",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-10.jpg?v=1764314290"
+      ]
+    },
+    "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree": {
+      "handle": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+      "title": "Saanjh Chandrama",
+      "url": "https://suta.in/products/saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+      "category": "Sarees",
+      "price": 12255,
+      "compareAtPrice": 12900,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Blue"
+      ],
+      "fabric": "Tussar Tissue Silk",
+      "technique": [
+        "Woven"
+      ],
+      "length": "6.50 m",
+      "blousePiece": "Yes",
+      "collection": "Chandrama",
+      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
+      "story": "Saanjh Chandrama is that little pause between day and night. She arrives just as the sky turns deep blue, when the last bit of sunlight is still hanging around and the evening is deciding what it wants to become.\nHer zari lines catch whatever light is left, her plain zari pallu follows along gracefully, and her tassels? They’re already ready for the evening plans. She loves festive dinners, rooftop conversations and celebrations that begin at sunset and somehow continue well past it. If dusk had a favourite saree, we think it would be her.",
+      "description": "Inspired by the magic of dusk, Saanjh Chandrama is a soft dark blue saree with delicate zari lines, a plain zari pallu and playful tassels. Paired with a blouse piece, it brings a subtle shimmer to the drape while keeping things soft and easy. Made for festive evenings, intimate celebrations and nights that begin at sunset.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07144-11.jpg?v=1790089114",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00009_fe941832-411c-4a59-b153-74b09d8877d7.jpg?v=1790151032",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06910-6.jpg?v=1790089113",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06902-1.jpg?v=1790089113",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00008_20e2d416-b12a-420f-baab-a1ab282a832b.jpg?v=1790151031",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07160-15.jpg?v=1790089113",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06903-2.jpg?v=1790089113",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06905-3.jpg?v=1790089114"
+      ]
+    },
+    "zafrani-varq-saree": {
+      "handle": "zafrani-varq-saree",
+      "title": "Zafrani Varq",
+      "url": "https://suta.in/products/zafrani-varq-saree",
+      "category": "Sarees",
+      "price": 4845,
+      "compareAtPrice": 5100,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Mustard",
+        "Yellow"
+      ],
+      "fabric": "Mul Cotton",
+      "technique": [
+        "Foil Printing"
+      ],
+      "length": "5.50 m",
+      "blousePiece": "Yes (80 cm additional fabric for the blouse)",
+      "collection": "Gulaab",
+      "preOrder": null,
+      "story": "Zafrani Varq likes her mornings sunny, her evenings glowing and her festive days just a little golden. She arrives in a soft beige, covered in a delicate golden jaal that looks as though someone sprinkled a little saffron sunshine all over her. The gold foil catches the light with every move, while her gold samosa lace makes sure she never goes unnoticed. Her beige tassels? They simply bounce along, pretending they aren't enjoying all the attention.",
+      "description": "Zafrani Varq is a soft beige mul cotton saree with a warm, festive personality. Its subtle beige base features an intricate jaal design, finished with shimmering gold foil printing for an elegant touch of festive sparkle.\nGold samosa lace detailing adds a classic finish along the edges, while beige tassels complete the look with understated charm. Lightweight, breathable and comfortable, Zafrani Varq is perfect for easy daytime celebrations and softly lit festive evenings alike.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-5.jpg?v=1789648872",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-2-2.jpg?v=1789731255",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-7.jpg?v=1789648872",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-2.jpg?v=1789648872",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Pujor_Rong_Makha_jpg_0edf67b9-79af-401b-a864-a0e3da63e021.jpg?v=1789803680",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-4.jpg?v=1789648872",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-3.jpg?v=1789648872",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-10.jpg?v=1789731255"
+      ]
+    },
+    "rani-jalebi-black-viscose-kurta-pant-set": {
+      "handle": "rani-jalebi-black-viscose-kurta-pant-set",
+      "title": "Rani Jalebi",
+      "url": "https://suta.in/products/rani-jalebi-black-viscose-kurta-pant-set",
+      "category": "Co-ords & Kurta Sets",
+      "price": 5686,
+      "compareAtPrice": 5985,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL",
+        "6XL"
+      ],
+      "sizesInStock": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL",
+        "6XL"
+      ],
+      "colours": [
+        "Black"
+      ],
+      "fabric": "Viscose",
+      "technique": [
+        "Embroidery",
+        "Machine Embroidery"
+      ],
+      "length": "0.94 m",
+      "blousePiece": null,
+      "collection": "Jalebi",
+      "preOrder": null,
+      "story": "Meet Rani Jalebi, a striking black kurta set with a dark-orange twist. The V-neck kurta comes with breezy bell sleeves, pockets on both sides and delicate gold zari floral embroidery along the neckline and pocket line. Paired with dark-orange salwar pants and made in soft, comfortable viscose, this set knows how to bring a little drama to festive dressing while staying wonderfully easy to wear.",
+      "description": "Rani Jalebi never entered a room quietly. She arrived in black, brought a little dark orange along for company, and let tiny gold flowers do the talking. Her bell sleeves swayed as she walked, her pockets held all her little secrets, and her salwar pants followed along like they knew exactly where the evening was headed. She could be found at a festive gathering, an impromptu dinner or simply out for chai looking far more dressed up than she intended. Rani Jalebi liked a little drama, but never at the expense of comfort. That was simply not her style.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-02.jpg?v=1790774036",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-18.jpg?v=1790854882",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-01.jpg?v=1790774036",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-11.jpg?v=1790774036",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-04.jpg?v=1790774036",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-08.jpg?v=1790774036",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-19.jpg?v=1790854882",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-14.jpg?v=1790774036"
+      ]
+    },
     "rokto-joba": {
       "handle": "rokto-joba",
       "title": "Rokto Joba",
@@ -39,6 +215,45 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/G9A4957.jpg?v=1745487527",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/products/rokto-joba-115522.jpg?v=1745487524",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/products/rokto-joba-284195.jpg?v=1745487524"
+      ]
+    },
+    "pura-chandrama-olive-green-tissue-tussar-silk-saree": {
+      "handle": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+      "title": "Pura Chandrama",
+      "url": "https://suta.in/products/pura-chandrama-olive-green-tissue-tussar-silk-saree",
+      "category": "Sarees",
+      "price": 12255,
+      "compareAtPrice": 12900,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Green"
+      ],
+      "fabric": "Tussar Tissue Silk",
+      "technique": [
+        "Woven"
+      ],
+      "length": "6.50 m",
+      "blousePiece": "Yes",
+      "collection": "Chandrama",
+      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
+      "story": "Pura Chandrama doesn’t do half-hearted appearances. When she shows up, she shows up fully, much like the moon on her favourite night of the month. Dressed in olive green, with zari lines glinting every time she moves, she has no interest in hiding behind clouds.\nHer plain zari pallu brings the glow, her tassels bring the fun, and she brings the kind of energy that says, “Yes, I dressed up. And?” Full moon. Full plans. Full festive mood. Pura Chandrama wouldn’t have it any other way.",
+      "description": "Soft, luminous and ready for a night of festivities, Pura Chandrama is an olive green saree detailed with delicate zari lines, a plain zari pallu and playful tassels. Complete with a blouse piece, its easy drape and subtle shimmer make it a lovely pick for festive dinners, celebrations and evenings under the moon.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07575-60.jpg?v=1790089218",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00004_a700cbbc-2b29-4e1c-a063-20e0b17233c1.jpg?v=1790150979",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07670-68.jpg?v=1790089218",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07555-56.jpg?v=1790089217",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00002_5f565d9d-7df9-4796-b3db-937b8985c0f6.jpg?v=1790150978",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07571-59.jpg?v=1790089217",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07579-61.jpg?v=1790089217",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07581-62.jpg?v=1790089217"
       ]
     },
     "hara-jalebi-green-viscose-kurta-pant-set": {
@@ -141,13 +356,13 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/NeelamVarq-3.jpg?v=1789649106"
       ]
     },
-    "laali-chandrama-pink-tissue-tussar-silk-saree": {
-      "handle": "laali-chandrama-pink-tissue-tussar-silk-saree",
-      "title": "Laali Chandrama",
-      "url": "https://suta.in/products/laali-chandrama-pink-tissue-tussar-silk-saree",
+    "kesar-ink": {
+      "handle": "kesar-ink",
+      "title": "Kesar Ink",
+      "url": "https://suta.in/products/kesar-ink",
       "category": "Sarees",
-      "price": 12255,
-      "compareAtPrice": 12900,
+      "price": 2271,
+      "compareAtPrice": 2390,
       "currency": "INR",
       "available": true,
       "sizes": [
@@ -157,204 +372,25 @@
         "Free Size"
       ],
       "colours": [
-        "Pink"
-      ],
-      "fabric": "Tussar Tissue Silk",
-      "technique": [
-        "Woven"
-      ],
-      "length": "6.50 m",
-      "blousePiece": "Yes",
-      "collection": "Chandrama",
-      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
-      "story": "Laali Chandrama has a soft spot for pink skies. She likes the kind that appear just before the sun goes down, when the world turns a little rosy and the evening feels like it’s about to become something special. So she decided to keep a little of that colour for herself.\nNow she arrives in pink, with zari lines that glimmer as she moves, a plain zari pallu that catches the light and tassels that refuse to sit still. She’s sweet, she’s festive, and she knows exactly when to make an entrance. Her favourite part? When someone looks at her and says, “You look like a whole mood.”",
-      "description": "Soft, rosy and made for festive evenings, Laali Chandrama is a pink saree with delicate zari lines, a plain zari pallu and playful tassels. Paired with a blouse piece, its gentle shimmer and easy drape make it perfect for festive gatherings, dinner plans and nights that call for a little extra glow.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07020-6.jpg?v=1790092578",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00014_5987b689-160a-4dad-922b-c5ffeaac8dcd.jpg?v=1790150871",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07048-10.jpg?v=1790092578",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07008-5.jpg?v=1790092578",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00012_9b1954e8-5cdb-4bd1-a5cd-7db6da7dad35.jpg?v=1790150870",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07060-12.jpg?v=1790092578",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06977-1.jpg?v=1790092578",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06982-2.jpg?v=1790092578"
-      ]
-    },
-    "teen-patti": {
-      "handle": "teen-patti",
-      "title": "Teen Patti",
-      "url": "https://suta.in/products/teen-patti",
-      "category": "Sarees",
-      "price": 2366,
-      "compareAtPrice": 2490,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Red"
+        "Purple"
       ],
       "fabric": "Mul Cotton",
       "technique": [],
       "length": "5.50 m",
       "blousePiece": "No",
       "collection": "Zar",
-      "preOrder": null,
+      "preOrder": "This is a pre-order and your order will be shipped within 10 days",
       "story": "",
-      "description": "Stand out with Teen Patti , a red woven mul cotton saree that balances tradition with vibrant twists. It features a colorblock layout and subtle zari border detailing. The olive green and pink jhalar tassels add a playful touch, making this a beautiful choice for celebratory occasions.",
+      "description": "Bold purple meets lively green in Kesar Ink , a woven mul cotton saree with a refreshing colorblock composition. Finished with green jhalar tassels and a glinting zari border, this saree is perfect for those who love a rich, jewel-toned look with a playful twist.",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3505.jpg?v=1750136079",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3857.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_5789.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8125.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8135.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8111.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3508.jpg?v=1750227722",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8115.jpg?v=1750227722"
-      ]
-    },
-    "saawan": {
-      "handle": "saawan",
-      "title": "Saawan",
-      "url": "https://suta.in/products/saawan",
-      "category": "Sarees",
-      "price": 3895,
-      "compareAtPrice": 4100,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Blue",
-        "Teal"
-      ],
-      "fabric": "Mul Cotton",
-      "technique": [
-        "Embroidery"
-      ],
-      "length": "5.50 m",
-      "blousePiece": "No",
-      "collection": "Suta x Priya Malik",
-      "preOrder": null,
-      "story": "She always arrived with the rain.\nNot the loud kind that rushed through the streets, but the gentle drizzle that made people pause by their windows. She loved the hush that came before the first drop, the smell of wet earth, and the way the whole world seemed to slow down for a while.\nAs she walked, tiny silver raindrops settled on her, refusing to leave. They sparkled with every step, as if the rain wanted to stay close a little longer.\nThat's why they called her Saawan .",
-      "description": "Like rain meeting still waters, Saawan is calm, refreshing, and quietly enchanting. Crafted from Suta's signature feather-soft mul cotton in a soothing teal, this borderless saree is sprinkled with delicate silver sequins that shimmer like raindrops caught in the light. Light, breathable, and effortlessly graceful, it's made for days when you want to carry the magic of the monsoon wherever you go.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-2.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-10.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-3.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-6.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-1.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-8.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-7.jpg?v=1785242361",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-5.jpg?v=1785242361"
-      ]
-    },
-    "aamras-jalebi-yellow-viscose-kurta-pant-set": {
-      "handle": "aamras-jalebi-yellow-viscose-kurta-pant-set",
-      "title": "Aamras Jalebi",
-      "url": "https://suta.in/products/aamras-jalebi-yellow-viscose-kurta-pant-set",
-      "category": "Co-ords & Kurta Sets",
-      "price": 5686,
-      "compareAtPrice": 5985,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "XXS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "3XL",
-        "4XL",
-        "5XL",
-        "6XL"
-      ],
-      "sizesInStock": [
-        "XXS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL",
-        "3XL",
-        "4XL",
-        "5XL",
-        "6XL"
-      ],
-      "colours": [
-        "Yellow"
-      ],
-      "fabric": "Viscose",
-      "technique": [
-        "Embroidery",
-        "Machine Embroidery"
-      ],
-      "length": "0.87 m",
-      "blousePiece": null,
-      "collection": "Jalebi",
-      "preOrder": null,
-      "story": "Meet Aamras Jalebi, a mustard-yellow kurta set with a little sunshine and a lot of charm. The V-neck kurta comes with breezy bell sleeves, pockets on both sides and delicate gold zari floral embroidery tracing the neckline and pocket line. Paired with deep-blue salwar pants, this viscose set brings together rich colours, soft comfort and just enough festive sparkle to make an entrance.",
-      "description": "Aamras Jalebi liked to take her time. She’d sway into a room in her mustard-yellow kurta, her bell sleeves following along like they had somewhere fun to be. Her dark-blue salwar pants kept things grounded, while little gold flowers quietly showed off around her neckline. And her pockets? Those were non-negotiable. She filled them with tiny treasures and went wherever the day called her. A festive lunch, a family gathering, an evening out for chai — Aamras Jalebi was ready. After all, she believed every good day deserved a little colour and a little twirl.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-11.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-04.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-05.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-02.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-08.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-19.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-03.jpg?v=1790855121",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-10.jpg?v=1790855121"
-      ]
-    },
-    "zafrani-varq-saree": {
-      "handle": "zafrani-varq-saree",
-      "title": "Zafrani Varq",
-      "url": "https://suta.in/products/zafrani-varq-saree",
-      "category": "Sarees",
-      "price": 4845,
-      "compareAtPrice": 5100,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Mustard",
-        "Yellow"
-      ],
-      "fabric": "Mul Cotton",
-      "technique": [
-        "Foil Printing"
-      ],
-      "length": "5.50 m",
-      "blousePiece": "Yes (80 cm additional fabric for the blouse)",
-      "collection": "Gulaab",
-      "preOrder": null,
-      "story": "Zafrani Varq likes her mornings sunny, her evenings glowing and her festive days just a little golden. She arrives in a soft beige, covered in a delicate golden jaal that looks as though someone sprinkled a little saffron sunshine all over her. The gold foil catches the light with every move, while her gold samosa lace makes sure she never goes unnoticed. Her beige tassels? They simply bounce along, pretending they aren't enjoying all the attention.",
-      "description": "Zafrani Varq is a soft beige mul cotton saree with a warm, festive personality. Its subtle beige base features an intricate jaal design, finished with shimmering gold foil printing for an elegant touch of festive sparkle.\nGold samosa lace detailing adds a classic finish along the edges, while beige tassels complete the look with understated charm. Lightweight, breathable and comfortable, Zafrani Varq is perfect for easy daytime celebrations and softly lit festive evenings alike.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-5.jpg?v=1789648872",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-2-2.jpg?v=1789731255",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-7.jpg?v=1789648872",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-2.jpg?v=1789648872",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Pujor_Rong_Makha_jpg_0edf67b9-79af-401b-a864-a0e3da63e021.jpg?v=1789803680",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-4.jpg?v=1789648872",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-3.jpg?v=1789648872",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/ZafraniVarq-10.jpg?v=1789731255"
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-12.jpg?v=1750162508",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_5783.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC4979_629d9ee0-f494-4c29-8c3d-976e60a6600b.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-09.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-05.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-06.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-07.jpg?v=1750228193",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-11.jpg?v=1750228193"
       ]
     },
     "firozi-varq-saree": {
@@ -396,6 +432,45 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC05522-116.jpg?v=1790166571"
       ]
     },
+    "laali-chandrama-pink-tissue-tussar-silk-saree": {
+      "handle": "laali-chandrama-pink-tissue-tussar-silk-saree",
+      "title": "Laali Chandrama",
+      "url": "https://suta.in/products/laali-chandrama-pink-tissue-tussar-silk-saree",
+      "category": "Sarees",
+      "price": 12255,
+      "compareAtPrice": 12900,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Pink"
+      ],
+      "fabric": "Tussar Tissue Silk",
+      "technique": [
+        "Woven"
+      ],
+      "length": "6.50 m",
+      "blousePiece": "Yes",
+      "collection": "Chandrama",
+      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
+      "story": "Laali Chandrama has a soft spot for pink skies. She likes the kind that appear just before the sun goes down, when the world turns a little rosy and the evening feels like it’s about to become something special. So she decided to keep a little of that colour for herself.\nNow she arrives in pink, with zari lines that glimmer as she moves, a plain zari pallu that catches the light and tassels that refuse to sit still. She’s sweet, she’s festive, and she knows exactly when to make an entrance. Her favourite part? When someone looks at her and says, “You look like a whole mood.”",
+      "description": "Soft, rosy and made for festive evenings, Laali Chandrama is a pink saree with delicate zari lines, a plain zari pallu and playful tassels. Paired with a blouse piece, its gentle shimmer and easy drape make it perfect for festive gatherings, dinner plans and nights that call for a little extra glow.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07020-6.jpg?v=1790092578",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00014_5987b689-160a-4dad-922b-c5ffeaac8dcd.jpg?v=1790150871",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07048-10.jpg?v=1790092578",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07008-5.jpg?v=1790092578",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00012_9b1954e8-5cdb-4bd1-a5cd-7db6da7dad35.jpg?v=1790150870",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07060-12.jpg?v=1790092578",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06977-1.jpg?v=1790092578",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06982-2.jpg?v=1790092578"
+      ]
+    },
     "surkh": {
       "handle": "surkh",
       "title": "Surkh",
@@ -433,43 +508,6 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Surkh-08.jpg?v=1785240965",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Surkh-03.jpg?v=1785240965",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Surkh-14.jpg?v=1785240965"
-      ]
-    },
-    "nitai": {
-      "handle": "nitai",
-      "title": "Nitai",
-      "url": "https://suta.in/products/nitai",
-      "category": "Sarees",
-      "price": 3278,
-      "compareAtPrice": 3450,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "White"
-      ],
-      "fabric": "Cotton",
-      "technique": [],
-      "length": "5.50 m",
-      "blousePiece": "No",
-      "collection": "Pujo",
-      "preOrder": null,
-      "story": "",
-      "description": "An off-white woven mul cotton saree, framed with a red and gold zari border, and finished with an embroidered alpona design gracing the pallu. This is the quintessential Durga Puja look. Light, breathable, and festive-ready. It’s perfect for Ashtami Anjali or pandal-hopping from morning to night. Wear it once, and get ready for the inevitable question: “Where did you get this from?”",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-03.jpg?v=1756103195",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-11.jpg?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_7178.png?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-12.jpg?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-05.jpg?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-04.jpg?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-09.jpg?v=1764314290",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Nitai-10.jpg?v=1764314290"
       ]
     },
     "shonkho-sindoor-cotton-saree": {
@@ -752,6 +790,43 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kanakam-186075.jpg?v=1740047016"
       ]
     },
+    "teen-patti": {
+      "handle": "teen-patti",
+      "title": "Teen Patti",
+      "url": "https://suta.in/products/teen-patti",
+      "category": "Sarees",
+      "price": 2366,
+      "compareAtPrice": 2490,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Red"
+      ],
+      "fabric": "Mul Cotton",
+      "technique": [],
+      "length": "5.50 m",
+      "blousePiece": "No",
+      "collection": "Zar",
+      "preOrder": null,
+      "story": "",
+      "description": "Stand out with Teen Patti , a red woven mul cotton saree that balances tradition with vibrant twists. It features a colorblock layout and subtle zari border detailing. The olive green and pink jhalar tassels add a playful touch, making this a beautiful choice for celebratory occasions.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3505.jpg?v=1750136079",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3857.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_5789.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8125.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8135.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8111.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC3508.jpg?v=1750227722",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_8115.jpg?v=1750227722"
+      ]
+    },
     "haldi-hustle": {
       "handle": "haldi-hustle",
       "title": "Haldi Hustle",
@@ -824,43 +899,6 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Harajamun_re-edit_-06.jpg?v=1750228002",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Harajamun_re-edit_-19.jpg?v=1750228002",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Harajamun_re-edit_-13.jpg?v=1750228002"
-      ]
-    },
-    "kesar-ink": {
-      "handle": "kesar-ink",
-      "title": "Kesar Ink",
-      "url": "https://suta.in/products/kesar-ink",
-      "category": "Sarees",
-      "price": 2271,
-      "compareAtPrice": 2390,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Purple"
-      ],
-      "fabric": "Mul Cotton",
-      "technique": [],
-      "length": "5.50 m",
-      "blousePiece": "No",
-      "collection": "Zar",
-      "preOrder": "This is a pre-order and your order will be shipped within 10 days",
-      "story": "",
-      "description": "Bold purple meets lively green in Kesar Ink , a woven mul cotton saree with a refreshing colorblock composition. Finished with green jhalar tassels and a glinting zari border, this saree is perfect for those who love a rich, jewel-toned look with a playful twist.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-12.jpg?v=1750162508",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/IMG_5783.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC4979_629d9ee0-f494-4c29-8c3d-976e60a6600b.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-09.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-05.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-06.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-07.jpg?v=1750228193",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/kesarink-11.jpg?v=1750228193"
       ]
     },
     "kedar-ki-dor-blouse": {
@@ -1054,84 +1092,6 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/hara-basic-blouse-242663.jpg?v=1747291596",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/hara-basic-blouse-466870.jpg?v=1747291596",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/hara-basic-blouse-727746.jpg?v=1747291596"
-      ]
-    },
-    "pura-chandrama-olive-green-tissue-tussar-silk-saree": {
-      "handle": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
-      "title": "Pura Chandrama",
-      "url": "https://suta.in/products/pura-chandrama-olive-green-tissue-tussar-silk-saree",
-      "category": "Sarees",
-      "price": 12255,
-      "compareAtPrice": 12900,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Green"
-      ],
-      "fabric": "Tussar Tissue Silk",
-      "technique": [
-        "Woven"
-      ],
-      "length": "6.50 m",
-      "blousePiece": "Yes",
-      "collection": "Chandrama",
-      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
-      "story": "Pura Chandrama doesn’t do half-hearted appearances. When she shows up, she shows up fully, much like the moon on her favourite night of the month. Dressed in olive green, with zari lines glinting every time she moves, she has no interest in hiding behind clouds.\nHer plain zari pallu brings the glow, her tassels bring the fun, and she brings the kind of energy that says, “Yes, I dressed up. And?” Full moon. Full plans. Full festive mood. Pura Chandrama wouldn’t have it any other way.",
-      "description": "Soft, luminous and ready for a night of festivities, Pura Chandrama is an olive green saree detailed with delicate zari lines, a plain zari pallu and playful tassels. Complete with a blouse piece, its easy drape and subtle shimmer make it a lovely pick for festive dinners, celebrations and evenings under the moon.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07575-60.jpg?v=1790089218",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00004_a700cbbc-2b29-4e1c-a063-20e0b17233c1.jpg?v=1790150979",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07670-68.jpg?v=1790089218",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07555-56.jpg?v=1790089217",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00002_5f565d9d-7df9-4796-b3db-937b8985c0f6.jpg?v=1790150978",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07571-59.jpg?v=1790089217",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07579-61.jpg?v=1790089217",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07581-62.jpg?v=1790089217"
-      ]
-    },
-    "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree": {
-      "handle": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
-      "title": "Saanjh Chandrama",
-      "url": "https://suta.in/products/saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
-      "category": "Sarees",
-      "price": 12255,
-      "compareAtPrice": 12900,
-      "currency": "INR",
-      "available": true,
-      "sizes": [
-        "Free Size"
-      ],
-      "sizesInStock": [
-        "Free Size"
-      ],
-      "colours": [
-        "Blue"
-      ],
-      "fabric": "Tussar Tissue Silk",
-      "technique": [
-        "Woven"
-      ],
-      "length": "6.50 m",
-      "blousePiece": "Yes",
-      "collection": "Chandrama",
-      "preOrder": "This is a pre-order and your order will be shipped within 7 days",
-      "story": "Saanjh Chandrama is that little pause between day and night. She arrives just as the sky turns deep blue, when the last bit of sunlight is still hanging around and the evening is deciding what it wants to become.\nHer zari lines catch whatever light is left, her plain zari pallu follows along gracefully, and her tassels? They’re already ready for the evening plans. She loves festive dinners, rooftop conversations and celebrations that begin at sunset and somehow continue well past it. If dusk had a favourite saree, we think it would be her.",
-      "description": "Inspired by the magic of dusk, Saanjh Chandrama is a soft dark blue saree with delicate zari lines, a plain zari pallu and playful tassels. Paired with a blouse piece, it brings a subtle shimmer to the drape while keeping things soft and easy. Made for festive evenings, intimate celebrations and nights that begin at sunset.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07144-11.jpg?v=1790089114",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00009_fe941832-411c-4a59-b153-74b09d8877d7.jpg?v=1790151032",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06910-6.jpg?v=1790089113",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06902-1.jpg?v=1790089113",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/image00008_20e2d416-b12a-420f-baab-a1ab282a832b.jpg?v=1790151031",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC07160-15.jpg?v=1790089113",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06903-2.jpg?v=1790089113",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC06905-3.jpg?v=1790089114"
       ]
     },
     "ratri-chandrama-black-tissue-tussar-silk-saree": {
@@ -1439,10 +1399,10 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RangooniJalebi-19.jpg?v=1790856074"
       ]
     },
-    "rani-jalebi-black-viscose-kurta-pant-set": {
-      "handle": "rani-jalebi-black-viscose-kurta-pant-set",
-      "title": "Rani Jalebi",
-      "url": "https://suta.in/products/rani-jalebi-black-viscose-kurta-pant-set",
+    "aamras-jalebi-yellow-viscose-kurta-pant-set": {
+      "handle": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+      "title": "Aamras Jalebi",
+      "url": "https://suta.in/products/aamras-jalebi-yellow-viscose-kurta-pant-set",
       "category": "Co-ords & Kurta Sets",
       "price": 5686,
       "compareAtPrice": 5985,
@@ -1475,28 +1435,28 @@
         "6XL"
       ],
       "colours": [
-        "Black"
+        "Yellow"
       ],
       "fabric": "Viscose",
       "technique": [
         "Embroidery",
         "Machine Embroidery"
       ],
-      "length": "0.94 m",
+      "length": "0.87 m",
       "blousePiece": null,
       "collection": "Jalebi",
       "preOrder": null,
-      "story": "Meet Rani Jalebi, a striking black kurta set with a dark-orange twist. The V-neck kurta comes with breezy bell sleeves, pockets on both sides and delicate gold zari floral embroidery along the neckline and pocket line. Paired with dark-orange salwar pants and made in soft, comfortable viscose, this set knows how to bring a little drama to festive dressing while staying wonderfully easy to wear.",
-      "description": "Rani Jalebi never entered a room quietly. She arrived in black, brought a little dark orange along for company, and let tiny gold flowers do the talking. Her bell sleeves swayed as she walked, her pockets held all her little secrets, and her salwar pants followed along like they knew exactly where the evening was headed. She could be found at a festive gathering, an impromptu dinner or simply out for chai looking far more dressed up than she intended. Rani Jalebi liked a little drama, but never at the expense of comfort. That was simply not her style.",
+      "story": "Meet Aamras Jalebi, a mustard-yellow kurta set with a little sunshine and a lot of charm. The V-neck kurta comes with breezy bell sleeves, pockets on both sides and delicate gold zari floral embroidery tracing the neckline and pocket line. Paired with deep-blue salwar pants, this viscose set brings together rich colours, soft comfort and just enough festive sparkle to make an entrance.",
+      "description": "Aamras Jalebi liked to take her time. She’d sway into a room in her mustard-yellow kurta, her bell sleeves following along like they had somewhere fun to be. Her dark-blue salwar pants kept things grounded, while little gold flowers quietly showed off around her neckline. And her pockets? Those were non-negotiable. She filled them with tiny treasures and went wherever the day called her. A festive lunch, a family gathering, an evening out for chai — Aamras Jalebi was ready. After all, she believed every good day deserved a little colour and a little twirl.",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-02.jpg?v=1790774036",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-18.jpg?v=1790854882",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-01.jpg?v=1790774036",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-11.jpg?v=1790774036",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-04.jpg?v=1790774036",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-08.jpg?v=1790774036",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-19.jpg?v=1790854882",
-        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/RaniJalebi-14.jpg?v=1790774036"
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-11.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-04.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-05.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-02.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-08.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-19.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-03.jpg?v=1790855121",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/AamrasJalebi-10.jpg?v=1790855121"
       ]
     },
     "raktim-varq-saree": {
@@ -1684,6 +1644,46 @@
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_1100.jpg?v=1764831141",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_1097_82c84ef8-881c-4d72-9236-424e7fb3452c.jpg?v=1764831141",
         "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/DSC_1112.jpg?v=1764831141"
+      ]
+    },
+    "saawan": {
+      "handle": "saawan",
+      "title": "Saawan",
+      "url": "https://suta.in/products/saawan",
+      "category": "Sarees",
+      "price": 3895,
+      "compareAtPrice": 4100,
+      "currency": "INR",
+      "available": true,
+      "sizes": [
+        "Free Size"
+      ],
+      "sizesInStock": [
+        "Free Size"
+      ],
+      "colours": [
+        "Blue",
+        "Teal"
+      ],
+      "fabric": "Mul Cotton",
+      "technique": [
+        "Embroidery"
+      ],
+      "length": "5.50 m",
+      "blousePiece": "No",
+      "collection": "Suta x Priya Malik",
+      "preOrder": null,
+      "story": "She always arrived with the rain.\nNot the loud kind that rushed through the streets, but the gentle drizzle that made people pause by their windows. She loved the hush that came before the first drop, the smell of wet earth, and the way the whole world seemed to slow down for a while.\nAs she walked, tiny silver raindrops settled on her, refusing to leave. They sparkled with every step, as if the rain wanted to stay close a little longer.\nThat's why they called her Saawan .",
+      "description": "Like rain meeting still waters, Saawan is calm, refreshing, and quietly enchanting. Crafted from Suta's signature feather-soft mul cotton in a soothing teal, this borderless saree is sprinkled with delicate silver sequins that shimmer like raindrops caught in the light. Light, breathable, and effortlessly graceful, it's made for days when you want to carry the magic of the monsoon wherever you go.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-2.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-10.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-3.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-6.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-1.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-8.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-7.jpg?v=1785242361",
+        "https://cdn.shopify.com/s/files/1/0026/6544/7536/files/Saawan-5.jpg?v=1785242361"
       ]
     },
     "safeed-ishq": {

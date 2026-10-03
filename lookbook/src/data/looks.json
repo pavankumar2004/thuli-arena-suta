@@ -6,68 +6,92 @@
   "cover": [
     [
       {
-        "product": "rokto-joba",
+        "product": "nitai",
         "index": 0,
-        "x": 50,
-        "y": 30
+        "src": "/images/looks/cover-01-shiuli-v1.jpg",
+        "x": 44,
+        "y": 25
       },
       {
-        "product": "hara-jalebi-green-viscose-kurta-pant-set",
-        "index": 5,
-        "x": 50,
-        "y": 40
-      },
-      {
-        "product": "neelam-varq-saree",
-        "index": 5,
+        "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+        "index": 0,
+        "src": "/images/looks/cover-02-saanjh-v1.jpg",
         "x": 50,
         "y": 25
-      }
-    ],
-    [
-      {
-        "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
-        "index": 0,
-        "x": 50,
-        "y": 30
       },
-      {
-        "product": "teen-patti",
-        "index": 4,
-        "x": 50,
-        "y": 30
-      },
-      {
-        "product": "saawan",
-        "index": 2,
-        "x": 50,
-        "y": 30
-      },
-      {
-        "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
-        "index": 1,
-        "x": 50,
-        "y": 25
-      }
-    ],
-    [
       {
         "product": "zafrani-varq-saree",
         "index": 0,
+        "src": "/images/looks/cover-03-zafrani-v1.jpg",
+        "x": 55,
+        "y": 25
+      },
+      {
+        "product": "rani-jalebi-black-viscose-kurta-pant-set",
+        "index": 0,
+        "src": "/images/looks/cover-04-rani-v1.jpg",
+        "x": 52,
+        "y": 25
+      }
+    ],
+    [
+      {
+        "product": "rokto-joba",
+        "index": 0,
+        "src": "/images/looks/cover-05-hibiscus-v1.jpg",
+        "x": 54,
+        "y": 25
+      },
+      {
+        "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+        "index": 0,
+        "src": "/images/looks/cover-06-pura-v1.jpg",
         "x": 50,
-        "y": 30
+        "y": 25
+      },
+      {
+        "product": "hara-jalebi-green-viscose-kurta-pant-set",
+        "index": 0,
+        "src": "/images/looks/cover-07-hara-v1.jpg",
+        "x": 44,
+        "y": 25
+      },
+      {
+        "product": "neelam-varq-saree",
+        "index": 0,
+        "src": "/images/looks/cover-08-neelam-v1.jpg",
+        "x": 52,
+        "y": 25
+      }
+    ],
+    [
+      {
+        "product": "kesar-ink",
+        "index": 0,
+        "src": "/images/looks/cover-09-kesar-v1.jpg",
+        "x": 58,
+        "y": 25
       },
       {
         "product": "firozi-varq-saree",
-        "index": 7,
-        "x": 40,
-        "y": 30
+        "index": 0,
+        "src": "/images/looks/cover-10-firozi-v1.jpg",
+        "x": 60,
+        "y": 25
+      },
+      {
+        "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+        "index": 0,
+        "src": "/images/looks/cover-11-laali-v1.jpg",
+        "x": 50,
+        "y": 25
       },
       {
         "product": "surkh",
-        "index": 5,
-        "x": 50,
-        "y": 30
+        "index": 0,
+        "src": "/images/looks/cover-12-surkh-v1.jpg",
+        "x": 52,
+        "y": 25
       }
     ]
   ],

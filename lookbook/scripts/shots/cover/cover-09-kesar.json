@@ -1,0 +1,51 @@
+{
+  "id": "cover-09-kesar",
+  "version": 1,
+  "look": "saffron-ink",
+  "aspect_ratio": "9:16",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "kesar-ink",
+      "index": 0
+    },
+    {
+      "product": "kesar-ink",
+      "index": 2
+    },
+    {
+      "product": "kesar-ink",
+      "index": 4
+    },
+    {
+      "product": "hara-basic-blouse",
+      "index": 5
+    },
+    {
+      "product": "hara-basic-blouse",
+      "index": 4
+    }
+  ],
+  "notes": "Cover panel re-shoot of zar-08-kesar-ink: standing, full length, headroom for the tall crop.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Tall vertical 9:16 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the vivid magenta-purple mul cotton saree from the first three references, with an emerald-green border carrying fine gold zari lines. Plain purple body, matte, very light.",
+    "- Blouse: the sleeveless emerald-green blouse with a scoop neckline from the last two references.",
+    "- The pallu lifts in the wind behind her shoulder like a sail, showing its green-and-gold border against the sky.",
+    "",
+    "MUSE: a slender woman in her early twenties with a pixie crop, small gold studs and a nose pin, a single thick gold kada. Eyes closed, face tilted to the breeze, serene smile.",
+    "",
+    "MOMENT AND PLACE: Golden hour on an old Kolkata rooftop: she stands with the wind lifting her pallu behind her, kites dotting the sky, rows of clay diyas on the parapet.",
+    "",
+    "LIGHT: Low golden sun behind and to the side, the magenta saree glowing translucent where the pallu lifts.",
+    "",
+    "COVER FRAMING (this photograph becomes one tall, narrow panel of the lookbook's opening page, behind a large title):",
+    "- POSE: she is standing upright, full length, head to toe in frame; ignore any seated or kneeling pose mentioned above.",
+    "- HEADROOM: the top quarter of the frame is calm, empty background (sky, wall, foliage or soft darkness); her head sits about a quarter of the way down, never near the top edge.",
+    "- Subject centred horizontally and filling the middle third of the width, so a narrow vertical crop keeps all of her.",
+    "- Keep the background simple and softly out of focus; nothing busy behind her face.",
+    "- CAMERA: eye level, 50mm lens at f/2.8, gentle depth of field, medium-format look with fine grain."
+  ]
+}

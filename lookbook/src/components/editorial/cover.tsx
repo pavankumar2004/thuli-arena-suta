@@ -34,7 +34,11 @@ export function Cover() {
 
   // Panel p advances on every third tick, offset by p, so panels change one at a time.
   // The middle panel (index 1) is the phone cover and the LCP image.
-  const slideOf = (p: number) => Math.floor((tick + (3 - ((p + 2) % 3))) / 3) % coverPanels[p].length
+  // Every panel opens on its first slide (the old offsets started the middle one on its
+  // second, so the preloaded LCP image never showed). Left changes first, then right,
+  // and the middle holds its opening frame longest.
+  const STAGGER = [2, 0, 1]
+  const slideOf = (p: number) => Math.floor((tick + STAGGER[p]) / 3) % coverPanels[p].length
 
   return (
     <section ref={ref} id="top" className="relative h-[100svh] min-h-[560px] overflow-hidden bg-charcoal text-ecru">
@@ -62,7 +66,9 @@ export function Cover() {
                       // Side panels are hidden on phones; "1px" makes them fetch the tiniest candidate there.
                       sizes={p === 1 ? "(min-width: 768px) 34vw, 100vw" : "(min-width: 768px) 34vw, 1px"}
                       className={cn("object-cover", k === active && live && "kenburns")}
-                      style={{ objectPosition: `${s.x}% ${s.y}%` }}
+                      // Zoom towards the focal point, not the centre: a centred push-in
+                      // pushed faces near the top out of the tall panel.
+                      style={{ objectPosition: `${s.x}% ${s.y}%`, transformOrigin: `${s.x}% ${s.y}%` }}
                     />
                   </div>
                 ) : null,

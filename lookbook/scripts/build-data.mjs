@@ -60,7 +60,13 @@ const need = (handle, where, image = 0, track = true) => {
 // Lookbook photographs we generated (scripts/generate-look.mjs), served from public/.
 const generated = []
 // Cover slides and filmstrip frames are resolved to URLs below, so they don't widen `images`.
-looks.cover.forEach((panel, i) => panel.forEach((c, j) => need(c.product, `cover[${i}][${j}]`, c.index, false)))
+looks.cover.forEach((panel, i) =>
+  panel.forEach((c, j) => {
+    need(c.product, `cover[${i}][${j}]`, c.index, false)
+    // A slide may show one of our generated photographs instead of the product's own.
+    if (c.src) generated.push({ where: `cover[${i}][${j}]`, src: c.src })
+  }),
+)
 for (const chapter of looks.chapters) {
   chapter.frames.forEach((f, i) => need(f.product, `${chapter.id} frame ${i}`, f.index, false))
   for (const look of chapter.looks) {
@@ -192,7 +198,7 @@ const summary = Object.fromEntries(
   ]),
 )
 const src = (ref) => catalogue.get(ref.product).images[ref.index]
-const cover = looks.cover.map((panel) => panel.map((c) => ({ src: src(c), product: c.product, x: c.x, y: c.y })))
+const cover = looks.cover.map((panel) => panel.map((c) => ({ src: c.src ?? src(c), product: c.product, x: c.x, y: c.y })))
 const frames = Object.fromEntries(
   looks.chapters.map((c) => [c.id, c.frames.map((f) => ({ src: src(f), product: f.product }))]),
 )

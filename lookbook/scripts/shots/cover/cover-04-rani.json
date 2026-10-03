@@ -1,0 +1,43 @@
+{
+  "id": "cover-04-rani",
+  "version": 1,
+  "look": "rani",
+  "aspect_ratio": "9:16",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "rani-jalebi-black-viscose-kurta-pant-set",
+      "index": 6
+    },
+    {
+      "product": "rani-jalebi-black-viscose-kurta-pant-set",
+      "index": 1
+    },
+    {
+      "product": "rani-jalebi-black-viscose-kurta-pant-set",
+      "index": 5
+    }
+  ],
+  "notes": "Cover panel re-shoot of jalebi-16-rani: standing, full length, headroom for the tall crop.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Tall vertical 9:16 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Kurta: the long-sleeved viscose kurta from the references, in broad vertical stripes of black and antique gold, with a V neckline, gold embroidery near the pocket, knee length.",
+    "- Trousers: the straight burnt-orange trousers from the references.",
+    "- It is a two-piece set: the kurta and the matching straight trousers shown in the references, worn together exactly as styled there.",
+    "",
+    "MUSE: an elegant woman in her mid-fifties with short silver hair, statement silver-and-gold earrings, reading glasses on a chain, a wry, knowing smile at the camera.",
+    "",
+    "MOMENT AND PLACE: Evening on a narrow bazaar street outside a lantern-lit antique shop, standing in the street with brass lanterns and old mirrors glowing softly behind her.",
+    "",
+    "LIGHT: Warm lantern light from behind and the side, deep dusky shadows, a painterly night feel.",
+    "",
+    "COVER FRAMING (this photograph becomes one tall, narrow panel of the lookbook's opening page, behind a large title):",
+    "- POSE: she is standing upright, full length, head to toe in frame; ignore any seated or kneeling pose mentioned above.",
+    "- HEADROOM: the top quarter of the frame is calm, empty background (sky, wall, foliage or soft darkness); her head sits about a quarter of the way down, never near the top edge.",
+    "- Subject centred horizontally and filling the middle third of the width, so a narrow vertical crop keeps all of her.",
+    "- Keep the background simple and softly out of focus; nothing busy behind her face.",
+    "- CAMERA: eye level, 50mm lens at f/2.8, gentle depth of field, medium-format look with fine grain."
+  ]
+}
