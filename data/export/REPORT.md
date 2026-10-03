@@ -1,12 +1,12 @@
 # Suta catalogue: scrape report
 
-Scraped at 2026-10-03T06:16:02+00:00. 7250 products exported, 9 excluded, 19247 variants, 49290 images.
+Scraped at 2026-10-03T07:28:13+00:00. 7249 products exported, 9 excluded, 19246 variants, 49288 images.
 
 ## Coverage against suta.in's own category counts
 
 | Category | Collection | Site shows | Scraped | Membership from | |
 |---|---|---:|---:|---|---|
-| Sarees / Sarees | `saree` | 3779 | 3779 | collection feed | ok |
+| Sarees / Sarees | `saree` | 3778 | 3778 | collection feed | ok |
 | Blouses / Blouses | `blouses` | 1404 | 1404 | collection feed | ok |
 | Women / Lehengas | `lehengas` | 55 | 55 | collection feed | ok |
 | Women / Dresses | `women-dresses` | 183 | 183 | collection feed | ok |
@@ -41,7 +41,7 @@ Scraped at 2026-10-03T06:16:02+00:00. 7250 products exported, 9 excluded, 19247 
 | Gifting / Gift Box | `gift-box` | 9 | 9 | collection feed | ok |
 | Kids / Kids | `kids-wear` | 32 | 32 | collection feed | ok |
 | Sarees / Ready To Wear Sarees | `ready-to-wear-sarees` | 109 | 109 | collection feed | ok |
-| Sarees / Garage Sarees | `suta-garage-saree` | 36 | 36 | collection feed | ok |
+| Sarees / Garage Sarees | `suta-garage-saree` | 32 | 32 | collection feed | ok |
 | Blouses / Garage Blouses | `suta-garage-blouse` | 170 | 170 | collection feed | ok |
 
 ## Field completeness
@@ -51,16 +51,16 @@ Scraped at 2026-10-03T06:16:02+00:00. 7250 products exported, 9 excluded, 19247 
 | title | 100.0% |
 | price | 100.0% |
 | images | 100.0% |
-| colours | 100.0% |
+| colours | 99.9% |
 | sizes | 100.0% |
 | category | 100.0% |
 | url | 100.0% |
 
-206 products name no colour in their tags, title, URL or description; their colour is the dominant shade of the garment in the first product photo (`colour_source = image`).
+198 products name no colour in their tags, title, URL or description; their colour is the dominant shade of the garment in the first product photo (`colour_source = image`).
 
 ## Category source
 
-6853 products are placed by suta.in's menu. 396 are published but sit in no menu collection (180 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`). 1 more have no product_type and are placed by a garment measurement in their description, such as "Blouse Length" (`category_source = description`).
+6852 products are placed by suta.in's menu. 396 are published but sit in no menu collection (180 of them in stock); their category comes from Shopify's `product_type` (`category_source = product_type`). 1 more have no product_type and are placed by a garment measurement in their description, such as "Blouse Length" (`category_source = description`).
 
 ## Uncategorised (0)
 
