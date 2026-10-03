@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  // Plain static files, served by Cloudflare Pages.
-  output: "export",
+  // Deployed on Vercel: static pages plus server routes for "Made for you" (Task 3).
   images: {
     // Product photos stay on Shopify's CDN, which resizes and serves WebP/AVIF itself.
     loader: "custom",

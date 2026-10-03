@@ -20,3 +20,6 @@ data/instagram/
 
 # Instagram login session: equivalent to being logged in, never commit
 .instagram-session.json
+
+# Personal lookbooks: contain people's Instagram posts
+data/foryou/
