@@ -12,15 +12,15 @@
   </div>
 </section>
 
-<section class="intro"><p>{{ edit.intro }}</p></section>
+<section class="intro reveal"><p>{{ edit.intro }}</p></section>
 
 {% for ch, looks in chapters %}
 <section id="{{ ch.slug }}" aria-label="Chapter {{ ch.numeral }}: {{ ch.title }}">
   {{ chapter_head(ch) }}
   <div class="looks">
-    {% for look in looks[:5] %}{{ card(look, feature=loop.first) }}{% endfor %}
+    {% for look in looks[:5] %}{{ card(look, feature=loop.first, i=loop.index0) }}{% endfor %}
   </div>
-  <p class="more"><a class="btn caps" href="/{{ ch.slug }}/">All {{ looks|length }} looks</a></p>
+  <p class="more reveal"><a class="btn caps" href="/{{ ch.slug }}/">All {{ looks|length }} looks</a></p>
 </section>
 {% endfor %}
 {% endblock %}

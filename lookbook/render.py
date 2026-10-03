@@ -30,6 +30,12 @@ def srcset(url: str) -> str:
     return ", ".join(f"{img(url, w)} {w}w" for w in IMAGE_WIDTHS)
 
 
+def vt(look: Look) -> str:
+    """View-transition name shared by a look's card and its page's lead photo, so the
+    photo glides from the grid into place on navigation."""
+    return "look-" + "".join(c if c.isalnum() or c == "-" else "-" for c in look.slug)
+
+
 def inr(amount: float) -> str:
     """₹ with Indian digit grouping: 1,25,000."""
     digits = str(int(round(amount)))
@@ -62,7 +68,7 @@ def render(edit: list, scraped_at: str, out: Path) -> int:
     env = Environment(loader=FileSystemLoader(HERE / "templates"), autoescape=True,
                       undefined=StrictUndefined, trim_blocks=True, lstrip_blocks=True)
     env.filters["inr"] = inr
-    env.globals.update(img=img, srcset=srcset, edit=EDIT, chapters=edit, fonts=FONTS,
+    env.globals.update(img=img, srcset=srcset, vt=vt, edit=EDIT, chapters=edit, fonts=FONTS,
                        # Our own stylesheet, inlined: autoescaping would turn its quotes
                        # into &#34; and silently break every font-family.
                        css=Markup((HERE / "site.css").read_text()), as_of=as_of(scraped_at),
@@ -70,6 +76,7 @@ def render(edit: list, scraped_at: str, out: Path) -> int:
 
     if out.exists():
         shutil.rmtree(out)
+    shutil.copytree(HERE / "static", out)  # logo and other fixed assets
     pages = 0
 
     def write(path: str, template: str, **ctx) -> None:

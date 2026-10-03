@@ -6,7 +6,7 @@
 <title>{% block title %}{{ edit.title }} · Suta{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ edit.intro }}{% endblock %}">
 <meta name="theme-color" content="#fbf8f3">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316130f'/%3E%3Ctext x='16' y='22' font-family='Futura,sans-serif' font-size='17' fill='%23fbf8f3' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="/suta-logo.png">
 <link rel="preconnect" href="https://cdn.shopify.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,12 @@
 <link rel="preload" as="style" href="{{ fonts }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ fonts }}"></noscript>
 <style>{{ css }}</style>
+{# Reveal animations hide content until it scrolls in, so only opt in when JS runs. #}
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <header class="top {% block header_class %}solid{% endblock %}">
-  <a href="/" class="wordmark" aria-label="Suta: The Festive Edit, home">SUTA</a>
+  <a href="/" class="logo"><img src="/suta-logo.png" width="81" height="54" alt="Suta: The Festive Edit, home"></a>
   <nav class="chapters caps" aria-label="Chapters">
     {% for ch, _ in chapters %}<a href="/{{ ch.slug }}/"{% if current == ch.slug %} aria-current="page"{% endif %}>{{ ch.numeral }} · {{ ch.title }}</a>{% endfor %}
   </nav>
@@ -26,8 +28,24 @@
 {% block main %}{% endblock %}
 </main>
 <footer>
+  <img class="footer-logo" src="/suta-logo.png" width="60" height="40" alt="" loading="lazy">
   <p>Every piece is a real Suta product. Prices and stock from <a href="https://suta.in">suta.in</a> as of {{ as_of }}.</p>
   <p>An unofficial lookbook made for the Thuli Arena hackathon. Photographs and products belong to Suta.</p>
 </footer>
+<script>
+(() => {
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  // Home: the header floats over the hero, then turns solid once past it.
+  const top = document.querySelector(".top.overlay"), hero = document.querySelector(".hero");
+  if (top && hero) {
+    new IntersectionObserver(([e]) => top.classList.toggle("scrolled", !e.isIntersecting),
+                             { rootMargin: "-90px 0px 0px 0px" }).observe(hero);
+  }
+})();
+</script>
 </body>
 </html>

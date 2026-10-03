@@ -6,9 +6,9 @@
 {{ look.partners|map(attribute='title')|join(' & ') }}
 {%- endmacro %}
 
-{% macro card(look, feature=False) -%}
-<a class="card{% if feature %} feature{% endif %}" href="/look/{{ look.slug }}/">
-  <div class="frame">{{ picture(look.hero, 720 if feature else 540, "(max-width: 900px) " ~ ("100vw" if feature else "50vw") ~ ", " ~ ("50vw" if feature else "25vw"), look.saree.title ~ " saree, styled with " ~ partners(look)) }}</div>
+{% macro card(look, feature=False, i=0) -%}
+<a class="card reveal{% if feature %} feature{% endif %}" style="--i: {{ i % 4 }}" href="/look/{{ look.slug }}/">
+  <div class="frame" style="view-transition-name: {{ vt(look) }}">{{ picture(look.hero, 720 if feature else 540, "(max-width: 900px) " ~ ("100vw" if feature else "50vw") ~ ", " ~ ("50vw" if feature else "25vw"), look.saree.title ~ " saree, styled with " ~ partners(look)) }}</div>
   <h3>{{ look.saree.title }}</h3>
   <p class="with">with {{ partners(look) }}</p>
   <p class="price">The look · {{ look.total|inr }}</p>
@@ -16,7 +16,7 @@
 {%- endmacro %}
 
 {% macro chapter_head(ch, heading="h2") -%}
-<div class="chapter-head">
+<div class="chapter-head reveal">
   <p class="numeral">{{ ch.numeral }}</p>
   <{{ heading }}>{{ ch.title }}</{{ heading }}>
   <p class="occasion caps">{{ ch.occasion }}</p>

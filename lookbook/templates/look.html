@@ -6,11 +6,11 @@
 {% block main %}
 <article class="look">
   <div class="gallery">
-    <div class="lead">{{ picture(look.hero, 720, "(max-width: 900px) 100vw, 56vw", look.saree.title ~ " saree, styled with " ~ partners(look), eager=True) }}</div>
-    {% for url in gallery %}{{ picture(url, 540, "(max-width: 900px) 50vw, 28vw", look.saree.title ~ ", detail " ~ loop.index) }}{% endfor %}
+    <div class="lead" style="view-transition-name: {{ vt(look) }}">{{ picture(look.hero, 720, "(max-width: 900px) 100vw, 56vw", look.saree.title ~ " saree, styled with " ~ partners(look), eager=True) }}</div>
+    {% for url in gallery %}<div class="reveal" style="--i: {{ loop.index0 % 2 }}">{{ picture(url, 540, "(max-width: 900px) 50vw, 28vw", look.saree.title ~ ", detail " ~ loop.index) }}</div>{% endfor %}
   </div>
 
-  <aside class="panel">
+  <aside class="panel enter">
     <p class="kicker caps"><a href="/{{ chapter.slug }}/">{{ chapter.numeral }} · {{ chapter.title }}</a> · Look {{ "%02d"|format(position) }} of {{ "%02d"|format(count) }}</p>
     <h1>{{ look.saree.title }}</h1>
     <p class="note">{{ note }}</p>
