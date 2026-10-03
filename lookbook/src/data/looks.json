@@ -1,0 +1,979 @@
+{
+  "title": "Utsav",
+  "subtitle": "A festive almanac in six chapters",
+  "season": "Autumn 2026",
+  "statement": "Woven for the days the goddess comes home, the night the moon is full, and every lamp-lit evening in between.",
+  "cover": [
+    [
+      {
+        "product": "rokto-joba",
+        "index": 0,
+        "x": 50,
+        "y": 30
+      },
+      {
+        "product": "hara-jalebi-green-viscose-kurta-pant-set",
+        "index": 5,
+        "x": 50,
+        "y": 40
+      },
+      {
+        "product": "neelam-varq-saree",
+        "index": 5,
+        "x": 50,
+        "y": 25
+      }
+    ],
+    [
+      {
+        "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+        "index": 0,
+        "x": 50,
+        "y": 30
+      },
+      {
+        "product": "teen-patti",
+        "index": 4,
+        "x": 50,
+        "y": 30
+      },
+      {
+        "product": "saawan",
+        "index": 2,
+        "x": 50,
+        "y": 30
+      },
+      {
+        "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+        "index": 1,
+        "x": 50,
+        "y": 25
+      }
+    ],
+    [
+      {
+        "product": "zafrani-varq-saree",
+        "index": 0,
+        "x": 50,
+        "y": 30
+      },
+      {
+        "product": "firozi-varq-saree",
+        "index": 7,
+        "x": 40,
+        "y": 30
+      },
+      {
+        "product": "surkh",
+        "index": 5,
+        "x": 50,
+        "y": 30
+      }
+    ]
+  ],
+  "prologue": [
+    "Su for Sujata, Ta for Taniya. Two sisters, one word: suta, the Sanskrit for thread.",
+    "This almanac follows that thread through one festive season, from the morning the dhaak announces Durga to the quiet evening after Diwali when someone finally sits down to read. Six chapters, six of Suta's own collections, twenty-four looks. Every piece is in the store, at the price you see here."
+  ],
+  "chapters": [
+    {
+      "id": "agomoni",
+      "numeral": "I",
+      "name": "Agomoni",
+      "title": "The goddess comes home",
+      "when": "Mahalaya to Bijoya Dashami",
+      "verse": "Red on white, sindoor on conch, and the dhaak somewhere down the lane.",
+      "intro": "Agomoni is the song Bengal sings for Uma's homecoming. Suta answers in the oldest festive pairing there is, laal-paar on shada: red borders on white, maroon on gold, mul cotton light enough for a full day of pandal-hopping.",
+      "drape": "Pleat the pallu wide and let it fall open at the back, the way it's worn for Ashtami anjali. Pin it once at the shoulder and leave the rest to the breeze.",
+      "tone": "light",
+      "palette": [
+        "#F3EEE4",
+        "#9E1B1B",
+        "#5E1414",
+        "#C9973B",
+        "#E39A2D"
+      ],
+      "frames": [
+        {
+          "product": "nitai",
+          "index": 1
+        },
+        {
+          "product": "nitai",
+          "index": 4
+        },
+        {
+          "product": "rokto-joba",
+          "index": 7
+        },
+        {
+          "product": "rokto-joba",
+          "index": 1
+        },
+        {
+          "product": "shonkho-sindoor-cotton-saree",
+          "index": 5
+        },
+        {
+          "product": "pujo-pujo-gondho-saree",
+          "index": 5
+        },
+        {
+          "product": "pujo-pujo-gondho-saree",
+          "index": 1
+        },
+        {
+          "product": "shonkho-sindoor-cotton-saree",
+          "index": 1
+        },
+        {
+          "product": "rokto-joba",
+          "index": 6
+        },
+        {
+          "product": "pujo-pujo-gondho-saree",
+          "index": 6
+        }
+      ],
+      "looks": [
+        {
+          "id": "shiuli-at-dawn",
+          "title": "Shiuli at dawn",
+          "image": {
+            "product": "nitai",
+            "index": 0,
+            "src": "/images/looks/agomoni-01-shiuli-v2.jpg"
+          },
+          "blurb": "Off-white mul framed in red and gold, worn with Gopal in deep maroon. The Ashtami morning look.",
+          "hotspots": [
+            {
+              "product": "nitai",
+              "x": 63,
+              "y": 64
+            },
+            {
+              "product": "gopal",
+              "x": 52,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "id": "the-hibiscus-offering",
+          "title": "The hibiscus offering",
+          "image": {
+            "product": "rokto-joba",
+            "index": 0
+          },
+          "blurb": "Rokto joba is the red hibiscus laid at the goddess's feet. Here it is maroon mul, foil-printed, with Thankam in old gold.",
+          "hotspots": [
+            {
+              "product": "rokto-joba",
+              "x": 45,
+              "y": 66
+            },
+            {
+              "product": "thankam",
+              "x": 45,
+              "y": 22
+            }
+          ]
+        },
+        {
+          "id": "conch-and-vermilion",
+          "title": "Conch and vermilion",
+          "image": {
+            "product": "shonkho-sindoor-cotton-saree",
+            "index": 0
+          },
+          "blurb": "Shonkho for the white, sindoor for the red: the two bangles a married Bengali woman wears, woven into a single drape and worn with Pontharam.",
+          "hotspots": [
+            {
+              "product": "shonkho-sindoor-cotton-saree",
+              "x": 74,
+              "y": 62
+            },
+            {
+              "product": "pontharam",
+              "x": 56,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "id": "the-smell-of-pujo",
+          "title": "The smell of Pujo",
+          "image": {
+            "product": "pujo-pujo-gondho-saree",
+            "index": 0
+          },
+          "blurb": "Pujo pujo gondho: what every Bengali says about the first cool breeze of autumn. Maroon mul modal with Kanakam, made for walking.",
+          "hotspots": [
+            {
+              "product": "pujo-pujo-gondho-saree",
+              "x": 55,
+              "y": 75
+            },
+            {
+              "product": "kanakam",
+              "x": 37,
+              "y": 31
+            }
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#5E1414",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "zar",
+      "numeral": "II",
+      "name": "Zar",
+      "title": "Gold at the edges",
+      "when": "Bijoya visits",
+      "verse": "Loud, happy mul, each drape held in by a thin line of gold.",
+      "intro": "After Dashami comes the visiting: aunts, neighbours, the friend who always has extra sweets. Zar is Suta's mul cotton in colours you can see from the end of the street, its borders woven with just enough zari to say 'occasion' and not a thread more.",
+      "drape": "Mul is featherweight, so let it move. Keep the pleats loose and the pallu long; on a staircase it will do the rest.",
+      "tone": "light",
+      "palette": [
+        "#E8B820",
+        "#D9302A",
+        "#2B2F8F",
+        "#8A2A86",
+        "#7F8F6A"
+      ],
+      "frames": [
+        {
+          "product": "teen-patti",
+          "index": 4
+        },
+        {
+          "product": "teen-patti",
+          "index": 1
+        },
+        {
+          "product": "haldi-hustle",
+          "index": 4
+        },
+        {
+          "product": "haldi-hustle",
+          "index": 5
+        },
+        {
+          "product": "hara-jamun",
+          "index": 2
+        },
+        {
+          "product": "hara-jamun",
+          "index": 4
+        },
+        {
+          "product": "haldi-hustle",
+          "index": 7
+        },
+        {
+          "product": "kesar-ink",
+          "index": 6
+        },
+        {
+          "product": "hara-jamun",
+          "index": 5
+        },
+        {
+          "product": "kesar-ink",
+          "index": 2
+        }
+      ],
+      "looks": [
+        {
+          "id": "teen-patti",
+          "title": "Teen Patti",
+          "image": {
+            "product": "teen-patti",
+            "index": 0
+          },
+          "blurb": "Named for the card game every festive night ends with. Red mul that refuses to sit still, and Kedar Ki Dor in pink silk.",
+          "hotspots": [
+            {
+              "product": "teen-patti",
+              "x": 72,
+              "y": 50
+            },
+            {
+              "product": "kedar-ki-dor-blouse",
+              "x": 37,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "id": "jamun-season",
+          "title": "Jamun season",
+          "image": {
+            "product": "hara-jamun",
+            "index": 0
+          },
+          "blurb": "A jamun-dark blue with a green edge and a pallu that catches the wind. Worn with Dipped in Green.",
+          "hotspots": [
+            {
+              "product": "hara-jamun",
+              "x": 46,
+              "y": 70
+            },
+            {
+              "product": "dipped-in-green",
+              "x": 36,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "id": "haldi-hustle",
+          "title": "Haldi, hurrying",
+          "image": {
+            "product": "haldi-hustle",
+            "index": 0
+          },
+          "blurb": "Turmeric yellow for the morning rush, bordered in purple and worn with the Swarna Kamal blouse.",
+          "hotspots": [
+            {
+              "product": "haldi-hustle",
+              "x": 52,
+              "y": 66
+            },
+            {
+              "product": "swarna-kamal",
+              "x": 35,
+              "y": 26
+            }
+          ]
+        },
+        {
+          "id": "saffron-ink",
+          "title": "Saffron, in ink",
+          "image": {
+            "product": "kesar-ink",
+            "index": 0
+          },
+          "blurb": "Saffron's name, ink's colour. Purple mul with a green border, worn with Hara Basic.",
+          "hotspots": [
+            {
+              "product": "kesar-ink",
+              "x": 56,
+              "y": 70
+            },
+            {
+              "product": "hara-basic-blouse",
+              "x": 40,
+              "y": 24
+            }
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#2B2F8F",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "chandrama",
+      "numeral": "III",
+      "name": "Chandrama",
+      "title": "The night of the full moon",
+      "when": "Sharad Purnima · Kojagari Lakshmi Puja",
+      "verse": "Tissue that holds lamplight the way still water holds the moon.",
+      "intro": "On Sharad Purnima the moon is said to pour amrit, and families stay up under it with kheer left out to cool in its light. Chandrama is Suta's tussar tissue silk, named for the moon's moods: Saanjh for dusk, Ratri for night, Laali for its blush, Pura for the full, unhurried glow.",
+      "drape": "Tissue silk drapes best with fewer, crisper pleats. Let the pallu hang straight from the shoulder so the zari lines can run unbroken from neck to hem.",
+      "tone": "dark",
+      "palette": [
+        "#1C2A3A",
+        "#B8964A",
+        "#6B6B2E",
+        "#B5553C",
+        "#E7DCC2"
+      ],
+      "frames": [
+        {
+          "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+          "index": 3
+        },
+        {
+          "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+          "index": 2
+        },
+        {
+          "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+          "index": 7
+        },
+        {
+          "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+          "index": 4
+        },
+        {
+          "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+          "index": 2
+        },
+        {
+          "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+          "index": 1
+        },
+        {
+          "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+          "index": 5
+        },
+        {
+          "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+          "index": 2
+        },
+        {
+          "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+          "index": 7
+        },
+        {
+          "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+          "index": 5
+        }
+      ],
+      "looks": [
+        {
+          "id": "pura",
+          "title": "Pura, the full moon",
+          "image": {
+            "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+            "index": 0
+          },
+          "blurb": "Olive tissue with zari lines that glint as she moves, worn with Glow Alat Palat. Full moon, full plans.",
+          "hotspots": [
+            {
+              "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+              "x": 50,
+              "y": 66
+            },
+            {
+              "product": "glow-alat-palat",
+              "x": 37,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "id": "saanjh",
+          "title": "Saanjh, at dusk",
+          "image": {
+            "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+            "index": 0
+          },
+          "blurb": "Dusk-blue shot with gold, the hour the lamps go on. Worn with Tulasi in green.",
+          "hotspots": [
+            {
+              "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+              "x": 58,
+              "y": 62
+            },
+            {
+              "product": "tulasi",
+              "x": 33,
+              "y": 30
+            }
+          ]
+        },
+        {
+          "id": "ratri",
+          "title": "Ratri, at night",
+          "image": {
+            "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+            "index": 0
+          },
+          "blurb": "Black tissue lit from within, worn with Aambal in pink.",
+          "hotspots": [
+            {
+              "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+              "x": 55,
+              "y": 62
+            },
+            {
+              "product": "aambal",
+              "x": 35,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "id": "laali",
+          "title": "Laali, the blush",
+          "image": {
+            "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+            "index": 0
+          },
+          "blurb": "The moon's blush in rose-copper, the pallu caught mid-air. Worn with Jal Kamal in blue silk.",
+          "hotspots": [
+            {
+              "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+              "x": 45,
+              "y": 64
+            },
+            {
+              "product": "jal-kamal",
+              "x": 25,
+              "y": 30
+            }
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#1C2A3A",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "jalebi",
+      "numeral": "IV",
+      "name": "Jalebi",
+      "title": "Afternoons in the bazaar",
+      "when": "Dhanteras · the shopping days",
+      "verse": "Brass, copper, old radios and older bargains.",
+      "intro": "Before Diwali the city goes to market for brass lamps, new steel, gold if the stars allow. Jalebi was shot among the antique shops: viscose kurta sets in sticky-sweet stripes, with side pockets and cuts loose enough to haggle in.",
+      "drape": "Wear the set as it comes. Add the heaviest earrings you own and a bag big enough for a brass lamp.",
+      "tone": "light",
+      "palette": [
+        "#D62E6E",
+        "#E9961E",
+        "#1F6B4F",
+        "#6B3E26",
+        "#1D1A1A"
+      ],
+      "frames": [
+        {
+          "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+          "index": 1
+        },
+        {
+          "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+          "index": 2
+        },
+        {
+          "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+          "index": 1
+        },
+        {
+          "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+          "index": 3
+        },
+        {
+          "product": "hara-jalebi-green-viscose-kurta-pant-set",
+          "index": 4
+        },
+        {
+          "product": "hara-jalebi-green-viscose-kurta-pant-set",
+          "index": 5
+        },
+        {
+          "product": "rani-jalebi-black-viscose-kurta-pant-set",
+          "index": 4
+        },
+        {
+          "product": "rani-jalebi-black-viscose-kurta-pant-set",
+          "index": 1
+        },
+        {
+          "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+          "index": 2
+        },
+        {
+          "product": "hara-jalebi-green-viscose-kurta-pant-set",
+          "index": 7
+        }
+      ],
+      "looks": [
+        {
+          "id": "rangooni",
+          "title": "Rangooni",
+          "image": {
+            "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+            "index": 0
+          },
+          "blurb": "Pink and rose stripes, sleeveless, with side pockets for the change from the brass-wallah.",
+          "hotspots": [
+            {
+              "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+              "x": 45,
+              "y": 45
+            }
+          ]
+        },
+        {
+          "id": "aamras",
+          "title": "Aamras",
+          "image": {
+            "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+            "index": 0
+          },
+          "blurb": "Mango-pulp yellow with long sleeves: the set for the sunniest stall in the lane.",
+          "hotspots": [
+            {
+              "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+              "x": 45,
+              "y": 46
+            }
+          ]
+        },
+        {
+          "id": "hara",
+          "title": "Hara",
+          "image": {
+            "product": "hara-jalebi-green-viscose-kurta-pant-set",
+            "index": 0
+          },
+          "blurb": "Bottle-green stripes, cut loose enough to sit on a shopkeeper's stool and stay a while.",
+          "hotspots": [
+            {
+              "product": "hara-jalebi-green-viscose-kurta-pant-set",
+              "x": 56,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "id": "rani",
+          "title": "Rani",
+          "image": {
+            "product": "rani-jalebi-black-viscose-kurta-pant-set",
+            "index": 0
+          },
+          "blurb": "Black and gold for the walk home, the lanterns already lit.",
+          "hotspots": [
+            {
+              "product": "rani-jalebi-black-viscose-kurta-pant-set",
+              "x": 60,
+              "y": 48
+            }
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#5A3420",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "varq",
+      "numeral": "V",
+      "name": "Varq",
+      "title": "Silver leaf, marigold",
+      "when": "Diwali",
+      "verse": "A fine shimmer, laid on by hand, like varq on a sweet.",
+      "intro": "Varq is the silver leaf on a box of kaju katli, the shine that tells you it's Diwali. Suta's Gulaab edit carries it as gold-foil jaal on mul cotton in ten jewel colours, shot against a curtain of marigolds.",
+      "drape": "Foil catches light at the folds, so pleat generously at the waist. Each Varq saree comes with blouse fabric, but a contrast blouse is half the fun.",
+      "tone": "light",
+      "palette": [
+        "#F2A31B",
+        "#1F6F78",
+        "#C8962E",
+        "#3A2D8F",
+        "#8E1B2C"
+      ],
+      "frames": [
+        {
+          "product": "firozi-varq-saree",
+          "index": 7
+        },
+        {
+          "product": "zafrani-varq-saree",
+          "index": 1
+        },
+        {
+          "product": "zafrani-varq-saree",
+          "index": 2
+        },
+        {
+          "product": "neelam-varq-saree",
+          "index": 5
+        },
+        {
+          "product": "neelam-varq-saree",
+          "index": 1
+        },
+        {
+          "product": "raktim-varq-saree",
+          "index": 3
+        },
+        {
+          "product": "raktim-varq-saree",
+          "index": 6
+        },
+        {
+          "product": "firozi-varq-saree",
+          "index": 1
+        },
+        {
+          "product": "zafrani-varq-saree",
+          "index": 7
+        },
+        {
+          "product": "raktim-varq-saree",
+          "index": 7
+        }
+      ],
+      "looks": [
+        {
+          "id": "firozi-varq",
+          "title": "Firozi in the courtyard",
+          "image": {
+            "product": "firozi-varq-saree",
+            "index": 0
+          },
+          "blurb": "Shaola teal with a golden jaal and midnight tassels, worn with Reth ki Lakeer.",
+          "hotspots": [
+            {
+              "product": "firozi-varq-saree",
+              "x": 50,
+              "y": 62
+            },
+            {
+              "product": "reth-ki-lakeer-blouse",
+              "x": 37,
+              "y": 25
+            }
+          ]
+        },
+        {
+          "id": "zafrani-varq",
+          "title": "Zafrani, laughing",
+          "image": {
+            "product": "zafrani-varq-saree",
+            "index": 0
+          },
+          "blurb": "Saffron gold that likes its mornings sunny, worn with Swarna Kamal in purple.",
+          "hotspots": [
+            {
+              "product": "zafrani-varq-saree",
+              "x": 48,
+              "y": 60
+            },
+            {
+              "product": "swarna-kamal",
+              "x": 42,
+              "y": 27
+            }
+          ]
+        },
+        {
+          "id": "neelam-varq",
+          "title": "Neelam, turning",
+          "image": {
+            "product": "neelam-varq-saree",
+            "index": 0
+          },
+          "blurb": "Sapphire, mid-turn, with Kashi sa Mann in pink silk at the shoulder.",
+          "hotspots": [
+            {
+              "product": "neelam-varq-saree",
+              "x": 60,
+              "y": 60
+            },
+            {
+              "product": "kashi-sa-mann-blouse",
+              "x": 30,
+              "y": 33
+            }
+          ]
+        },
+        {
+          "id": "raktim-varq",
+          "title": "Raktim, in lamplight",
+          "image": {
+            "product": "raktim-varq-saree",
+            "index": 0
+          },
+          "blurb": "Blood-red and gold, never one for quiet entrances. Worn with Meri Chaandi.",
+          "hotspots": [
+            {
+              "product": "raktim-varq-saree",
+              "x": 48,
+              "y": 66
+            },
+            {
+              "product": "meri-chaandi",
+              "x": 40,
+              "y": 30
+            }
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#7A1A28",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "kavita",
+      "numeral": "VI",
+      "name": "Kavita",
+      "title": "Afterword, in verse",
+      "when": "The quiet after",
+      "verse": "When the lamps are packed away, someone reads by the window.",
+      "intro": "When the guests leave and the diyas go back in their box, a softer season begins. Suta made it with the poet Priya Malik: mul cotton sarees, each with a short story on its label. We let the stories speak.",
+      "drape": "Drape it the way you would at home: one loose pleat, the pallu over an arm, nowhere to be.",
+      "tone": "light",
+      "palette": [
+        "#E9E4DA",
+        "#1F6F78",
+        "#7C8597",
+        "#A3241E",
+        "#1A1A1A"
+      ],
+      "frames": [
+        {
+          "product": "saawan",
+          "index": 2
+        },
+        {
+          "product": "saawan",
+          "index": 1
+        },
+        {
+          "product": "saawan",
+          "index": 5
+        },
+        {
+          "product": "safeed-ishq",
+          "index": 1
+        },
+        {
+          "product": "safeed-ishq",
+          "index": 5
+        },
+        {
+          "product": "neela-aasmaan",
+          "index": 4
+        },
+        {
+          "product": "neela-aasmaan",
+          "index": 1
+        },
+        {
+          "product": "surkh",
+          "index": 1
+        },
+        {
+          "product": "surkh",
+          "index": 5
+        },
+        {
+          "product": "safeed-ishq",
+          "index": 6
+        }
+      ],
+      "looks": [
+        {
+          "id": "saawan",
+          "title": "Saawan",
+          "image": {
+            "product": "saawan",
+            "index": 0
+          },
+          "blurb": "“She always arrived with the rain.” Teal mul with silver sequins, scattered like raindrops.",
+          "hotspots": [
+            {
+              "product": "saawan",
+              "x": 70,
+              "y": 62
+            }
+          ],
+          "extras": [
+            "jashn-alat-palat"
+          ]
+        },
+        {
+          "id": "safeed-ishq",
+          "title": "Safeed Ishq",
+          "image": {
+            "product": "safeed-ishq",
+            "index": 0
+          },
+          "blurb": "“She fell in love with everything.” White mul, a book, and an afternoon with nothing in it.",
+          "hotspots": [
+            {
+              "product": "safeed-ishq",
+              "x": 36,
+              "y": 66
+            }
+          ],
+          "extras": [
+            "jashn-alat-palat"
+          ]
+        },
+        {
+          "id": "neela-aasmaan",
+          "title": "Neela Aasmaan",
+          "image": {
+            "product": "neela-aasmaan",
+            "index": 0
+          },
+          "blurb": "“She belonged to the sky.” Grey-blue mul, worn with Hatke Alat Palat and a stem of rajnigandha.",
+          "hotspots": [
+            {
+              "product": "neela-aasmaan",
+              "x": 66,
+              "y": 72
+            },
+            {
+              "product": "hatke-alat-palat",
+              "x": 37,
+              "y": 41
+            }
+          ]
+        },
+        {
+          "id": "surkh",
+          "title": "Surkh",
+          "image": {
+            "product": "surkh",
+            "index": 0
+          },
+          "blurb": "“She was born where flowers met fire.” Red mul, morning chai, a window full of light.",
+          "hotspots": [
+            {
+              "product": "surkh",
+              "x": 66,
+              "y": 66
+            }
+          ],
+          "extras": [
+            "dilbar-alat-palat"
+          ]
+        }
+      ],
+      "banner": {
+        "ink": "#1F4E52",
+        "focus": [
+          35,
+          25,
+          25
+        ]
+      }
+    }
+  ]
+}

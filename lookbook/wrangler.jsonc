@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Cloudflare Pages project serving the static export in ./out
+  "name": "suta-utsav",
+  "pages_build_output_dir": "./out",
+  "compatibility_date": "2026-10-01"
+}

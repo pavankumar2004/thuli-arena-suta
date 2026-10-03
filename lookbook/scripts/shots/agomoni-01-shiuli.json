@@ -1,0 +1,30 @@
+{
+  "id": "agomoni-01-shiuli",
+  "version": 2,
+  "look": "shiuli-at-dawn",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    { "product": "nitai", "index": 0 },
+    { "product": "nitai", "index": 1 },
+    { "product": "nitai", "index": 4 },
+    { "product": "gopal", "index": 0 }
+  ],
+  "notes": "v2: references scrubbed of the corner signature + explicit no-watermark rule (v1 copied the Suta signature). Pallu now hangs down her side so the alpona circle reads as on the product (v1 turned it into a shoulder panel). Pola bangles and shiuli stems made explicit; cowrie trim on Gopal added.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame, full length.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly):",
+    "- Saree: the off-white, feather-light mul cotton saree from the first three references. A narrow deep-red border runs along both edges, with a hairline of gold zari beside it. The pallu carries ONE large circular red 'alpona' medallion, roughly the size of a dinner plate, embroidered with fine white radiating petal lines, exactly as in the references; small red woollen tassels finish the pallu's end. The rest of the saree is plain off-white, matte and slightly sheer.",
+    "- Drape it as in the first reference: neat pleats at the front, and the pallu taken over the left shoulder and left to hang straight down her left side to below the knee, so the red alpona medallion hangs at thigh height, flat, fully visible and facing the camera. Do NOT wrap the alpona over the shoulder or chest.",
+    "- Blouse: the sleeveless deep maroon cotton blouse from the last reference, with its sweetheart neckline and the row of small white cowrie shells along the hem.",
+    "",
+    "MUSE: a Bengali woman in her early thirties, warm brown skin with natural texture, dark curly hair in a loose low bun with a short string of shiuli flowers (small white star-shaped petals with bright saffron-orange tubes) tucked in. A small round red bindi, a fine line of sindoor in her parting, kohl-lined eyes. On each wrist one white conch-shell 'shankha' bangle and one red coral 'pola' bangle, both clearly visible; a slim gold choker. Expression: quiet, private joy, eyes lowered to the flowers.",
+    "",
+    "MOMENT AND PLACE: Durga Ashtami morning, moments before pushpanjali, in the 'thakurdalan' of an old North Kolkata family house: fluted lime-washed columns with weathered ochre paint, a cool red-oxide floor, a heavy carved teak door ajar to her right. She holds a small brass plate at waist height, heaped with shiuli and two red hibiscus. A few shiuli blossoms lie scattered on the red floor near her bare feet. Deep in the soft background: brass lamps glowing and marigold garlands, out of focus.",
+    "",
+    "LIGHT: early dawn. One soft shaft of low golden sunlight enters from the left between the columns, falling across her face, the plate and the alpona; the hall behind falls away into warm shadow, with a faint haze of incense catching the light. Chiaroscuro, painterly, as if Raja Ravi Varma had been commissioned by a heritage couture house.",
+    "",
+    "CAMERA: medium-format, 80mm lens at f/2.8, eye level. She stands slightly right of centre, turned three-quarters towards the light, with breathing room on the left. Head to feet in frame, with a little floor below her feet. Clean, uncluttered top corners."
+  ]
+}
