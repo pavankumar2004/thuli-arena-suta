@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% from "_macros.html" import picture, partners %}
+{% block title %}{{ look.saree.title }} · {{ chapter.title }} · Suta{% endblock %}
+{% block description %}{{ look.saree.title }} saree styled with {{ partners(look) }}. {{ chapter.title }}, {{ edit.title }}.{% endblock %}
+{% block preload %}<link rel="preload" as="image" href="{{ img(look.hero, 720) }}" imagesrcset="{{ srcset(look.hero) }}" imagesizes="(max-width: 900px) 100vw, 56vw" fetchpriority="high">{% endblock %}
+{% block main %}
+<article class="look">
+  <div class="gallery">
+    <div class="lead">{{ picture(look.hero, 720, "(max-width: 900px) 100vw, 56vw", look.saree.title ~ " saree, styled with " ~ partners(look), eager=True) }}</div>
+    {% for url in gallery %}{{ picture(url, 540, "(max-width: 900px) 50vw, 28vw", look.saree.title ~ ", detail " ~ loop.index) }}{% endfor %}
+  </div>
+
+  <aside class="panel">
+    <p class="kicker caps"><a href="/{{ chapter.slug }}/">{{ chapter.numeral }} · {{ chapter.title }}</a> · Look {{ "%02d"|format(position) }} of {{ "%02d"|format(count) }}</p>
+    <h1>{{ look.saree.title }}</h1>
+    <p class="note">{{ note }}</p>
+
+    <ul class="pieces" aria-label="In this look">
+      {% for p in look.pieces %}
+      <li class="piece">
+        <a href="{{ p.url }}" target="_blank" rel="noopener">{{ picture(p.images[0], 180, "88px", p.title) }}</a>
+        <div>
+          <p class="name">{{ p.title }}</p>
+          <p class="meta">{{ p.category }}{% if p.colours %} · {{ p.colours|join(", ") }}{% endif %}</p>
+          <p class="cost">{{ p.price|inr }}{% if p.compare_at_price %}<span class="was">{{ p.compare_at_price|inr }}</span>{% endif %}</p>
+          {% if p.sizes != ["Free Size"] %}<p class="meta">In stock: {{ p.sizes_in_stock|join(" · ") }}</p>{% endif %}
+          <a class="shop caps" href="{{ p.url }}" target="_blank" rel="noopener">Shop on suta.in</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="total"><span class="caps">The look</span><span>{{ look.total|inr }}</span></p>
+  </aside>
+</article>
+<nav class="pager caps" aria-label="Looks">
+  {% if prev %}<a href="/look/{{ prev.slug }}/">← {{ prev.saree.title }}</a>{% else %}<a href="/{{ chapter.slug }}/">← {{ chapter.title }}</a>{% endif %}
+  {% if next %}<a href="/look/{{ next.slug }}/">{{ next.saree.title }} →</a>{% elif next_chapter %}<a href="/{{ next_chapter.slug }}/">{{ next_chapter.numeral }} · {{ next_chapter.title }} →</a>{% endif %}
+</nav>
+{% endblock %}

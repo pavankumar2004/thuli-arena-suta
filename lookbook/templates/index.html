@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "_macros.html" import picture, card, chapter_head %}
+{% block header_class %}overlay{% endblock %}
+{% block preload %}<link rel="preload" as="image" href="{{ img(hero[0].hero, 720) }}" imagesrcset="{{ srcset(hero[0].hero) }}" imagesizes="(max-width: 760px) 100vw, 34vw" fetchpriority="high">{% endblock %}
+{% block main %}
+<section class="hero">
+  {% for look in hero %}{{ picture(look.hero, 720, "(max-width: 760px) 100vw, 34vw", look.saree.title ~ " saree", eager=loop.first) }}{% endfor %}
+  <div class="title">
+    <p class="caps">Suta · {{ edit.season }}</p>
+    <h1>{{ edit.title }}</h1>
+    <a class="btn caps" href="#{{ chapters[0][0].slug }}">Begin</a>
+  </div>
+</section>
+
+<section class="intro"><p>{{ edit.intro }}</p></section>
+
+{% for ch, looks in chapters %}
+<section id="{{ ch.slug }}" aria-label="Chapter {{ ch.numeral }}: {{ ch.title }}">
+  {{ chapter_head(ch) }}
+  <div class="looks">
+    {% for look in looks[:5] %}{{ card(look, feature=loop.first) }}{% endfor %}
+  </div>
+  <p class="more"><a class="btn caps" href="/{{ ch.slug }}/">All {{ looks|length }} looks</a></p>
+</section>
+{% endfor %}
+{% endblock %}

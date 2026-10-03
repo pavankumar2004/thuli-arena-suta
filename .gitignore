@@ -12,5 +12,5 @@ data/cache/
 # organiser material, not ours to redistribute
 *.pdf
 
-# lookbook build output: re-created by python -m lookbook.build
-lookbook/dist/
+# lookbook build output: re-created by python -m lookbook
+site/dist/

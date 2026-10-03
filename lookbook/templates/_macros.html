@@ -1,0 +1,25 @@
+{% macro picture(url, width, sizes, alt, eager=False) -%}
+<img src="{{ img(url, width) }}" srcset="{{ srcset(url) }}" sizes="{{ sizes }}" width="{{ width }}" height="{{ (width * 4 / 3)|int }}" alt="{{ alt }}" decoding="async"{% if eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>
+{%- endmacro %}
+
+{% macro partners(look) -%}
+{{ look.partners|map(attribute='title')|join(' & ') }}
+{%- endmacro %}
+
+{% macro card(look, feature=False) -%}
+<a class="card{% if feature %} feature{% endif %}" href="/look/{{ look.slug }}/">
+  <div class="frame">{{ picture(look.hero, 720 if feature else 540, "(max-width: 900px) " ~ ("100vw" if feature else "50vw") ~ ", " ~ ("50vw" if feature else "25vw"), look.saree.title ~ " saree, styled with " ~ partners(look)) }}</div>
+  <h3>{{ look.saree.title }}</h3>
+  <p class="with">with {{ partners(look) }}</p>
+  <p class="price">The look · {{ look.total|inr }}</p>
+</a>
+{%- endmacro %}
+
+{% macro chapter_head(ch, heading="h2") -%}
+<div class="chapter-head">
+  <p class="numeral">{{ ch.numeral }}</p>
+  <{{ heading }}>{{ ch.title }}</{{ heading }}>
+  <p class="occasion caps">{{ ch.occasion }}</p>
+  <p class="lede">{{ ch.intro }}</p>
+</div>
+{%- endmacro %}

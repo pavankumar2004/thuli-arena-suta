@@ -1,7 +1,10 @@
 # Thuli Arena · Suta
 
 Hackathon build on the catalogue of [Suta](https://suta.in), an Indian handloom and
-attire brand. This repo currently holds **Task 1: the catalogue**.
+attire brand.
+
+- **Task 1, catalogue:** `catalogue/` scrapes suta.in into JSONL and Neon.
+- **Task 2, lookbook:** `lookbook/` builds *The Festive Edit*, a static site on Cloudflare Pages.
 
 ## Run it
 
@@ -132,6 +135,43 @@ As of the last run (see `data/export/REPORT.md`):
   Checked by eye on 28 of them: right for about 3 in 4, reliably so for sarees, blouses
   and lehengas; wrong mostly for thin lace trims shot on dark backgrounds. Task 4 should
   prefer image embeddings over this field for these products.
+
+## Task 2: The Festive Edit (lookbook)
+
+```bash
+uv run --env-file .env python -m lookbook            # build site/dist/ from Neon
+uv run python -m http.server -d site/dist 8000       # preview at localhost:8000
+npx wrangler login                                   # once
+uv run --env-file .env python -m lookbook --deploy   # publish to Cloudflare Pages
+```
+
+Before judging, refresh prices end to end:
+`python -m catalogue --refresh && python -m lookbook --deploy` (both with `--env-file .env`).
+
+**Concept.** Four chapters for the season from Mahalaya to Diwali: *Agomoni* (Durga
+Puja), *The Wedding Guest*, *Festive Nights* and *The City Saree*. Each chapter is
+built from one of Suta's own photoshoots (a north-Kolkata house with marigolds, a
+spotlit night shoot, Bombay streets), so every chapter looks coherent.
+
+**Every look is one the brand styled.** A look is a saree plus the pieces its product
+copy says the model is wearing ("the model is wearing a blouse called Hemam"), taken
+from the `pairs_with` field. Nothing is invented or recombined, and there are no
+generated images. Prices and stock come from Neon at build time; only looks where every
+piece is in stock are shown, and the footer states when prices were last fetched.
+
+**Curated, with a safety net.** `lookbook/chapters.py` holds the hand-picked looks
+(chosen from contact sheets of the top candidates). If a pick sells out, the chapter
+fills the gap from candidates ranked by Suta's own signals (bestseller, new arrival,
+runway), preferring a different blouse and colour.
+
+**Three clicks.** Home → look → "Shop on suta.in" (two clicks). Chapter pages and
+next/previous links give the editorial flow.
+
+**Fast by construction.** Plain static HTML with inline CSS and no JavaScript. Images
+come from Shopify's CDN resized per screen (`&width=`, `srcset`; WebP for browsers that
+accept it), with only the first image loaded eagerly. Lighthouse mobile, locally:
+home 100, look page 98, chapter page 91 for performance; 98–100 for accessibility,
+best practices and SEO.
 
 ## Data model
 

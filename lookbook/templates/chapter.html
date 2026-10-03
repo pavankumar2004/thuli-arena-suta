@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "_macros.html" import card, chapter_head %}
+{% block title %}{{ chapter.title }} · {{ edit.title }} · Suta{% endblock %}
+{% block description %}{{ chapter.intro }}{% endblock %}
+{% block main %}
+{{ chapter_head(chapter, heading="h1") }}
+<div class="looks">
+  {% for look in looks %}{{ card(look, feature=loop.first) }}{% endfor %}
+</div>
+<nav class="pager caps" aria-label="Chapters">
+  {% if prev %}<a href="/{{ prev.slug }}/">← {{ prev.numeral }} · {{ prev.title }}</a>{% else %}<a href="/">← The edit</a>{% endif %}
+  {% if next %}<a href="/{{ next.slug }}/">{{ next.numeral }} · {{ next.title }} →</a>{% endif %}
+</nav>
+{% endblock %}
