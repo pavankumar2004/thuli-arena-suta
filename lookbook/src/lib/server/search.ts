@@ -212,11 +212,13 @@ export async function productForTryOn(handle: string) {
     title: string
     url: string
     category: string | null
+    department: string | null
+    tags: string[] | null
     colours: string[]
     attributes: Record<string, string[]>
     images: string[]
     description: string | null
-  }>(`SELECT handle, title, url, category, colours, attributes, images[1:3] AS images, left(description, 900) AS description
+  }>(`SELECT handle, title, url, category, department, tags, colours, attributes, images[1:3] AS images, left(description, 900) AS description
       FROM products WHERE handle = $1`, [handle])
   return row ?? null
 }

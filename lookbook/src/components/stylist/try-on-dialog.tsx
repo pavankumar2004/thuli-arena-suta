@@ -8,7 +8,7 @@ import { formatPrice } from "@/lib/format"
 import { photoToDataUrl } from "@/lib/stylist/photo"
 import type { StylistProduct, TryOnReply } from "@/lib/stylist/types"
 
-type State = { stage: "idle" } | { stage: "need-photo" } | { stage: "working" } | { stage: "done"; image: string } | { stage: "error"; message: string }
+type State = { stage: "idle" } | { stage: "need-photo" } | { stage: "working" } | { stage: "done"; image: string } | { stage: "error"; message: string; code?: string }
 
 const STEPS = ["Reading your photo", "Studying the weave", "Pleating the drape", "Setting the light"]
 
@@ -20,11 +20,14 @@ export function TryOnDialog({
   product,
   portrait,
   onPortrait,
+  onResult,
   onClose,
 }: {
   product: StylistProduct | null
   portrait: string | null
   onPortrait: (dataUrl: string) => void
+  /** A finished try-on, so the chat can keep it for later. */
+  onResult: (key: string, piece: StylistProduct, image: string) => void
   onClose: () => void
 }) {
   const [stored, setState] = useState<State>({ stage: "idle" })
@@ -34,6 +37,10 @@ export function TryOnDialog({
   const [step, setStep] = useState(0)
   const file = useRef<HTMLInputElement>(null)
   const started = useRef<string | null>(null)
+  const keep = useRef(onResult)
+  useEffect(() => {
+    keep.current = onResult
+  })
 
   const run = async (photo: string, piece: StylistProduct) => {
     setState({ stage: "working" })
@@ -44,12 +51,16 @@ export function TryOnDialog({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ portrait: photo, product: piece.handle }),
       })
-      const json = (await res.json()) as Partial<TryOnReply> & { error?: string }
-      if (!res.ok || !json.image) throw new Error(json.error ?? "The fitting room is resting. Please try again.")
+      const json = (await res.json()) as Partial<TryOnReply> & { error?: string; code?: string }
+      if (!res.ok || !json.image) {
+        setState({ stage: "error", message: json.error ?? "The fitting room is resting. Please try again.", code: json.code })
+        return
+      }
       setSplit(50)
       setState({ stage: "done", image: json.image })
-    } catch (err) {
-      setState({ stage: "error", message: (err as Error).message })
+      keep.current(`${piece.handle}-${photo.length}`, piece, json.image)
+    } catch {
+      setState({ stage: "error", message: "The fitting room is resting. Please try again." })
     }
   }
 
@@ -132,7 +143,7 @@ export function TryOnDialog({
                     <ImagePlus className="size-4" strokeWidth={1.5} /> Upload my photo
                   </button>
                   <p className="mt-4 text-xs leading-relaxed text-stone">
-                    Your photo is used only to make this one image and is not stored.
+                    Your photo is used only to make this one image and is not stored by us. The result stays in your chat, in this browser only, so you can download it later.
                   </p>
                 </div>
               )}
@@ -146,19 +157,30 @@ export function TryOnDialog({
               {state.stage === "error" && (
                 <div className="mt-8">
                   <p className="text-[0.95rem] leading-relaxed text-rust">{state.message}</p>
-                  <button
-                    onClick={() => (portrait ? ((started.current = null), void run(portrait, product)) : file.current?.click())}
-                    className="mt-5 inline-flex items-center gap-2 border border-charcoal/25 px-4 py-2.5 text-sm hover:bg-kora"
-                  >
-                    <RotateCcw className="size-4" strokeWidth={1.5} /> Try again
-                  </button>
+                  {state.code ? (
+                    // The guardrail refused this photo for this piece: retrying it won't help.
+                    <button
+                      onClick={() => file.current?.click()}
+                      className="mt-5 inline-flex items-center gap-2 border border-charcoal/25 px-4 py-2.5 text-sm hover:bg-kora"
+                    >
+                      <ImagePlus className="size-4" strokeWidth={1.5} /> Upload a different photo
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => (portrait ? ((started.current = null), void run(portrait, product)) : file.current?.click())}
+                      className="mt-5 inline-flex items-center gap-2 border border-charcoal/25 px-4 py-2.5 text-sm hover:bg-kora"
+                    >
+                      <RotateCcw className="size-4" strokeWidth={1.5} /> Try again
+                    </button>
+                  )}
                 </div>
               )}
 
               {state.stage === "done" && (
                 <div className="mt-8 flex flex-col gap-3">
                   <p className="text-[0.95rem] leading-relaxed text-charcoal/80">
-                    Drag the line to compare. A preview made by AI: colours and drape are a guide, the real weave is lovelier.
+                    Drag the line to compare. A preview made by AI: colours and drape are a guide, the real weave is lovelier. It&rsquo;s also saved in your
+                    chat, so you can download it later.
                   </p>
                   <a
                     href={product.url}

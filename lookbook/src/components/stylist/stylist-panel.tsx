@@ -3,13 +3,14 @@
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { AnimatePresence, m } from "framer-motion"
-import { ArrowUp, Camera, ImagePlus, RotateCcw, UserRound, X } from "lucide-react"
+import { ArrowUp, ArrowUpRight, Camera, Download, ImagePlus, RotateCcw, UserRound, X } from "lucide-react"
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet"
 import { Logo } from "@/components/brand/logo"
 import { cn } from "@/lib/utils"
 import { photoToDataUrl } from "@/lib/stylist/photo"
 import type { ChatReply, HistoryTurn, StylistEvent, StylistProduct } from "@/lib/stylist/types"
 import type { Intent } from "@/lib/stylist/intent"
+import { clearTryOns, loadTryOn, saveTryOn } from "@/lib/stylist/try-on-store"
 import { OCCASIONS, type Occasion } from "@/lib/stylist/vocab"
 import { useOverlays } from "@/store/lookbook"
 import { StylistCard } from "./stylist-card"
@@ -20,6 +21,8 @@ type Message =
   | { id: number; role: "user"; text: string; photo?: string }
   | { id: number; role: "stylist"; reply: ChatReply; streaming?: boolean }
   | { id: number; role: "stylist"; error: string }
+  // A finished try-on; the image itself lives in IndexedDB under `key`.
+  | { id: number; role: "stylist"; tryOn: { key: string; handle: string; title: string; url: string } }
 
 // Omit that keeps a union a union.
 type NewMessage = Message extends infer M ? (M extends unknown ? Omit<M, "id"> : never) : never
@@ -103,7 +106,27 @@ export function StylistPanel() {
     try {
       window.sessionStorage.removeItem(SESSION_KEY)
     } catch {}
+    void clearTryOns()
   }
+
+  // Keep each finished try-on in the chat (once), with its image saved in this browser.
+  const keepTryOn = (key: string, piece: StylistProduct, image: string) => {
+    void saveTryOn({ id: key, handle: piece.handle, title: piece.title, url: piece.url, image, createdAt: Date.now() })
+    setMessages((xs) =>
+      xs.some((x) => "tryOn" in x && x.tryOn.key === key)
+        ? xs
+        : [...xs, { id: nextId.current++, role: "stylist", tryOn: { key, handle: piece.handle, title: piece.title, url: piece.url } }],
+    )
+  }
+
+  // The composer grows with what's typed, up to a limit, then scrolls.
+  const input = useRef<HTMLTextAreaElement>(null)
+  useEffect(() => {
+    const el = input.current
+    if (!el) return
+    el.style.height = "auto"
+    el.style.height = `${Math.min(el.scrollHeight, 200)}px`
+  }, [draft])
 
   // Wake the database the moment the panel opens, before the first question.
   useEffect(() => {
@@ -304,6 +327,8 @@ export function StylistPanel() {
                     </>
                   ) : "error" in msg ? (
                     <p className="border-l-2 border-rust pl-3 text-base text-rust">{msg.error}</p>
+                  ) : "tryOn" in msg ? (
+                    <TryOnMessage tryOn={msg.tryOn} />
                   ) : (
                     <StylistMessage reply={msg.reply} streaming={Boolean(msg.streaming)} onTryOn={setTrying} onSuggest={(m) => void send(m)} />
                   )}
@@ -372,6 +397,7 @@ export function StylistPanel() {
                 Ask the stylist
               </label>
               <textarea
+                ref={input}
                 id="stylist-input"
                 value={draft}
                 onChange={(e) => setDraft(e.target.value.slice(0, MAX))}
@@ -381,10 +407,10 @@ export function StylistPanel() {
                     void send(draft)
                   }
                 }}
-                rows={1}
+                rows={2}
                 maxLength={MAX}
                 placeholder="A sangeet look in green, under ₹8,000…"
-                className="max-h-32 min-h-11 flex-1 resize-none border border-charcoal/20 bg-white/60 px-3 py-2.5 outline-none placeholder:text-stone/70 focus:border-charcoal/50 text-base"
+                className="max-h-[200px] min-h-[4.25rem] flex-1 resize-none overflow-y-auto border border-charcoal/20 bg-white/60 px-4 py-3 text-base leading-relaxed outline-none placeholder:text-stone/70 focus:border-charcoal/50"
               />
               <button
                 type="submit"
@@ -402,7 +428,7 @@ export function StylistPanel() {
         </SheetContent>
       </Sheet>
 
-      <TryOnDialog product={trying} portrait={portrait} onPortrait={setPortrait} onClose={() => setTrying(null)} />
+      <TryOnDialog product={trying} portrait={portrait} onPortrait={setPortrait} onResult={keepTryOn} onClose={() => setTrying(null)} />
     </>
   )
 }
@@ -477,6 +503,55 @@ function StylistMessage({
         </m.div>
       )}
       {reply.trace && <TraceView trace={reply.trace} />}
+    </div>
+  )
+}
+
+/** A saved try-on in the chat: the image from this browser's storage, ready to download. */
+function TryOnMessage({ tryOn }: { tryOn: { key: string; handle: string; title: string; url: string } }) {
+  const [image, setImage] = useState<string | null | undefined>(undefined)
+  useEffect(() => {
+    let live = true
+    void loadTryOn(tryOn.key).then((t) => live && setImage(t?.image ?? null))
+    return () => {
+      live = false
+    }
+  }, [tryOn.key])
+
+  return (
+    <div className="flex gap-4">
+      <span className="mt-1 size-2 shrink-0 rounded-full bg-haldi" aria-hidden />
+      <div className="min-w-0">
+        <p className="eyebrow text-[0.62rem] text-rust">Your try-on</p>
+        <p className="mt-1 font-display text-2xl leading-tight">{tryOn.title}</p>
+        {image ? (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={image} alt={`You, wearing ${tryOn.title}`} className="mt-3 aspect-[3/4] w-64 max-w-full bg-sand object-cover" />
+            <div className="mt-3 flex flex-wrap gap-2 text-sm">
+              <a
+                href={image}
+                download={`suta-${tryOn.handle}-try-on.png`}
+                className="inline-flex items-center gap-1.5 bg-charcoal px-4 py-2 text-ecru transition-colors hover:bg-rust"
+              >
+                <Download className="size-3.5" strokeWidth={1.5} /> Download
+              </a>
+              <a
+                href={tryOn.url}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-1.5 border border-charcoal/20 px-4 py-2 transition-colors hover:bg-kora"
+              >
+                Shop this look <ArrowUpRight className="size-3.5" strokeWidth={1.5} />
+              </a>
+            </div>
+          </>
+        ) : image === null ? (
+          <p className="mt-2 text-sm text-stone">This image is no longer stored in this browser.</p>
+        ) : (
+          <div className="mt-3 aspect-[3/4] w-64 max-w-full animate-pulse bg-sand" />
+        )}
+      </div>
     </div>
   )
 }

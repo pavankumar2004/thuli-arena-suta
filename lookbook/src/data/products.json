@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-03T06:01:33+00:00",
+  "scrapedAt": "2026-10-03T07:28:13+00:00",
   "products": {
     "rokto-joba": {
       "handle": "rokto-joba",
@@ -195,7 +195,9 @@
       "sizesInStock": [
         "Free Size"
       ],
-      "colours": [],
+      "colours": [
+        "Red"
+      ],
       "fabric": "Mul Cotton",
       "technique": [],
       "length": "5.50 m",
@@ -802,7 +804,9 @@
       "sizesInStock": [
         "Free Size"
       ],
-      "colours": [],
+      "colours": [
+        "Navy"
+      ],
       "fabric": "Mul Cotton",
       "technique": [],
       "length": "5.50 m",

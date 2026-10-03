@@ -12,6 +12,8 @@ export class HttpError extends Error {
   constructor(
     public status: number,
     message: string,
+    /** Lets the client tell kinds of refusal apart (e.g. "fit-mismatch"). */
+    public code?: string,
   ) {
     super(message)
   }
@@ -118,7 +120,7 @@ export function rateLimit(key: string, limit: number, windowMs: number) {
 }
 
 export function errorResponse(err: unknown) {
-  if (err instanceof HttpError) return Response.json({ error: err.message }, { status: err.status })
+  if (err instanceof HttpError) return Response.json({ error: err.message, ...(err.code && { code: err.code }) }, { status: err.status })
   console.error("[stylist]", err)
   return Response.json({ error: "Something went quiet on our side. Please try again." }, { status: 500 })
 }

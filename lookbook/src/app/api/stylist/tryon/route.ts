@@ -3,6 +3,7 @@ import { SUTA_SIGNATURE, generateImage, imageInput } from "../../../../../script
 import type { TryOnReply } from "@/lib/stylist/types"
 import { env } from "@/lib/server/env"
 import { cleanImage, clientKey, errorResponse, HttpError, rateLimit, readJson } from "@/lib/server/guard"
+import { checkFit } from "@/lib/server/fit-guard"
 import { productForTryOn } from "@/lib/server/search"
 
 export const runtime = "nodejs"
@@ -39,7 +40,12 @@ export async function POST(req: Request) {
     inFlight++
     try {
       env("OPENROUTER_API_KEY")
-      const garmentRefs = await Promise.all(product.images.slice(0, 2).map((src) => imageInput(src, { scrub: SUTA_SIGNATURE, maxWidth: 1024 })))
+      // The guardrail runs alongside fetching the garment photos; nothing is generated
+      // unless the piece suits the person in the photo.
+      const [garmentRefs] = await Promise.all([
+        Promise.all(product.images.slice(0, 2).map((src) => imageInput(src, { scrub: SUTA_SIGNATURE, maxWidth: 1024 }))),
+        checkFit(portrait, product),
+      ])
       const shot = await generateImage({
         model: MODEL,
         prompt: tryOnPrompt(product),
