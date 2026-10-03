@@ -32,8 +32,8 @@ export const SUTA_SIGNATURE = { trimTop: 0.12 }
 export function apiKey() {
   if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY
   for (const p of [resolve(lookbookRoot, ".env"), resolve(lookbookRoot, "../.env")]) {
-    if (!existsSync(p)) continue
-    const m = readFileSync(p, "utf8").match(/^OPENROUTER_API_KEY\s*=\s*"?([^"\r\n]+)"?/m)
+    if (!existsSync(/*turbopackIgnore: true*/ p)) continue
+    const m = readFileSync(/*turbopackIgnore: true*/ p, "utf8").match(/^OPENROUTER_API_KEY\s*=\s*"?([^"\r\n]+)"?/m)
     if (m) return m[1].trim()
   }
   throw new Error("OPENROUTER_API_KEY is not set (environment or .env)")
@@ -94,11 +94,11 @@ function httpsJson(url, body, timeoutMs = 600_000) {
   })
 }
 
-async function post(path, body, { retries = 2 } = {}) {
+async function post(path, body, { retries = 2, timeoutMs = 600_000 } = {}) {
   for (let attempt = 0; ; attempt++) {
     let status, json
     try {
-      ;({ status, json } = await httpsJson(`${API}${path}`, body))
+      ;({ status, json } = await httpsJson(`${API}${path}`, body, timeoutMs))
     } catch (err) {
       // Dropped connection or cut-off body: worth another go.
       if (attempt < retries) {
@@ -125,13 +125,17 @@ async function readBytes(src) {
     if (!res.ok) throw new Error(`could not fetch ${src}: ${res.status}`)
     return Buffer.from(await res.arrayBuffer())
   }
-  return readFileSync(resolve(src))
+  return readFileSync(/*turbopackIgnore: true*/ resolve(src))
 }
 
 /**
  * Loads an image for use as a model input: resized to `maxWidth`, re-encoded as JPEG,
  * and optionally cropped (`scrub.trimTop`, a fraction of the height) to drop a
  * watermark band the model would otherwise copy.
+ *
+ * @param {string} src https URL, local path or data URL
+ * @param {{ maxWidth?: number, scrub?: { trimTop: number } | null }} [options]
+ * @returns {Promise<string>} a JPEG data URL
  */
 export async function imageInput(src, { maxWidth = 1600, scrub = null } = {}) {
   let img = sharp(await readBytes(src)).rotate().resize({ width: maxWidth, withoutEnlargement: true })
@@ -148,6 +152,9 @@ export async function imageInput(src, { maxWidth = 1600, scrub = null } = {}) {
 /**
  * Text-to-image or reference-guided image generation.
  * `references`: image inputs (see imageInput) the model should follow.
+ *
+ * @param {{ model: string, prompt: string, references?: string[], aspectRatio?: string, resolution?: string }} options
+ * @returns {Promise<{ bytes: Buffer, mediaType: string, cost: number | null, seconds: number }>}
  */
 export async function generateImage({ model, prompt, references = [], aspectRatio = "3:4", resolution = "2K" }) {
   const started = Date.now()
@@ -174,20 +181,103 @@ export async function generateImage({ model, prompt, references = [], aspectRati
  * Chat completion. `messages` follow the OpenAI shape; an image can be included as
  * { type: "image_url", image_url: { url } } in a content array. With `json: true` the
  * reply is parsed (the model is asked for a JSON object).
+ *
+ * @param {{ model: string, messages: { role: string, content: unknown }[], json?: boolean, temperature?: number,
+ *   maxTokens?: number, timeoutMs?: number, retries?: number, extra?: Record<string, unknown> }} options
+ * @returns {Promise<{ text?: string, data?: any, usage: { cost: number | null, tokens: number | null } }>}
  */
-export async function chat({ model, messages, json = false, temperature = 0.7, maxTokens = 2000 }) {
-  const res = await post("/chat/completions", {
-    model,
-    messages,
-    temperature,
-    max_tokens: maxTokens,
-    ...(json && { response_format: { type: "json_object" } }),
-  })
+export async function chat({
+  model,
+  messages,
+  json = false,
+  temperature = 0.7,
+  maxTokens = 2000,
+  timeoutMs = 60_000,
+  retries = 1,
+  extra = {},
+}) {
+  const res = await post(
+    "/chat/completions",
+    {
+      model,
+      messages,
+      temperature,
+      max_tokens: maxTokens,
+      ...(json && { response_format: { type: "json_object" } }),
+      ...extra,
+    },
+    { timeoutMs, retries },
+  )
   const text = res.choices?.[0]?.message?.content ?? ""
   const usage = { cost: res.usage?.cost ?? null, tokens: res.usage?.total_tokens ?? null }
   if (!json) return { text, usage }
   const body = text.replace(/^```(?:json)?\s*|\s*```$/g, "")
   return { data: JSON.parse(body), usage }
+}
+
+/**
+ * Streaming chat completion: yields text as the model writes it (server-sent events).
+ * `timeoutMs` caps the wait for the first token; `totalMs` caps the whole reply. Aborting
+ * via `signal` closes the connection.
+ *
+ * @param {{ model: string, messages: { role: string, content: unknown }[], temperature?: number,
+ *   maxTokens?: number, timeoutMs?: number, totalMs?: number, signal?: AbortSignal }} options
+ * @returns {AsyncGenerator<string, { cost: number | null }, void>}
+ */
+export async function* chatStream({ model, messages, temperature = 0.7, maxTokens = 350, timeoutMs = 3000, totalMs = 12_000, signal }) {
+  const payload = JSON.stringify({ model, messages, temperature, max_tokens: maxTokens, stream: true, usage: { include: true } })
+  /** @type {import("node:http").IncomingMessage} */
+  const res = await new Promise((resolvePromise, reject) => {
+    const req = https.request(`${API}/chat/completions`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey()}`,
+        "Content-Type": "application/json",
+        "Content-Length": Buffer.byteLength(payload),
+        "X-Title": "Suta Utsav lookbook",
+      },
+      timeout: timeoutMs,
+    })
+    req.on("response", resolvePromise)
+    req.on("timeout", () => req.destroy(new Error(`no response within ${timeoutMs}ms`)))
+    req.on("error", reject)
+    signal?.addEventListener("abort", () => req.destroy(new Error("aborted")))
+    req.end(payload)
+  })
+  if (res.statusCode !== 200) {
+    let body = ""
+    for await (const chunk of res) body += chunk
+    throw new Error(`OpenRouter stream ${res.statusCode}: ${body.slice(0, 300)}`)
+  }
+  const deadline = setTimeout(() => res.destroy(new Error(`reply exceeded ${totalMs}ms`)), totalMs)
+  let cost = null
+  let buffer = ""
+  try {
+    res.setEncoding("utf8")
+    for await (const chunk of res) {
+      buffer += chunk
+      let nl
+      while ((nl = buffer.indexOf("\n")) >= 0) {
+        const line = buffer.slice(0, nl).trim()
+        buffer = buffer.slice(nl + 1)
+        if (!line.startsWith("data:")) continue // comments (": OPENROUTER PROCESSING") and blanks
+        const data = line.slice(5).trim()
+        if (data === "[DONE]") return { cost }
+        try {
+          const json = JSON.parse(data)
+          if (json.usage?.cost != null) cost = json.usage.cost
+          const delta = json.choices?.[0]?.delta?.content
+          if (delta) yield delta
+        } catch {
+          // a partial or non-JSON line; skip it
+        }
+      }
+    }
+    return { cost }
+  } finally {
+    clearTimeout(deadline)
+    res.destroy()
+  }
 }
 
 /** Writes a generated image, optionally converting it (by extension: .jpg/.webp/.png). */

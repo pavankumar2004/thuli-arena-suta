@@ -27,8 +27,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
       if (cancelled) return
       lenis = new Lenis({ duration: 1.15, anchors: { offset: -64 }, autoRaf: true })
       lenisRef.current = lenis
-      const { look, piece, tray, menu } = useOverlays.getState()
-      if (look || piece || tray || menu) lenis.stop()
+      const { look, piece, tray, menu, stylist } = useOverlays.getState()
+      if (look || piece || tray || menu || stylist) lenis.stop()
     })
     return () => {
       cancelled = true

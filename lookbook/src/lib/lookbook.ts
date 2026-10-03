@@ -40,8 +40,7 @@ export function lookTotal(look: Parameters<typeof piecesOf>[0]) {
   return piecesOf(look).reduce((sum, p) => sum + p.price, 0)
 }
 
-const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 })
-export const formatPrice = (n: number) => inr.format(n)
+export { formatPrice } from "./format"
 
 export const pad = (n: number) => String(n).padStart(2, "0")
 

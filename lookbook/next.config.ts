@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  // Plain static files, served by Cloudflare Pages.
-  output: "export",
+  // A Node server (next start): the stylist's API routes need one. The lookbook pages
+  // themselves are still pre-rendered at build time.
   images: {
     // Product photos stay on Shopify's CDN, which resizes and serves WebP/AVIF itself.
     loader: "custom",

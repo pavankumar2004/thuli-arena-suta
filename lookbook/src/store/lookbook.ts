@@ -51,10 +51,12 @@ interface Overlays {
   piece: string | null
   tray: boolean
   menu: boolean
+  stylist: boolean
   openLook: (id: string | null) => void
   openPiece: (handle: string | null) => void
   setTray: (open: boolean) => void
   setMenu: (open: boolean) => void
+  setStylist: (open: boolean) => void
 }
 
 export const useOverlays = create<Overlays>()((set) => ({
@@ -62,10 +64,12 @@ export const useOverlays = create<Overlays>()((set) => ({
   piece: null,
   tray: false,
   menu: false,
+  stylist: false,
   openLook: (look) => set({ look }),
   openPiece: (piece) => set({ piece }),
   setTray: (tray) => set({ tray }),
   setMenu: (menu) => set({ menu }),
+  setStylist: (stylist) => set({ stylist }),
 }))
 
-export const useAnyOverlay = () => useOverlays((s) => Boolean(s.look || s.piece || s.tray || s.menu))
+export const useAnyOverlay = () => useOverlays((s) => Boolean(s.look || s.piece || s.tray || s.menu || s.stylist))
