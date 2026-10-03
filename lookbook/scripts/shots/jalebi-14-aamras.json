@@ -1,0 +1,40 @@
+{
+  "id": "jalebi-14-aamras",
+  "version": 1,
+  "look": "aamras",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+      "index": 0
+    },
+    {
+      "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+      "index": 1
+    },
+    {
+      "product": "aamras-jalebi-yellow-viscose-kurta-pant-set",
+      "index": 2
+    }
+  ],
+  "notes": "Eating hot jalebi at a halwai's street counter, curvy muse in her forties, candid joy, steam. Afternoon.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Kurta: the mango-yellow viscose kurta from the references, with subtle tonal stripes, long full sleeves, a V neckline with a little gold embroidery, knee length and flowing.",
+    "- Trousers: the straight periwinkle-purple trousers from the references.",
+    "- It is a two-piece set: the kurta and the matching straight trousers shown in the references, worn together exactly as styled there.",
+    "",
+    "MUSE: a curvy woman in her mid-forties with her hair in a sleek low bun, oversized gold chandbali earrings, kohl, a wide delighted grin; she bites into a hot, syrupy jalebi held in a leaf cup.",
+    "",
+    "MOMENT AND PLACE: late afternoon at an old halwai's street-side counter in the bazaar: a huge black iron karahi of bubbling oil, a cook's hands piping jalebi spirals into it, trays heaped with glistening orange jalebis, brass vessels of rabri, steam curling up around her. A blur of shoppers and strings of marigolds in the background.",
+    "",
+    "LIGHT: warm low afternoon sun from behind the counter backlighting the steam and her hair, with soft bounce on her face; rich, appetising, golden.",
+    "",
+    "CAMERA: waist-up, slightly from the side, 85mm lens at f/1.8, the karahi and jalebis sharp in the foreground corner; joyful candid.",
+    "",
+    "No signboards or legible text anywhere."
+  ]
+}

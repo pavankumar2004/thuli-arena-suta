@@ -1,0 +1,46 @@
+{
+  "id": "varq-17-firozi",
+  "version": 1,
+  "look": "firozi-varq",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "firozi-varq-saree",
+      "index": 0
+    },
+    {
+      "product": "firozi-varq-saree",
+      "index": 1
+    },
+    {
+      "product": "firozi-varq-saree",
+      "index": 7
+    },
+    {
+      "product": "reth-ki-lakeer-blouse",
+      "index": 3
+    },
+    {
+      "product": "reth-ki-lakeer-blouse",
+      "index": 0
+    }
+  ],
+  "notes": "Hanging an akash kandil on a balcony at dusk, muse late twenties, low angle, lantern light. Diwali eve.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep shaola-teal mul cotton saree from the first three references, printed all over with a delicate gold foil jaal of scalloped lines and tiny dots, edged with gold samosa lace and finished with dark navy tassels. Soft, matte, airy.",
+    "- Blouse: the gold sequinned and embroidered blouse from the last two references, with short cap sleeves and a V neckline.",
+    "- Pallu over the left shoulder, falling free so the gold jaal and navy tassels catch the light.",
+    "",
+    "MUSE: a woman in her late twenties with long dark hair in a loose braid with a few jasmine flowers, gold choker, slim gold bangles; she reaches up on tiptoe, smiling with concentration.",
+    "",
+    "MOMENT AND PLACE: Diwali eve on the carved wooden balcony of an old house: she hangs a glowing handmade paper akash kandil (star lantern) from a hook in the eaves; strings of tiny lights along the railing, a row of clay diyas on the balcony ledge, neighbouring balconies softly lit in the distance.",
+    "",
+    "LIGHT: blue-hour dusk; the warm glow of the lantern above lights her face and the gold foil from above, the sky a deep teal-blue that echoes the saree.",
+    "",
+    "CAMERA: full length from a low angle looking up at her and the lantern, 35mm lens at f/2.2, vertical composition with the lantern near the top third."
+  ]
+}

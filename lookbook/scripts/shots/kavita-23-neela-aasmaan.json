@@ -1,0 +1,46 @@
+{
+  "id": "kavita-23-neela-aasmaan",
+  "version": 1,
+  "look": "neela-aasmaan",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "neela-aasmaan",
+      "index": 0
+    },
+    {
+      "product": "neela-aasmaan",
+      "index": 1
+    },
+    {
+      "product": "neela-aasmaan",
+      "index": 2
+    },
+    {
+      "product": "hatke-alat-palat",
+      "index": 1
+    },
+    {
+      "product": "hatke-alat-palat",
+      "index": 5
+    }
+  ],
+  "notes": "'She belonged to the sky': open hilltop at dawn, wind, rajnigandha stems, muse forties. Huge sky, small figure.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the soft grey-blue mul cotton saree from the first three references, edged with a fine white lace trim and finished with navy crochet pompom tassels. Plain, matte, feather-light.",
+    "- Blouse: the plain off-white blouse from the last two references, elbow-length sleeves, round neckline.",
+    "- The pallu lifts and streams sideways in the wind, showing the lace edge and navy tassels.",
+    "",
+    "MUSE: a serene woman in her mid-forties with long dark hair blowing across her shoulder, a small bindi, silver bangles; she holds a few long stems of white rajnigandha (tuberose), face turned up to the sky.",
+    "",
+    "MOMENT AND PLACE: dawn on an open grassy hilltop above a valley of low mist, nothing else around her; long grass bending in the wind.",
+    "",
+    "LIGHT: soft pastel dawn light, the sky a gradient of pale blue, lilac and peach with high wispy clouds; gentle front light on her face.",
+    "",
+    "CAMERA: wide vertical frame with a low horizon so the sky fills the upper two thirds and she stands full-length in the lower third, 35mm lens at f/4; expansive and calm, the saree still clearly readable."
+  ]
+}

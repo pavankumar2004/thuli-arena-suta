@@ -1,0 +1,40 @@
+{
+  "id": "jalebi-13-rangooni",
+  "version": 1,
+  "look": "rangooni",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+      "index": 0
+    },
+    {
+      "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+      "index": 2
+    },
+    {
+      "product": "rangooni-jalebi-pink-viscose-kurta-pant-set",
+      "index": 3
+    }
+  ],
+  "notes": "Dhanteras brass-shop haggling, muse mid-twenties, tall, three-quarter, morning shafts of light in a shop.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Kurta: the sleeveless viscose kurta from the references, in broad vertical stripes of hot pink and dusty rose, with a deep V neckline, side pockets and a small gold machine-embroidered motif near the pocket. Knee length, fluid.",
+    "- Trousers: the straight, wide, bright orange trousers from the references.",
+    "- It is a two-piece set: the kurta and the matching straight trousers shown in the references, worn together exactly as styled there.",
+    "",
+    "MUSE: a tall woman in her mid-twenties with long, glossy wavy hair, big gold jhumkas, a stack of gold bangles, a confident half-smile; she is mid-bargain, one eyebrow raised.",
+    "",
+    "MOMENT AND PLACE: Dhanteras morning in an old brass-and-copper utensil shop in a bazaar: shelves crammed floor to ceiling with gleaming brass lamps, copper pots, urlis and bells. She holds a heavy brass oil lamp up to the light to inspect it; the old shopkeeper is just out of focus behind the counter (only his hands and a ledger visible, no faces).",
+    "",
+    "LIGHT: shafts of warm morning sunlight slanting into the dim shop through the open shutter, catching floating dust and blazing off the polished brass; her face in soft reflected golden light.",
+    "",
+    "CAMERA: three-quarter length, 50mm lens at f/2, she stands slightly left of centre framed by shelves of brass, shallow depth of field.",
+    "",
+    "Shop signs, ledgers and price tags must show no legible text."
+  ]
+}

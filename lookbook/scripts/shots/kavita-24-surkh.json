@@ -1,0 +1,42 @@
+{
+  "id": "kavita-24-surkh",
+  "version": 1,
+  "look": "surkh",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "surkh",
+      "index": 2
+    },
+    {
+      "product": "surkh",
+      "index": 1
+    },
+    {
+      "product": "surkh",
+      "index": 5
+    },
+    {
+      "product": "dilbar-alat-palat",
+      "index": 0
+    }
+  ],
+  "notes": "'She was born where flowers met fire': palash grove at sunset with fallen orange blossoms, muse thirties, three-quarter. Fiery warmth to close the book.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the bright red mul cotton saree from the first three references, with delicate black thread line-embroidery of flowers and leaves on the pallu and small tassels. Matte, light.",
+    "- Blouse: the black blouse from the last reference, elbow-length sleeves with a woven red-and-black border at the cuffs.",
+    "- Pallu over the shoulder and held out slightly in one hand so the black floral embroidery is clearly visible.",
+    "",
+    "MUSE: a woman in her early thirties with wavy dark hair pinned up loosely, red lips, a small black bindi, a stack of black and red glass bangles; a fierce, warm half-smile straight to camera.",
+    "",
+    "MOMENT AND PLACE: sunset in a grove of palash trees (flame of the forest) in full bloom: bare dark branches crowded with flaming orange blossoms, the ground carpeted with fallen orange flowers; a few petals drifting down.",
+    "",
+    "LIGHT: low, deep-orange setting sun backlighting her and the blossoms, glowing rim light, warm fill on her face; the whole frame in fire tones of red, orange and black.",
+    "",
+    "CAMERA: three-quarter length, 85mm lens at f/1.8, blossoms as soft bokeh in the foreground and background; a vivid, defiant closing image."
+  ]
+}

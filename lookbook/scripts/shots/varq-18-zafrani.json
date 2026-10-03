@@ -1,0 +1,46 @@
+{
+  "id": "varq-18-zafrani",
+  "version": 1,
+  "look": "zafrani-varq",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "zafrani-varq-saree",
+      "index": 0
+    },
+    {
+      "product": "zafrani-varq-saree",
+      "index": 1
+    },
+    {
+      "product": "zafrani-varq-saree",
+      "index": 6
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 1
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 3
+    }
+  ],
+  "notes": "Laying silver varq on kaju katli in a sunlit kitchen, waist-up, laughing, muse thirties. Detail on hands and sweets.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the saffron-ochre mul cotton saree from the first three references, printed with a fine gold foil jaal of scalloped lines and tiny dots, gold lace edge and navy tassels. Soft, matte, airy.",
+    "- Blouse: the deep purple silk brocade blouse with gold lotus motifs from the last two references, elbow-length sleeves.",
+    "- Pallu tucked at the waist kitchen-style, showing the gold jaal across her shoulder and front.",
+    "",
+    "MUSE: a woman in her early thirties with a short pixie-fringe bob, small gold earrings, a nose pin, glass bangles, laughing as a sheet of silver leaf floats off her fingertips.",
+    "",
+    "MOMENT AND PLACE: Diwali morning in an old-fashioned home kitchen: she stands at a stone counter laying delicate sheets of edible silver varq onto diamonds of kaju katli on a large brass thali; open steel dabbas of cardamom and pistachio, a brass lamp and a bunch of marigolds on the windowsill.",
+    "",
+    "LIGHT: bright morning sun streaming through a window behind and to the side, rim-lighting her and making the silver leaf and gold foil sparkle; airy, warm, happy.",
+    "",
+    "CAMERA: waist-up, 85mm lens at f/2, the thali of sweets sharp in the lower foreground, her laughing face just above."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "kavita-22-safeed-ishq",
+  "version": 1,
+  "look": "safeed-ishq",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "safeed-ishq",
+      "index": 2
+    },
+    {
+      "product": "safeed-ishq",
+      "index": 1
+    },
+    {
+      "product": "safeed-ishq",
+      "index": 4
+    },
+    {
+      "product": "jashn-alat-palat",
+      "index": 1
+    }
+  ],
+  "notes": "'She fell in love with everything': morning chai and a book on a daybed by a window, reclining, muse late twenties. Bright, white, soft.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the pure white mul cotton saree from the first three references, plain and soft with a fine self edge and white pompom tassels along the pallu. Matte, translucent where the light passes through.",
+    "- Blouse: the red silk brocade blouse with gold floral motifs from the last reference, elbow-length sleeves.",
+    "- She reclines, the white pallu spilling over the edge of the daybed onto the floor, tassels visible.",
+    "",
+    "MUSE: a woman in her late twenties with long dark hair loose over a cushion, bare-faced but for kohl, a thin gold chain; smiling softly at the page she is reading.",
+    "",
+    "MOMENT AND PLACE: early morning in a whitewashed room: she lies back on a low wooden daybed with white cotton bolsters beside a tall open window, an old hardback book open on her chest, a glass of chai and a small brass bowl of jasmine on the sill, sheer white curtains lifting in the breeze.",
+    "",
+    "LIGHT: high-key soft morning daylight pouring through the curtains, creamy whites, gentle shadows; the red blouse the only strong colour.",
+    "",
+    "CAMERA: a slightly high angle from the foot of the daybed, full figure, 50mm lens at f/2.2, airy and serene."
+  ]
+}
