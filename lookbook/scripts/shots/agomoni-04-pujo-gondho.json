@@ -1,0 +1,48 @@
+{
+  "id": "agomoni-04-pujo-gondho",
+  "version": 1,
+  "look": "the-smell-of-pujo",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "pujo-pujo-gondho-saree",
+      "index": 0
+    },
+    {
+      "product": "pujo-pujo-gondho-saree",
+      "index": 1
+    },
+    {
+      "product": "pujo-pujo-gondho-saree",
+      "index": 6
+    },
+    {
+      "product": "kanakam",
+      "index": 0
+    },
+    {
+      "product": "kanakam",
+      "index": 5
+    }
+  ],
+  "notes": "Pandal-hopping in a North Kolkata lane at dusk, muse late twenties with a bob, walking, environmental, festive lights.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep maroon-red mul modal saree from the first three references, with a gold foil border along which runs gold Bengali lettering exactly as printed on the reference, and small gold motifs scattered across the body. Light, airy, slightly sheer.",
+    "- Blouse: the gold tissue blouse from the last two references, with elbow-length sleeves and a sweetheart neckline.",
+    "- Pallu over the left shoulder, its free end caught in her hand and lifted slightly as she walks, showing the gold lettered border.",
+    "",
+    "MUSE: a slim Bengali woman in her late twenties with a sharp chin-length bob, small gold hoops, a thin red bindi, a stack of red and white bangles. Mid-stride, turning back over her shoulder with a bright, conspiratorial grin, as if calling friends to hurry.",
+    "",
+    "MOMENT AND PLACE: Durga Puja night, pandal-hopping. A narrow North Kolkata lane of old balconied houses with strings of warm fairy lights and paper lanterns overhead; in the soft, out-of-focus distance the glowing arch of a pandal and a blur of people. Steam rising from a roadside tea stall at the frame edge. Wet old stone road reflecting the lights.",
+    "",
+    "LIGHT: blue-hour dusk with warm tungsten and fairy lights; a deep cobalt sky between the buildings, her face lit warmly by a string of bulbs; plenty of round golden bokeh.",
+    "",
+    "CAMERA: full-length environmental shot, she occupies the middle third of the frame walking towards camera, 35mm lens at f/1.8, a little motion in the pallu but her face sharp. Street-photography energy with fashion polish.",
+    "",
+    "The gold Bengali lettering is part of the printed garment and must appear only on the saree border; no other text anywhere in the image."
+  ]
+}

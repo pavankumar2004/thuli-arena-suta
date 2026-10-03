@@ -16,13 +16,18 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
+import https from "node:https"
 import sharp from "sharp"
 
 const API = "https://openrouter.ai/api/v1"
 const lookbookRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../..")
 
-/** The Suta signature sits in the top-right corner of their product photos. */
-export const SUTA_SIGNATURE = { left: 0.8, top: 0, width: 0.2, height: 0.11 }
+/**
+ * The Suta signature sits in the top-right corner of their product photos. We crop the
+ * whole top band away rather than blurring it: a blurred patch gets copied by the model
+ * as a soft grey box. References only need to show the garment, so the band is no loss.
+ */
+export const SUTA_SIGNATURE = { trimTop: 0.12 }
 
 export function apiKey() {
   if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY
@@ -34,32 +39,89 @@ export function apiKey() {
   throw new Error("OPENROUTER_API_KEY is not set (environment or .env)")
 }
 
+const wait = (ms) => new Promise((r) => setTimeout(r, ms))
+
+/** fetch that retries dropped connections and timeouts (not HTTP errors). */
+async function fetchRetry(url, init, retries = 3) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await fetch(url, init)
+    } catch (err) {
+      if (attempt >= retries) throw err
+      await wait(3000 * (attempt + 1))
+    }
+  }
+}
+
+/**
+ * POST JSON over node:https. Not global fetch: undici aborts any response that takes
+ * longer than 300s, and a 2K image with several references can exceed that.
+ */
+function httpsJson(url, body, timeoutMs = 600_000) {
+  const payload = JSON.stringify(body)
+  return new Promise((resolvePromise, reject) => {
+    const req = https.request(
+      url,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey()}`,
+          "Content-Type": "application/json",
+          "Content-Length": Buffer.byteLength(payload),
+          "X-Title": "Suta Utsav lookbook",
+        },
+        timeout: timeoutMs,
+      },
+      (res) => {
+        const chunks = []
+        res.on("data", (c) => chunks.push(c))
+        res.on("error", reject)
+        res.on("end", () => {
+          const text = Buffer.concat(chunks).toString("utf8")
+          let json
+          try {
+            json = JSON.parse(text)
+          } catch {
+            return reject(new Error(`truncated or non-JSON response (${res.statusCode}): ${text.slice(0, 200)}`))
+          }
+          resolvePromise({ status: res.statusCode, json })
+        })
+      },
+    )
+    req.on("timeout", () => req.destroy(new Error(`timed out after ${timeoutMs / 1000}s`)))
+    req.on("error", reject)
+    req.end(payload)
+  })
+}
+
 async function post(path, body, { retries = 2 } = {}) {
   for (let attempt = 0; ; attempt++) {
-    const res = await fetch(`${API}${path}`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey()}`,
-        "Content-Type": "application/json",
-        "X-Title": "Suta Utsav lookbook",
-      },
-      body: JSON.stringify(body),
-    })
-    const json = await res.json().catch(() => ({}))
-    if (res.ok) return json
+    let status, json
+    try {
+      ;({ status, json } = await httpsJson(`${API}${path}`, body))
+    } catch (err) {
+      // Dropped connection or cut-off body: worth another go.
+      if (attempt < retries) {
+        console.warn(`OpenRouter ${path}: ${err.message}; retrying`)
+        await wait(3000 * (attempt + 1))
+        continue
+      }
+      throw err
+    }
+    if (status >= 200 && status < 300) return json
     // Retry rate limits and upstream hiccups; fail fast on bad requests.
-    if (attempt < retries && (res.status === 429 || res.status >= 500)) {
-      await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)))
+    if (attempt < retries && (status === 429 || status >= 500)) {
+      await wait(2000 * (attempt + 1))
       continue
     }
-    throw new Error(`OpenRouter ${path} ${res.status}: ${JSON.stringify(json).slice(0, 600)}`)
+    throw new Error(`OpenRouter ${path} ${status}: ${JSON.stringify(json).slice(0, 600)}`)
   }
 }
 
 async function readBytes(src) {
   if (src.startsWith("data:")) return Buffer.from(src.split(",")[1], "base64")
   if (/^https?:/.test(src)) {
-    const res = await fetch(src)
+    const res = await fetchRetry(src)
     if (!res.ok) throw new Error(`could not fetch ${src}: ${res.status}`)
     return Buffer.from(await res.arrayBuffer())
   }
@@ -68,25 +130,16 @@ async function readBytes(src) {
 
 /**
  * Loads an image for use as a model input: resized to `maxWidth`, re-encoded as JPEG,
- * and optionally with a region blurred away (`scrub`, as fractions of width/height),
- * e.g. a watermark the model would otherwise copy.
+ * and optionally cropped (`scrub.trimTop`, a fraction of the height) to drop a
+ * watermark band the model would otherwise copy.
  */
 export async function imageInput(src, { maxWidth = 1600, scrub = null } = {}) {
   let img = sharp(await readBytes(src)).rotate().resize({ width: maxWidth, withoutEnlargement: true })
-  if (scrub) {
+  if (scrub?.trimTop) {
     const buf = await img.jpeg().toBuffer()
     const { width, height } = await sharp(buf).metadata()
-    const box = {
-      left: Math.round(scrub.left * width),
-      top: Math.round(scrub.top * height),
-      width: Math.round(scrub.width * width),
-      height: Math.round(scrub.height * height),
-    }
-    box.width = Math.min(box.width, width - box.left)
-    box.height = Math.min(box.height, height - box.top)
-    // Fill the box with a heavy blur of itself, which smears dark strokes into the background.
-    const patch = await sharp(buf).extract(box).blur(Math.max(20, box.height / 3)).toBuffer()
-    img = sharp(buf).composite([{ input: patch, left: box.left, top: box.top }])
+    const top = Math.round(scrub.trimTop * height)
+    img = sharp(buf).extract({ left: 0, top, width, height: height - top })
   }
   const out = await img.jpeg({ quality: 88 }).toBuffer()
   return `data:image/jpeg;base64,${out.toString("base64")}`

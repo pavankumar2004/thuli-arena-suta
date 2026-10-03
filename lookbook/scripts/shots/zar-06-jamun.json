@@ -1,0 +1,46 @@
+{
+  "id": "zar-06-jamun",
+  "version": 1,
+  "look": "jamun-season",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "hara-jamun",
+      "index": 0
+    },
+    {
+      "product": "hara-jamun",
+      "index": 2
+    },
+    {
+      "product": "hara-jamun",
+      "index": 3
+    },
+    {
+      "product": "dipped-in-green",
+      "index": 0
+    },
+    {
+      "product": "dipped-in-green",
+      "index": 2
+    }
+  ],
+  "notes": "Older muse (late fifties) at a rain-washed window on a Bijoya visit with a tiffin of sweets. Quiet, seated, rainy daylight.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep jamun violet-blue mul cotton saree from the first three references, with a narrow bottle-green border edged in fine gold zari lines, and green tassels. Plain, matte, soft.",
+    "- Blouse: the bottle-green cotton blouse from the last two references, with elbow-length puffed sleeves and a round neckline.",
+    "- Draped simply, pallu over the left shoulder and resting across her lap, the green-and-gold border visible along its edge.",
+    "",
+    "MUSE: a dignified Bengali woman in her late fifties with salt-and-pepper hair in a neat low bun, a small red bindi, thin gold bangles, gentle smile lines. She looks out of the window with a soft, nostalgic smile.",
+    "",
+    "MOMENT AND PLACE: the afternoon after Bijoya: she sits on the broad wooden sill of a tall arched window in an old Kolkata house, green louvred shutters thrown open; beside her a stainless-steel tiffin carrier and a small plate of sandesh and narkel naru, ready for the visiting rounds. Monsoon rain still falls outside; wet green leaves glisten beyond the window bars.",
+    "",
+    "LIGHT: cool, silvery rainy-day daylight from the window as a soft key light, warm interior shadows behind her, raindrops on the window bars catching the light. A tender palette of violet, green and grey.",
+    "",
+    "CAMERA: seated, framed from head to knees, 85mm lens at f/2, camera inside the room at her eye level, the window filling the right half of the frame. Painterly, still, contemplative."
+  ]
+}

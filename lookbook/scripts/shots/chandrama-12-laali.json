@@ -1,0 +1,46 @@
+{
+  "id": "chandrama-12-laali",
+  "version": 1,
+  "look": "laali",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+      "index": 0
+    },
+    {
+      "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+      "index": 1
+    },
+    {
+      "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
+      "index": 3
+    },
+    {
+      "product": "jal-kamal",
+      "index": 2
+    },
+    {
+      "product": "jal-kamal",
+      "index": 0
+    }
+  ],
+  "notes": "Kojagari Lakshmi puja alpona, high angle, kneeling, muse thirties with curls. Graphic floor composition.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the rose-copper tussar tissue silk saree from the first three references, woven with copper and gold zari stripes, edged in hot pink, with a shimmering gold pallu. Luminous, crisp drape.",
+    "- Blouse: the navy-indigo silk brocade blouse with a gold floral jaal from the last two references, elbow-length sleeves, V neckline.",
+    "- The pallu spreads across the floor beside her as she kneels, showing the pink edge and gold zari.",
+    "",
+    "MUSE: a woman in her early thirties with voluminous curly hair tied loosely back, a small bindi, gold earrings, focused and smiling slightly as she works.",
+    "",
+    "MOMENT AND PLACE: Kojagari Lakshmi Puja: she kneels on a cool red-oxide floor drawing a large white alpona in rice paste with her fingertips, an intricate circular lotus pattern with small Lakshmi footprints leading towards the door. A brass bowl of rice paste, a small brass lamp, a basket of paddy ears and a few pink lotus flowers rest at the edge of the design.",
+    "",
+    "LIGHT: soft early-evening light from a doorway to one side, warm and even, the brass lamp adding a glow; the white alpona crisp against the deep red floor.",
+    "",
+    "CAMERA: high angle looking down at about 60 degrees, her figure and the alpona both fully in frame, 35mm lens at f/4; graphic, composed like a painting."
+  ]
+}

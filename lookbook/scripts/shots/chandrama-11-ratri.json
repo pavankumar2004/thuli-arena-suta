@@ -1,0 +1,46 @@
+{
+  "id": "chandrama-11-ratri",
+  "version": 1,
+  "look": "ratri",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+      "index": 0
+    },
+    {
+      "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+      "index": 1
+    },
+    {
+      "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
+      "index": 3
+    },
+    {
+      "product": "aambal",
+      "index": 2
+    },
+    {
+      "product": "aambal",
+      "index": 0
+    }
+  ],
+  "notes": "Night in a haveli corridor of lanterns, half-length portrait, muse forties with a silver streak. Dramatic low-key.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the black-and-bronze tussar tissue silk saree from the first three references, woven with dense gold zari stripes that give a deep bronze metallic glow, with a gold zari pallu. Crisp, luminous drape.",
+    "- Blouse: the hot-pink art silk blouse from the last two references, elbow-length sleeves, round neckline.",
+    "- Pallu brought over the left shoulder and wrapped around her arms like a shawl, catching the light.",
+    "",
+    "MUSE: a striking woman in her mid-forties with a bold silver-grey streak in her black hair, swept back in a low bun; strong brows, dark kohl, gold jhumkas, a single red rose tucked behind her ear. A direct, confident gaze into the camera, the faintest smile.",
+    "",
+    "MOMENT AND PLACE: late night in the long arched corridor of an old haveli, a row of brass-and-glass lanterns hanging along the arches into the distance, carved wooden doors, the night garden dark beyond the arches.",
+    "",
+    "LIGHT: low-key and dramatic: the nearest lantern lights her from the side, sculpting her face and making the bronze zari blaze; the corridor recedes into warm darkness punctuated by small lantern glows.",
+    "",
+    "CAMERA: half-length portrait from the waist up, 105mm lens at f/2, subject slightly left of centre, the receding lanterns as soft bokeh on the right. Couture-portrait intensity."
+  ]
+}

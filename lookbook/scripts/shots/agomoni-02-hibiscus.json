@@ -1,0 +1,46 @@
+{
+  "id": "agomoni-02-hibiscus",
+  "version": 1,
+  "look": "the-hibiscus-offering",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "rokto-joba",
+      "index": 0
+    },
+    {
+      "product": "rokto-joba",
+      "index": 1
+    },
+    {
+      "product": "rokto-joba",
+      "index": 7
+    },
+    {
+      "product": "thankam",
+      "index": 3
+    },
+    {
+      "product": "thankam",
+      "index": 0
+    }
+  ],
+  "notes": "Sandhi puja at night, muse in her forties, waist-up, lamp light. Contrast to look 01's dawn full-length.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep maroon mul saree from the first three references, foil-printed with large gold hibiscus flowers clustered along the pallu and small scattered gold dots on the body, edged with a thin gold gota border. Soft, slightly lustrous drape.",
+    "- Blouse: the plain antique-gold sleeveless cotton blouse from the last two references, high rounded neckline.",
+    "- Draped with the pallu over the left shoulder and gathered across the front so the gold hibiscus flowers are prominent across her chest and arm.",
+    "",
+    "MUSE: a Bengali woman in her mid-forties, dusky skin, a few silver strands in her hair, worn in a low knot with a small red hibiscus; a broad sindoor line, a large round red bindi, gold jhumkas, shankha and pola bangles, a gold temple choker. Composed and devotional, eyes half-closed in prayer.",
+    "",
+    "MOMENT AND PLACE: Sandhi puja, the hushed junction of Ashtami and Navami at night. She kneels at the front of a family puja room, holding a brass panchapradip (five-wick lamp) raised in both hands for the arati. Around her on the floor, rows of small lit clay diyas; a few red hibiscus on a brass plate beside her. Behind her, softly out of focus, a deep red wall and the white-and-gold shola crown of the goddess.",
+    "",
+    "LIGHT: night, lit only by flame: the lamp in her hands throws warm golden light up onto her face, throat and the gold hibiscus print; everything else falls into deep maroon shadow, with tiny sparkles on the gold foil. Rich, intimate chiaroscuro.",
+    "",
+    "CAMERA: waist-up three-quarter portrait from a slightly low angle, 85mm lens at f/2, subject centred, diya flames as soft bokeh in the lower foreground. Medium-format look, fine grain."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "chandrama-10-saanjh",
+  "version": 1,
+  "look": "saanjh",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+      "index": 0
+    },
+    {
+      "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+      "index": 1
+    },
+    {
+      "product": "saanjh-chandrama-dark-blue-tissue-tussar-silk-saree",
+      "index": 5
+    },
+    {
+      "product": "tulasi",
+      "index": 2
+    },
+    {
+      "product": "tulasi",
+      "index": 4
+    }
+  ],
+  "notes": "Dusk on river ghats, environmental wide, muse late twenties floating a diya. Twilight gradient.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the dusk-blue and gold tussar tissue silk saree from the first three references, woven in fine alternating blue-grey and gold stripes with a metallic sheen, a gold zari pallu edged with a deep blue band. Luminous, crisp drape.",
+    "- Blouse: the bottle-green art silk blouse from the last two references, elbow-length sleeves, round neckline, deep back.",
+    "- Pallu over the left shoulder, falling down her back and side so the blue band and gold stripes show.",
+    "",
+    "MUSE: a woman in her late twenties with a blunt fringe and shoulder-length hair, a delicate gold necklace, blue glass bangles, calm and absorbed.",
+    "",
+    "MOMENT AND PLACE: saanjh, the hour of evening lamps, on ancient stone river ghats: she crouches on the lower steps placing a lit leaf-boat diya onto the water; other diyas already drift away on the dark river; temple spires and old riverside buildings stand in the soft distance.",
+    "",
+    "LIGHT: twilight: a gradient sky from apricot at the horizon to deep blue overhead, reflected in the river; the diya in her hands lights her face and the gold stripes warmly, the rest in cool blue dusk.",
+    "",
+    "CAMERA: wide environmental frame, she is medium-small in the lower third on the steps, river and sky filling the frame, 35mm lens at f/2.8; serene and cinematic, but the saree still clearly readable."
+  ]
+}
