@@ -179,24 +179,3 @@ See [`catalogue/schema.sql`](catalogue/schema.sql): `products`, `product_variant
 (one row per size, with stock), and `category_counts` (site count vs. scraped).
 Re-runs upsert products instead of truncating, so rows later tasks attach to a
 product (embeddings, lookbooks) survive a refresh.
-
-## Task 2: the lookbook
-
-A static, editorial lookbook in five chapters (Agomoni, The Wedding Season, One of a
-Kind, Desk to Dusk, New This Season), built from the catalogue export:
-
-```bash
-uv run python -m lookbook.build                          # -> lookbook/dist/
-npx wrangler pages deploy lookbook/dist --project-name suta-lookbook
-```
-
-- **Grounded by construction.** [`lookbook/chapters.py`](lookbook/chapters.py) holds only
-  the editorial copy and a rule per chapter (a Suta edit or a style tag). Products are
-  picked by those rules from the export, in stock only, with their catalogue price, and
-  every piece links to its suta.in page.
-- **Looks are the brand's own pairings.** A look is a saree (or lehenga, dress, kurta
-  set) plus the pieces Suta's own copy styles it with (`pairs_with`). No product
-  appears twice, and no chapter shows more than two looks in the same colour.
-- **Fast.** Plain HTML and one CSS file, no JavaScript; images come from Shopify's CDN at
-  the size each screen needs (`srcset`), lazy-loaded below the fold.
-- **Three clicks or fewer:** home → chapter → product.
