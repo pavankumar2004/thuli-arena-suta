@@ -1,13 +1,15 @@
 import "server-only"
 
 import { neonConfig, Pool } from "@neondatabase/serverless"
+import ws from "ws"
 import { env } from "./env"
 import { trace } from "./trace"
 
 // Neon over a persistent WebSocket pool. Measured from the dev machine, one-off HTTP
 // queries failed about 1 in 4 and spiked to 3s; the pool's warm connections had a ~330ms
-// median and no failures. Node 22 ships a WebSocket, so no extra dependency is needed.
-neonConfig.webSocketConstructor = globalThis.WebSocket
+// median and no failures. Node 22 ships a WebSocket; Node 20 (some hosts' default, and
+// local dev) doesn't, so fall back to the `ws` package rather than fail every query.
+neonConfig.webSocketConstructor = globalThis.WebSocket ?? ws
 
 let pool: Pool | null = null
 

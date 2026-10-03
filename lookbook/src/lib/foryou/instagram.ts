@@ -73,6 +73,9 @@ async function igJson(url: string, handle: string) {
   if (res.status === 404) throw new InstagramError("not_found", `We couldn't find @${handle}. Check the spelling?`)
   if (res.status !== 200) {
     // 3xx to /accounts/login (session expired), 401, 429 (rate limited), 5xx.
+    // Logged so the reason shows in the host's logs; never the cookie itself.
+    const where = res.headers.get("location")?.split("?")[0] ?? ""
+    console.warn(`[foryou] instagram session request failed for @${handle}: HTTP ${res.status}${where ? ` -> ${where}` : ""}`)
     throw new InstagramError("unavailable", "Instagram isn't answering right now. Please try again in a minute.")
   }
   return res.json()
@@ -224,6 +227,8 @@ export async function fetchProfile(
       if (!(err instanceof InstagramError) || err.status !== "unavailable") throw err
       onFallback("Instagram is busy, so we're reading your latest posts")
     }
+  } else {
+    console.info(`[foryou] IG_SESSION is not set; reading @${handle}'s public embed (latest 6 posts)`)
   }
   return { ...(await fetchEmbed(handle)), source: "embed" }
 }
