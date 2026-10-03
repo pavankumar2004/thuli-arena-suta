@@ -1,0 +1,14 @@
+{
+  "model": "google/gemini-3-pro-image",
+  "style": [
+    "HOUSE STYLE (applies to every Utsav photograph):",
+    "- A festive editorial for Suta, an Indian handloom label: intimate, unhurried, warm, never glossy-commercial.",
+    "- Real Indian women of varied ages and builds with natural skin texture, real pores and natural hair; minimal retouching.",
+    "- Natural or practical light only (sunlight, lamps, diyas); soft falloff into warm shadow; a painterly, heritage feel.",
+    "- Medium-format photographic rendering, fine natural film grain, restrained colour grade: ivory, earth reds, ochre, brass, deep greens.",
+    "- The garments are the hero: reproduce the referenced fabric, colours, borders and motifs faithfully and keep them clearly visible."
+  ],
+  "never": [
+    "NEVER INCLUDE: any watermark, signature, logo, brand mark, monogram, text, letters, numbers or captions anywhere in the image, including the corners (the reference photos may carry a signature in a corner; do not reproduce it); plastic or airbrushed skin; extra or malformed fingers; distorted faces; modern gadgets or branded objects; harsh flash; oversaturated colour; any garment pattern that differs from the reference photos."
+  ]
+}

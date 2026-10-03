@@ -1,0 +1,268 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Suta palette: kora cotton, earth, ink. */
+@theme {
+  --color-ecru: #faf7f2;
+  --color-kora: #f5f0e6;
+  --color-sand: #e7dcc8;
+  --color-rust: #a4422d;
+  --color-haldi: #d99b26;
+  --color-ink: #1c2a3a;
+  --color-forest: #1e352f;
+  --color-charcoal: #1a1a1a;
+  --color-stone: #6f675c;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+/* shadcn tokens mapped onto the palette. Editorial, so corners stay square. */
+:root {
+  --radius: 0.125rem;
+  --background: #faf7f2;
+  --foreground: #1a1a1a;
+  --card: #faf7f2;
+  --card-foreground: #1a1a1a;
+  --popover: #faf7f2;
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #faf7f2;
+  --secondary: #f5f0e6;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f5f0e6;
+  --muted-foreground: #6f675c;
+  --accent: #f5f0e6;
+  --accent-foreground: #1a1a1a;
+  --destructive: #a4422d;
+  --border: #e3dacb;
+  --input: #e3dacb;
+  --ring: #a4422d;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "kern", "liga";
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-rust);
+    color: var(--color-ecru);
+  }
+  :focus-visible {
+    outline: 1px solid var(--color-rust);
+    outline-offset: 3px;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* Hotspot pulse: transform + opacity only. */
+@keyframes hotspot-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  80%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+.hotspot-ring {
+  animation: hotspot-pulse 2.4s var(--ease-editorial) infinite;
+}
+
+@keyframes cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+.scroll-cue {
+  animation: cue 2.2s ease-in-out infinite;
+}
+
+@keyframes eq {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+/* A whisper of paper grain on light sections. */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .33 0 0 0 0 .25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Opening curtain: the wordmark is "sewn" left to right, then the curtain lifts. */
+@keyframes intro-sew {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes intro-lift {
+  to {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+.intro-curtain {
+  animation: intro-lift 0.9s cubic-bezier(0.76, 0, 0.24, 1) 1.5s forwards;
+}
+.intro-logo {
+  clip-path: inset(0 100% 0 0);
+  animation: intro-sew 1s cubic-bezier(0.65, 0, 0.35, 1) 0.15s forwards;
+}
+.intro-line {
+  opacity: 0;
+  animation: intro-fade 0.6s ease-out 0.8s forwards;
+}
+
+/* Slow push-in on the active cover slide. */
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+.kenburns {
+  animation: kenburns 9s ease-out forwards;
+}
+
+/* Endless ticker of chapter names. */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 38s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.text-outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot-ring,
+  .scroll-cue,
+  .kenburns,
+  .marquee-track {
+    animation: none;
+  }
+  .intro-curtain {
+    display: none;
+  }
+}
