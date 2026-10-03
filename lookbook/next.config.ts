@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  // Deployed on Vercel: static pages plus server routes for "Made for you" (Task 3).
+  // A Node server (Vercel, or `next start`): the stylist (Task 4) and "Made for you" (Task 3)
+  // need API routes. The lookbook pages themselves are still pre-rendered at build time.
   images: {
     // Product photos stay on Shopify's CDN, which resizes and serves WebP/AVIF itself.
     loader: "custom",

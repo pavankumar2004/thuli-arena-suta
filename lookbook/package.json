@@ -6,9 +6,9 @@
     "data": "node scripts/build-data.mjs",
     "dev": "node scripts/build-data.mjs && next dev",
     "build": "node scripts/build-data.mjs && next build",
-    "preview": "npx serve out",
+    "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && wrangler pages deploy out --project-name suta-utsav --branch main"
+    "db:stylist": "node scripts/db-stylist.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",
