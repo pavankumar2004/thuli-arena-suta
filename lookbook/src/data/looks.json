@@ -163,19 +163,20 @@
           "title": "The hibiscus offering",
           "image": {
             "product": "rokto-joba",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/agomoni-02-hibiscus-v1.jpg"
           },
           "blurb": "Rokto joba is the red hibiscus laid at the goddess's feet. Here it is maroon mul, foil-printed, with Thankam in old gold.",
           "hotspots": [
             {
               "product": "rokto-joba",
-              "x": 45,
-              "y": 66
+              "x": 44,
+              "y": 56
             },
             {
               "product": "thankam",
-              "x": 45,
-              "y": 22
+              "x": 29,
+              "y": 33
             }
           ]
         },
@@ -184,19 +185,20 @@
           "title": "Conch and vermilion",
           "image": {
             "product": "shonkho-sindoor-cotton-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/agomoni-03-sindoor-v1.jpg"
           },
           "blurb": "Shonkho for the white, sindoor for the red: the two bangles a married Bengali woman wears, woven into a single drape and worn with Pontharam.",
           "hotspots": [
             {
               "product": "shonkho-sindoor-cotton-saree",
-              "x": 74,
-              "y": 62
+              "x": 66,
+              "y": 72
             },
             {
               "product": "pontharam",
-              "x": 56,
-              "y": 30
+              "x": 34,
+              "y": 38
             }
           ]
         },
@@ -296,19 +298,20 @@
           "title": "Teen Patti",
           "image": {
             "product": "teen-patti",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/zar-05-teen-patti-v1.jpg"
           },
           "blurb": "Named for the card game every festive night ends with. Red mul that refuses to sit still, and Kedar Ki Dor in pink silk.",
           "hotspots": [
             {
               "product": "teen-patti",
-              "x": 72,
-              "y": 50
+              "x": 56,
+              "y": 66
             },
             {
               "product": "kedar-ki-dor-blouse",
-              "x": 37,
-              "y": 30
+              "x": 34,
+              "y": 45
             }
           ]
         },
@@ -317,19 +320,20 @@
           "title": "Jamun season",
           "image": {
             "product": "hara-jamun",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/zar-06-jamun-v1.jpg"
           },
           "blurb": "A jamun-dark blue with a green edge and a pallu that catches the wind. Worn with Dipped in Green.",
           "hotspots": [
             {
               "product": "hara-jamun",
-              "x": 46,
-              "y": 70
+              "x": 45,
+              "y": 73
             },
             {
               "product": "dipped-in-green",
-              "x": 36,
-              "y": 28
+              "x": 35,
+              "y": 57
             }
           ]
         },
@@ -338,19 +342,20 @@
           "title": "Haldi, hurrying",
           "image": {
             "product": "haldi-hustle",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/zar-07-haldi-v1.jpg"
           },
           "blurb": "Turmeric yellow for the morning rush, bordered in purple and worn with the Swarna Kamal blouse.",
           "hotspots": [
             {
               "product": "haldi-hustle",
-              "x": 52,
-              "y": 66
+              "x": 47,
+              "y": 76
             },
             {
               "product": "swarna-kamal",
-              "x": 35,
-              "y": 26
+              "x": 40,
+              "y": 48
             }
           ]
         },
@@ -359,19 +364,20 @@
           "title": "Saffron, in ink",
           "image": {
             "product": "kesar-ink",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/zar-08-kesar-ink-v1.jpg"
           },
           "blurb": "Saffron's name, ink's colour. Purple mul with a green border, worn with Hara Basic.",
           "hotspots": [
             {
               "product": "kesar-ink",
-              "x": 56,
-              "y": 70
+              "x": 68,
+              "y": 74
             },
             {
               "product": "hara-basic-blouse",
-              "x": 40,
-              "y": 24
+              "x": 49,
+              "y": 54
             }
           ]
         }
@@ -450,19 +456,20 @@
           "title": "Pura, the full moon",
           "image": {
             "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/chandrama-09-pura-v1.jpg"
           },
           "blurb": "Olive tissue with zari lines that glint as she moves, worn with Glow Alat Palat. Full moon, full plans.",
           "hotspots": [
             {
               "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
-              "x": 50,
-              "y": 66
+              "x": 55,
+              "y": 62
             },
             {
               "product": "glow-alat-palat",
-              "x": 37,
-              "y": 28
+              "x": 40,
+              "y": 24
             }
           ]
         },
@@ -492,19 +499,20 @@
           "title": "Ratri, at night",
           "image": {
             "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/chandrama-11-ratri-v1.jpg"
           },
           "blurb": "Black tissue lit from within, worn with Aambal in pink.",
           "hotspots": [
             {
               "product": "ratri-chandrama-black-tissue-tussar-silk-saree",
-              "x": 55,
-              "y": 62
+              "x": 40,
+              "y": 76
             },
             {
               "product": "aambal",
-              "x": 35,
-              "y": 28
+              "x": 42,
+              "y": 47
             }
           ]
         },
@@ -513,19 +521,20 @@
           "title": "Laali, the blush",
           "image": {
             "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
-            "index": 0
+            "index": 0,
+            "src": "/images/looks/chandrama-12-laali-v1.jpg"
           },
           "blurb": "The moon's blush in rose-copper, the pallu caught mid-air. Worn with Jal Kamal in blue silk.",
           "hotspots": [
             {
               "product": "laali-chandrama-pink-tissue-tussar-silk-saree",
-              "x": 45,
-              "y": 64
+              "x": 75,
+              "y": 68
             },
             {
               "product": "jal-kamal",
-              "x": 25,
-              "y": 30
+              "x": 43,
+              "y": 35
             }
           ]
         }

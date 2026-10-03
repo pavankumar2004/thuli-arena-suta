@@ -1,0 +1,46 @@
+{
+  "id": "varq-19-neelam",
+  "version": 1,
+  "look": "neelam-varq",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "neelam-varq-saree",
+      "index": 0
+    },
+    {
+      "product": "neelam-varq-saree",
+      "index": 1
+    },
+    {
+      "product": "neelam-varq-saree",
+      "index": 5
+    },
+    {
+      "product": "kashi-sa-mann-blouse",
+      "index": 2
+    },
+    {
+      "product": "kashi-sa-mann-blouse",
+      "index": 0
+    }
+  ],
+  "notes": "Sparklers on a terrace at night, light trails, muse early twenties, motion. Darkest, most kinetic frame.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep sapphire-violet mul cotton saree from the first three references, printed with a delicate gold foil jaal of scalloped lines and tiny dots, gold lace edge and navy tassels. Soft, matte, airy.",
+    "- Blouse: the magenta silk brocade blouse with tiny gold buttis from the last two references, elbow-length sleeves, V neckline.",
+    "- The pallu swirls out as she turns, showing the gold jaal.",
+    "",
+    "MUSE: a young woman in her early twenties with short curly hair, big gold jhumkas, a red bindi, glass bangles, laughing with her head thrown back as she spins.",
+    "",
+    "MOMENT AND PLACE: Diwali night on a rooftop terrace: she twirls holding a lit phuljhadi (sparkler) high, tracing a glowing spiral of light around her; strings of diyas along the parapet, distant fireworks blooming softly over the city skyline.",
+    "",
+    "LIGHT: night: the sparkler is the key light, throwing bright warm sparks and golden light onto her face and the gold foil; diyas give a low warm glow; the sky deep indigo.",
+    "",
+    "CAMERA: full length, 35mm lens at f/1.8 with a slightly slow shutter so the sparkler draws light trails while she stays mostly sharp; dynamic, celebratory."
+  ]
+}

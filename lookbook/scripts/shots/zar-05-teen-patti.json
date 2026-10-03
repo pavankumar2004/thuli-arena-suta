@@ -1,0 +1,48 @@
+{
+  "id": "zar-05-teen-patti",
+  "version": 1,
+  "look": "teen-patti",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "teen-patti",
+      "index": 0
+    },
+    {
+      "product": "teen-patti",
+      "index": 1
+    },
+    {
+      "product": "teen-patti",
+      "index": 3
+    },
+    {
+      "product": "kedar-ki-dor-blouse",
+      "index": 1
+    },
+    {
+      "product": "kedar-ki-dor-blouse",
+      "index": 0
+    }
+  ],
+  "notes": "Card-game night on a floor mattress, muse thirties, seated cross-legged, high angle, playful. Interior lamp light.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the bright scarlet-red mul cotton saree from the first three references, with a wide dark bottle-green border carrying thin gold zari stripes, and dark green tassels. Plain red body, matte and feather-light.",
+    "- Blouse: the fuchsia-pink silk brocade blouse with small gold floral motifs from the last two references, elbow-length sleeves, V neckline.",
+    "- She sits cross-legged, the red pleats fanned around her and the green-and-gold border running across the foreground.",
+    "",
+    "MUSE: a woman in her early thirties with a choppy fringe and a short bob, fuller build, a statement gold choker, mid-laugh; she holds a fan of playing cards close to her chest and peeks at them with mock suspicion.",
+    "",
+    "MOMENT AND PLACE: Diwali-week card night at home: she sits on a white floor mattress with round bolsters, a low brass tray in front of her with a few cards face down, coins, a bowl of mithai and two glasses of chai. Behind her, softly out of focus: a brass hanging lamp, fairy lights, an old wooden almirah and framed family photographs on a pistachio-green wall.",
+    "",
+    "LIGHT: warm interior evening light from a table lamp and the hanging brass lamp, golden and cosy with gentle fall-off; the red saree glowing.",
+    "",
+    "CAMERA: high three-quarter angle looking down at her from where another player would sit, 50mm lens at f/2.2, the brass tray and cards soft in the foreground, her face and blouse sharp. Playful, intimate, candid.",
+    "",
+    "The playing cards show only plain patterned backs; no letters or numbers on them."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "varq-20-raktim",
+  "version": 1,
+  "look": "raktim-varq",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "raktim-varq-saree",
+      "index": 0
+    },
+    {
+      "product": "raktim-varq-saree",
+      "index": 1
+    },
+    {
+      "product": "raktim-varq-saree",
+      "index": 7
+    },
+    {
+      "product": "meri-chaandi",
+      "index": 0
+    },
+    {
+      "product": "meri-chaandi",
+      "index": 3
+    }
+  ],
+  "notes": "Seated on a wooden jhoola in a diya-filled courtyard on Lakshmi puja night, muse forties, full-length seated, symmetrical.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the deep blood-red mul cotton saree from the first three references, printed with a delicate gold foil jaal of scalloped lines and tiny dots, gold lace edge and red tassels. Soft, matte, airy.",
+    "- Blouse: the gold embellished net blouse from the last two references, with short cap sleeves and a V neckline.",
+    "- The pallu falls from her shoulder across the swing's seat, its gold jaal and red tassels visible.",
+    "",
+    "MUSE: a regal woman in her mid-forties with a thick braid over one shoulder, a large red bindi, sindoor, heavy gold temple earrings, gold bangles; a calm, contented smile.",
+    "",
+    "MOMENT AND PLACE: Diwali / Lakshmi puja night in the courtyard of an old ancestral house: she sits on a carved wooden jhoola (swing) hung from brass chains, surrounded by hundreds of small clay diyas set out in concentric rings on the stone floor and along the steps; marigold torans on the doorways behind her.",
+    "",
+    "LIGHT: night, lit only by the sea of diyas: a warm golden underglow on her face and the gold foil, rich velvety shadows, the faint glow of more lamps in the distance.",
+    "",
+    "CAMERA: full-length seated, perfectly symmetrical front-on composition, camera at seat height, 50mm lens at f/2, the rings of diyas leading into the frame."
+  ]
+}

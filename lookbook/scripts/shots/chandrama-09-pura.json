@@ -1,0 +1,46 @@
+{
+  "id": "chandrama-09-pura",
+  "version": 1,
+  "look": "pura",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+      "index": 0
+    },
+    {
+      "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+      "index": 1
+    },
+    {
+      "product": "pura-chandrama-olive-green-tissue-tussar-silk-saree",
+      "index": 6
+    },
+    {
+      "product": "glow-alat-palat",
+      "index": 1
+    },
+    {
+      "product": "glow-alat-palat",
+      "index": 2
+    }
+  ],
+  "notes": "Sharad Purnima full moon on a rooftop with kheer and floating diyas, full-length, moonlight vs lamplight.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the olive-green tussar tissue silk saree from the first three references, woven with fine gold zari lines throughout that give a metallic shimmer, a plain gold zari pallu and small tassels. Crisp, luminous, slightly stiff drape.",
+    "- Blouse: the mustard-yellow silk brocade blouse from the last two references, elbow-length sleeves, round neckline.",
+    "- Pleated neatly, the gold pallu hanging straight from her left shoulder so the zari lines run unbroken.",
+    "",
+    "MUSE: a woman in her mid-thirties with big natural curls, warm brown skin, a kundan choker, gold bangles, a radiant open smile, looking up at the moon.",
+    "",
+    "MOMENT AND PLACE: Sharad Purnima, the night of the full moon, on a whitewashed rooftop: earthen bowls of rice kheer set out on a low wooden stool to cool in the moonlight, a wide brass urli of water with floating marigold petals and small floating diyas, a few paper lanterns. A huge, luminous full moon low in the deep blue sky behind her.",
+    "",
+    "LIGHT: cool blue moonlight from behind as a rim light outlining her silhouette and the shimmering tissue; warm golden light from the floating diyas below lighting her face and the zari from the front. Magical but believable.",
+    "",
+    "CAMERA: full-length, slightly low angle so the moon sits above her shoulder, 50mm lens at f/2, centred and symmetrical, the urli of diyas soft in the foreground."
+  ]
+}

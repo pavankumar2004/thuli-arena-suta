@@ -1,0 +1,42 @@
+{
+  "id": "kavita-21-saawan",
+  "version": 1,
+  "look": "saawan",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "saawan",
+      "index": 2
+    },
+    {
+      "product": "saawan",
+      "index": 1
+    },
+    {
+      "product": "saawan",
+      "index": 6
+    },
+    {
+      "product": "jashn-alat-palat",
+      "index": 0
+    }
+  ],
+  "notes": "'She always arrived with the rain': veranda in monsoon drizzle, palm out catching rain, muse thirties. Grey-green daylight.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the soft teal mul cotton saree from the first three references, borderless, sprinkled with tiny silver sequins like raindrops, finished with small green woollen pompom tassels. Matte, feather-light.",
+    "- Blouse: the emerald-green blouse with small gold buttis from the last reference, elbow-length sleeves.",
+    "- Pallu over the shoulder and draped loosely over one arm.",
+    "",
+    "MUSE: a woman in her early thirties with long straight dark hair left open, a small black bindi, no heavy jewellery, a single silver ring; eyes half-closed, a private smile.",
+    "",
+    "MOMENT AND PLACE: a monsoon afternoon on the wooden veranda of an old hill-station bungalow: she leans against a weathered pillar with one palm stretched out beyond the eaves, catching the falling rain; a cane chair and an open notebook beside her; the garden beyond soft green and silver with rain.",
+    "",
+    "LIGHT: soft, cool, silvery rain-light, low contrast and luminous; tiny sparkles on the sequins; raindrops visible as streaks against the dark eaves.",
+    "",
+    "CAMERA: three-quarter length, 85mm lens at f/2, side-on with the curtain of rain between her outstretched hand and the camera's background; poetic, still."
+  ]
+}

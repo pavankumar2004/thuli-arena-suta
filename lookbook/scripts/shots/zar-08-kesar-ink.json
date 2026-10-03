@@ -1,0 +1,46 @@
+{
+  "id": "zar-08-kesar-ink",
+  "version": 1,
+  "look": "saffron-ink",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "kesar-ink",
+      "index": 0
+    },
+    {
+      "product": "kesar-ink",
+      "index": 2
+    },
+    {
+      "product": "kesar-ink",
+      "index": 4
+    },
+    {
+      "product": "hara-basic-blouse",
+      "index": 5
+    },
+    {
+      "product": "hara-basic-blouse",
+      "index": 4
+    }
+  ],
+  "notes": "Rooftop golden hour, muse early twenties, wind in the pallu, low angle against the sky. Open air.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the vivid magenta-purple mul cotton saree from the first three references, with an emerald-green border carrying fine gold zari lines. Plain purple body, matte, very light.",
+    "- Blouse: the sleeveless emerald-green blouse with a scoop neckline from the last two references.",
+    "- The pallu lifts in the wind behind her shoulder like a sail, showing its green-and-gold border against the sky.",
+    "",
+    "MUSE: a slender woman in her early twenties with a pixie crop, small gold studs and a nose pin, a single thick gold kada. Eyes closed, face tilted to the breeze, serene smile.",
+    "",
+    "MOMENT AND PLACE: golden hour on the flat terrace of an old city house during the festive week: rows of terracotta diyas set along the parapet ready for evening, a few kites in the warm sky, faded water tanks and old rooftops softly in the background.",
+    "",
+    "LIGHT: low warm golden-hour sun from behind and to the right, rim-lighting her hair and making the purple mul glow translucent where the pallu catches the light; soft warm fill on her face bounced from the parapet.",
+    "",
+    "CAMERA: low angle from near the terrace floor looking up, three-quarter length against a wide apricot-and-lilac sky, 50mm lens at f/2, airy negative space above her."
+  ]
+}

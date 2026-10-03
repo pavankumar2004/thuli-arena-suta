@@ -1,0 +1,46 @@
+{
+  "id": "zar-07-haldi",
+  "version": 1,
+  "look": "haldi-hustle",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "haldi-hustle",
+      "index": 0
+    },
+    {
+      "product": "haldi-hustle",
+      "index": 1
+    },
+    {
+      "product": "haldi-hustle",
+      "index": 2
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 1
+    },
+    {
+      "product": "swarna-kamal",
+      "index": 3
+    }
+  ],
+  "notes": "Plus-size muse in motion running down a staircase hung with marigolds, morning, dynamic full-length.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the bright turmeric-yellow mul cotton saree from the first three references, with a deep purple border carrying gold zari stripes, and purple tassels. Plain yellow body, matte and light.",
+    "- Blouse: the deep purple silk brocade blouse with gold lotus motifs from the last two references, elbow-length sleeves.",
+    "- The long pallu flies out behind her as she moves, its purple-and-gold border clearly visible.",
+    "",
+    "MUSE: a plus-size South Indian woman in her early thirties, glowing dark skin, curly hair half tied with jasmine, a big gold necklace, glass bangles, laughing as she hurries, one hand lifting her pleats so she doesn't trip.",
+    "",
+    "MOMENT AND PLACE: festive morning, late for the family haldi ceremony: she rushes down a narrow old stone staircase in a sunlit courtyard house, strings of fresh orange and yellow marigold garlands hanging across the stairwell, a brass urli of turmeric paste on a landing, pigeons lifting off the parapet.",
+    "",
+    "LIGHT: bright, clear morning sun raking across the stairs from the upper left, crisp shadows of the garlands on lime-washed walls, vivid but natural colour.",
+    "",
+    "CAMERA: full-length, shot from the bottom of the stairs looking slightly up, 35mm lens at f/2.8, fast shutter freezing her mid-step with the pallu streaming behind; a dynamic diagonal composition."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "agomoni-03-sindoor",
+  "version": 1,
+  "look": "conch-and-vermilion",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "shonkho-sindoor-cotton-saree",
+      "index": 0
+    },
+    {
+      "product": "shonkho-sindoor-cotton-saree",
+      "index": 1
+    },
+    {
+      "product": "shonkho-sindoor-cotton-saree",
+      "index": 3
+    },
+    {
+      "product": "pontharam",
+      "index": 0
+    },
+    {
+      "product": "pontharam",
+      "index": 3
+    }
+  ],
+  "notes": "Bijoya Dashami sindoor khela, muse mid-twenties, seated, joyful candid. Soft daylight courtyard.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Saree: the cream-ivory mul cotton saree from the first three references, dotted all over with tiny gold foil dots, with a contrasting crimson-red pallu also dotted in gold, finished with red woollen tassels and a fine gold lace edge.",
+    "- Blouse: the gold chanderi silk blouse from the last two references, with short puffed sleeves and a V neckline.",
+    "- She is seated; the red pallu falls across her lap and onto the step, spread so the red-and-gold dots and red tassels show clearly against the ivory body of the saree.",
+    "",
+    "MUSE: a young Bengali woman in her mid-twenties with a round face and long, thick wavy hair left open; a red bindi, gold earrings, shankha and pola bangles. Laughing openly, eyes crinkled, cheeks and forehead smudged with bright vermilion sindoor.",
+    "",
+    "MOMENT AND PLACE: Bijoya Dashami, sindoor khela. She sits on the low marble step of an old courtyard with green wooden shutters behind her, a brass plate of sindoor and paan leaves beside her. A second woman's hand, wearing only a white shankha bangle and with no other clothing visible, reaches in from the frame edge to touch sindoor to her cheek. A faint haze of red sindoor dust in the air; marigold petals on the step.",
+    "",
+    "LIGHT: late-morning daylight, soft and diffuse from an overcast sky, bouncing off whitewashed walls; gentle shadows, true colours, the sindoor glowing intensely red.",
+    "",
+    "CAMERA: seated full figure, head to the hem pooled on the step, camera at her eye level, 50mm lens at f/2.5; a candid documentary moment caught mid-laugh, slightly off-centre composition."
+  ]
+}

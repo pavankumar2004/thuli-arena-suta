@@ -1,0 +1,38 @@
+{
+  "id": "jalebi-15-hara",
+  "version": 1,
+  "look": "hara",
+  "aspect_ratio": "3:4",
+  "resolution": "2K",
+  "references": [
+    {
+      "product": "hara-jalebi-green-viscose-kurta-pant-set",
+      "index": 2
+    },
+    {
+      "product": "hara-jalebi-green-viscose-kurta-pant-set",
+      "index": 1
+    },
+    {
+      "product": "hara-jalebi-green-viscose-kurta-pant-set",
+      "index": 4
+    }
+  ],
+  "notes": "Phool bazaar walk with marigold garlands over her arm, muse thirties, wide environmental, motion.",
+  "prompt": [
+    "Editorial fashion photograph for an Indian handloom label's festive lookbook. Vertical 3:4 frame.",
+    "",
+    "GARMENT (a real product; match the reference photos exactly, including colours, borders and motifs):",
+    "- Kurta: the sleeveless viscose kurta from the references, in broad vertical stripes of bottle green and teal, with a deep V neckline, side pockets and a small gold embroidered motif near the pocket. Knee length.",
+    "- Trousers: the straight magenta-purple trousers from the references.",
+    "- It is a two-piece set: the kurta and the matching straight trousers shown in the references, worn together exactly as styled there.",
+    "",
+    "MUSE: a woman in her early thirties with shoulder-length curly hair, gold hoops, stacked gold bangles, a relaxed easy smile, looking to the side as she walks.",
+    "",
+    "MOMENT AND PLACE: early morning in a riverside flower market (phool bazaar) before Diwali: mountains of loose orange and yellow marigolds on jute sacks, vendors' hands threading garlands, baskets of lotus and roses. She walks through the narrow lane carrying several long marigold garlands looped over one forearm.",
+    "",
+    "LIGHT: soft, misty early-morning daylight with a gentle warm sun breaking through haze from the back left; the marigolds glowing saturated orange against her green stripes.",
+    "",
+    "CAMERA: full-length, wide environmental frame from slightly above eye level, 35mm lens at f/2.8, mid-stride, the flower heaps filling foreground and background."
+  ]
+}
