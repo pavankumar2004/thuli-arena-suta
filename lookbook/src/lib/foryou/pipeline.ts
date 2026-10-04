@@ -112,7 +112,7 @@ async function readTaste(handle: string, photos: Photo[], emit: Emit): Promise<{
 
   const outfits = photos.filter((p) => p.is_outfit && p.worn_by_owner)
   if (!outfits.length) throw new InstagramError("empty", `We couldn't find any outfits on @${handle} yet.`)
-  emit({ type: "stage", stage: "taste", message: `Reading your style from ${outfits.length} outfit${outfits.length === 1 ? "" : "s"}` })
+  emit({ type: "stage", stage: "taste", message: `Reading the style in ${outfits.length} outfit${outfits.length === 1 ? "" : "s"}` })
   // With few outfit photos (e.g. the 6-post embed of a feed full of film posters), also show
   // their other posts, so the three moments can come from different posts and captions.
   const extra = outfits.length >= 3 ? [] : photos.filter((p) => !outfits.includes(p) && p.is_outfit !== null)
@@ -178,7 +178,7 @@ async function pickOne(taste: StoredTaste, m: Moment, photo: Photo, cands: Candi
   } catch {
     // fall through to a grounded default
   }
-  return { chosen: cands[0], headline: m.name, reason: `Picked because of your post: ${m.why}`, cost: 0 }
+  return { chosen: cands[0], headline: m.name, reason: `Picked because of this post: ${m.why}`, cost: 0 }
 }
 
 /** The whole "Made for you" run for one handle. Every stage is persisted, so a retry resumes. */
@@ -201,7 +201,7 @@ export async function run(handle: string, emit: Emit): Promise<void> {
     if (lists.some((l) => !l.length)) throw new InstagramError("empty", "We couldn't find in-stock pieces for this style right now.")
     mark("shortlist")
 
-    emit({ type: "stage", stage: "style", message: "Styling your three looks" })
+    emit({ type: "stage", stage: "style", message: "Styling three looks" })
     const byId = new Map(photos.map((p) => [p.id, p]))
     await withImages(taste.moments.map((m) => byId.get(m.photo_id) ?? photos[0]))
     const picks = await Promise.all(taste.moments.map((m, i) => pickOne(taste, m, byId.get(m.photo_id) ?? photos[0], lists[i])))

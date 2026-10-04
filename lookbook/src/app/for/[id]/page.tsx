@@ -67,9 +67,9 @@ export default async function ForYouPage({ params }: PageProps<"/for/[id]">) {
                 <img src={`/api/foryou/photo/${look.photo_id}`} alt={`${name}'s post`} width={640} height={800}
                   className="aspect-[4/5] w-full bg-kora object-cover" loading={i ? "lazy" : "eager"} />
                 <figcaption className="mt-3 text-xs leading-relaxed text-stone">
-                  Your post{photo?.caption ? `: “${String(photo.caption).replace(/\s+/g, " ").slice(0, 110)}…”` : ""}{" "}
+                  From this post{photo?.caption ? `: “${String(photo.caption).replace(/\s+/g, " ").slice(0, 110)}…”` : ""}{" "}
                   {photo?.post_url && (
-                    <a href={photo.post_url as string} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">View on Instagram</a>
+                    <a href={photo.post_url as string} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">View the post</a>
                   )}
                 </figcaption>
               </figure>

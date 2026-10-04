@@ -19,7 +19,7 @@ export function SignIn() {
 
   async function submit(value: string, retry = true) {
     setPhase("working")
-    if (retry) setSteps([{ stage: "start", message: "Signing you in" }])
+    if (retry) setSteps([{ stage: "start", message: "Signing in" }])
     setError("")
     try {
       const res = await fetch("/api/foryou", {
@@ -46,7 +46,7 @@ export function SignIn() {
           if (event.type === "stage") setSteps((s) => [...s, event])
           if (event.type === "error") throw new Error(event.message)
           if (event.type === "done") {
-            setSteps((s) => [...s, { stage: "done", message: "Your lookbook is ready" }])
+            setSteps((s) => [...s, { stage: "done", message: "The lookbook is ready" }])
             router.push(`/for/${event.id}`)
             return
           }
@@ -69,7 +69,7 @@ export function SignIn() {
       <Logo className="h-12 text-charcoal" />
       <p className="mt-6 text-[11px] uppercase tracking-[0.3em] text-stone">Made for you</p>
       <h1 className="mt-3 max-w-md text-center font-display text-4xl leading-tight sm:text-5xl">
-        Three looks, styled from your own posts
+        Three looks, styled from an Instagram profile
       </h1>
 
       <div className="mt-10 w-full max-w-sm border border-border bg-kora/60 p-6">
@@ -82,7 +82,7 @@ export function SignIn() {
               <Camera className="size-4" strokeWidth={1.5} /> Sign in with Instagram
             </button>
             <p className="mt-4 text-center text-xs leading-relaxed text-stone">
-              A demo sign-in: we only read your public posts. No password, no access to your account.
+              A demo sign-in: we only read public posts. No password, no access to any account.
             </p>
           </>
         )}
@@ -95,7 +95,7 @@ export function SignIn() {
             }}
           >
             <label htmlFor="handle" className="text-xs uppercase tracking-[0.2em] text-stone">
-              Your Instagram handle
+              Instagram handle (public profile)
             </label>
             <div className="mt-2 flex border border-border bg-ecru focus-within:border-charcoal">
               <span className="px-3 py-3 text-stone">@</span>
